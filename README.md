@@ -2,6 +2,13 @@
 
 ##资料
 
-[Spring 文档](https://spring.io)
+- [Spring 文档](https://spring.io)
+- [Spring Web](https://spring.io/guides/gs/serving-web-content/)
+- [Thymeleaf](https://www.thymeleaf.org/doc/tutorials/3.0/usingthymeleaf.html#setting-attribute-values)
+- [菜鸟教程](https://www.runoob.com/mysql/mysql-insert-query.html)
+- [Markdown插件](http://editor.md.ipandao.com/)
+- [Spring MVC](https://docs.spring.io/spring/docs/5.0.3.RELEASE/spring-framework-reference/web.html#mvc-handlermapping-interceptor)
 
-[Spring Web](https://spring.io/guides/gs/serving-web-content/)
+##工具
+- [Git](https://git-scm.com/download)
+- [Lombok](https://www.projectlombok.org/)
