@@ -8,20 +8,24 @@
 - [菜鸟教程](https://www.runoob.com/mysql/mysql-insert-query.html)
 - [Markdown插件](http://editor.md.ipandao.com/)
 - [Spring MVC](https://docs.spring.io/spring/docs/5.0.3.RELEASE/spring-framework-reference/web.html#mvc-handlermapping-interceptor)
+- [PageHelper分页插件](https://github.com/pagehelper/Mybatis-PageHelper)
 
 ##工具
 - [Git](https://git-scm.com/download)
 - [Lombok](https://www.projectlombok.org/)
 ##脚本
 ````
-CREATE TABLE USER
+create table user
 (
-    ID int AUTO_INCREMENT PRIMARY KEY NOT NULL,
-    ACCOUNT_ID VARCHAR(100),
-    NAME VARCHAR(50),
-    TOKEN VARCHAR(36),
-    GMT_CREATE BIGINT,
-    GMT_MODIFIED BIGINT
+    ID           int auto_increment
+        primary key,
+    ACCOUNT_ID   varchar(100) null,
+    NAME         varchar(50)  null,
+    TOKEN        char(36)     null,
+    GMT_CREATE   bigint       null,
+    GMT_MODIFIED bigint       null,
+    bio          varchar(256) null,
+    avatar_url   varchar(100) null
 );
 ````
 ````
