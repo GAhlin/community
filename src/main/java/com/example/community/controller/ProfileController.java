@@ -3,6 +3,9 @@ package com.example.community.controller;
 import com.example.community.dto.PaginationDTO;
 import com.example.community.model.User;
 import com.example.community.service.QuestionService;
+import io.swagger.annotations.Api;
+import io.swagger.annotations.ApiOperation;
+import io.swagger.annotations.ApiParam;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -12,17 +15,19 @@ import org.springframework.web.bind.annotation.RequestParam;
 
 import javax.servlet.http.HttpServletRequest;
 
+@Api(tags = "ProfileController", description = "我的提问")
 @Controller
 public class ProfileController {
 
     @Autowired
     private QuestionService questionService;
 
+    @ApiOperation("分页查询我的问题列表")
     @GetMapping("/profile/{action}")
     public String profile(HttpServletRequest request,
                           @PathVariable(name = "action") String action,
-                          @RequestParam(name = "page", defaultValue = "1") Integer page,
-                          @RequestParam(name = "size", defaultValue = "5") Integer size,
+                          @RequestParam(name = "page", defaultValue = "1") @ApiParam("页码") Integer page,
+                          @RequestParam(name = "size", defaultValue = "5") @ApiParam("每页数量") Integer size,
                           Model model
                           ) {
         User user = (User) request.getSession().getAttribute("user");

@@ -1,10 +1,12 @@
 package com.example.community.controller;
 
 import com.example.community.dto.QuestionDTO;
-import com.example.community.mapper.QuestionMapper;
 import com.example.community.model.Question;
 import com.example.community.model.User;
 import com.example.community.service.QuestionService;
+import io.swagger.annotations.Api;
+import io.swagger.annotations.ApiOperation;
+import io.swagger.annotations.ApiParam;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -15,14 +17,16 @@ import org.springframework.web.bind.annotation.RequestParam;
 
 import javax.servlet.http.HttpServletRequest;
 
+@Api(tags = "PublishController", description = "发布提问")
 @Controller
 public class PublishController {
 
     @Autowired
     private QuestionService questionService;
 
+    @ApiOperation("编辑功能")
     @GetMapping("/publish/{id}")
-    public String edit(@PathVariable(name = "id") Integer id,
+    public String edit(@PathVariable(name = "id") @ApiParam("问题ID") Long id,
                        Model model) {
         QuestionDTO question = questionService.getById(id);
 
@@ -33,17 +37,19 @@ public class PublishController {
         return "publish";
     }
 
+    @ApiOperation("返回发布页面")
     @GetMapping("/publish")
     public String publish() {
         return "publish";
     }
 
+    @ApiOperation("发布功能")
     @PostMapping("/publish")
     public String doPublish(
-            @RequestParam(value = "title", required = false) String title,
-            @RequestParam(value = "description", required = false) String description,
-            @RequestParam(value = "tag", required = false) String tag,
-            @RequestParam(value = "id", required = false) Integer id,
+            @RequestParam(value = "title", required = false) @ApiParam("问题标题") String title,
+            @RequestParam(value = "description", required = false) @ApiParam("问题描述") String description,
+            @RequestParam(value = "tag", required = false) @ApiParam("问题标签") String tag,
+            @RequestParam(value = "id", required = false) @ApiParam("问题ID") Long id,
             HttpServletRequest request,
             Model model) {
 
