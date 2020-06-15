@@ -1,6 +1,10 @@
 function post() {
     var questionId = $("#question_id").val();
     var content = $("#comment_content").val();
+    if (!content) {
+        alert("输入内容不能为空！！！");
+        return;
+    }
     $.ajax({
         type: "POST",
         url: "/comment",
@@ -12,9 +16,17 @@ function post() {
         }),
         success: function (response) {
             if (response.code == 200) {
-                $("#comment_section").hide();
+                window.location.reload();
             } else {
-                alert(response.message);
+                if (response.code == 2003) {
+                    var isAccepted = confirm(response.message);
+                    if (isAccepted) {
+                        window.open("https://github.com/login/oauth/authorize?client_id=4ffdcfe8addf056de377&redirect_uri=http://localhost:8887/callback&scope=user&state=1");
+                        window.localStorage.setItem("closable", true);
+                    }
+                } else {
+                    alert(response.message);
+                }
             }
             console.log(response);
         },
