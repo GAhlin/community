@@ -4,10 +4,11 @@
 
 - [Spring 文档](https://spring.io)
 - [Spring Web](https://spring.io/guides/gs/serving-web-content/)
+- [Spring MVC](https://docs.spring.io/spring/docs/5.0.3.RELEASE/spring-framework-reference/web.html#mvc-handlermapping-interceptor)
+- [Maven repository](https://mvnrepository.com/)
 - [Thymeleaf](https://www.thymeleaf.org/doc/tutorials/3.0/usingthymeleaf.html#setting-attribute-values)
 - [菜鸟教程](https://www.runoob.com/mysql/mysql-insert-query.html)
 - [Markdown插件](http://editor.md.ipandao.com/)
-- [Spring MVC](https://docs.spring.io/spring/docs/5.0.3.RELEASE/spring-framework-reference/web.html#mvc-handlermapping-interceptor)
 - [PageHelper分页插件](https://github.com/pagehelper/Mybatis-PageHelper)
 
 ##工具

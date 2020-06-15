@@ -1,7 +1,9 @@
 package com.example.community.controller;
 
 import com.example.community.dto.CommentCreateDTO;
+import com.example.community.dto.CommentDTO;
 import com.example.community.dto.ResultDTO;
+import com.example.community.enums.CommentTypeEnum;
 import com.example.community.exception.CustomizeErrorCode;
 import com.example.community.model.Comment;
 import com.example.community.model.User;
@@ -12,12 +14,10 @@ import io.swagger.annotations.ApiParam;
 import org.apache.commons.lang3.StringUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
-import org.springframework.web.bind.annotation.RequestBody;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestMethod;
-import org.springframework.web.bind.annotation.ResponseBody;
+import org.springframework.web.bind.annotation.*;
 
 import javax.servlet.http.HttpServletRequest;
+import java.util.List;
 
 @Controller
 @Api(tags = "CommentController", description = "评论功能")
@@ -47,9 +47,17 @@ public class CommentController {
         comment.setGmtModified(System.currentTimeMillis());
         comment.setGmtCreate(System.currentTimeMillis());
         comment.setCommentator(user.getId());
-        comment.setLikeCount(0L);
+        comment.setLikeCount(0);
         commentService.insert(comment, user);
         return ResultDTO.okOf();
+    }
+
+    @ApiOperation("二级评论")
+    @ResponseBody
+    @RequestMapping(value = "/comment/{id}", method = RequestMethod.GET)
+    public ResultDTO<List<CommentDTO>> comments(@PathVariable(name = "id") @ApiParam("二级评论id") Long id) {
+        List<CommentDTO> commentDTOS = commentService.listByTargetId(id, CommentTypeEnum.COMMENT);
+        return ResultDTO.okOf(commentDTOS);
     }
 }
 

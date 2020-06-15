@@ -1,8 +1,8 @@
 package com.example.community.controller;
 
-import com.example.community.dto.CommentCreateDTO;
 import com.example.community.dto.CommentDTO;
 import com.example.community.dto.QuestionDTO;
+import com.example.community.enums.CommentTypeEnum;
 import com.example.community.service.CommentService;
 import com.example.community.service.QuestionService;
 import io.swagger.annotations.Api;
@@ -31,7 +31,7 @@ public class QuestionController {
     public String question(@PathVariable(name = "id") @ApiParam("问题ID") Long id, Model model) {
 
         QuestionDTO questionDTO = questionService.getById(id);
-        List<CommentDTO> comments = commentService.listByQuestionId(id);
+        List<CommentDTO> comments = commentService.listByTargetId(id, CommentTypeEnum.QUESTION);
         //累加阅读数
         questionService.incView(id);
         model.addAttribute("question", questionDTO);

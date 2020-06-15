@@ -43,7 +43,7 @@ body {
 }
 
 .media-body {
-    padding-top: 10px;
+    padding-top: 5px;
 }
 
 .comment {
@@ -61,6 +61,18 @@ body {
     padding-bottom: 5px;
 }
 
+.sub-comments {
+    border-radius: 5px;
+    margin-top: 10px;
+    margin-bottom: 15px;
+    padding-top: 15px;
+    border: 1px solid #eee;
+}
+
+.sub-comments .btn {
+    margin: 10px 0;
+}
+
 .comment-hr {
     margin-top: 0;
 }
@@ -76,6 +88,20 @@ body {
     cursor: pointer;
 }
 
+.menu .comment-icon {
+    font-size: 15px;
+    cursor: pointer;
+}
+
+.menu .comment-icon:hover {
+    color: #499ef3;
+}
+
+.menu .active {
+    color: #499ef3;
+}
+
 .menu .icon:hover {
     color: #499ef3;
 }
+
