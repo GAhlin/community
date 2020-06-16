@@ -1,0 +1,208 @@
+2020-06-16 00:52:11.316  INFO 21048 --- [main] com.sjl.community.CommunityApplication   : Starting CommunityApplication on DESKTOP-HC5T7NJ with PID 21048 (started by guo in D:\ideaProject\community)
+2020-06-16 00:52:11.331  INFO 21048 --- [main] com.sjl.community.CommunityApplication   : No active profile set, falling back to default profiles: default
+2020-06-16 00:52:13.311  INFO 21048 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-06-16 00:52:13.317  INFO 21048 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2020-06-16 00:52:13.380  INFO 21048 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 35ms. Found 0 Redis repository interfaces.
+2020-06-16 00:52:14.077  INFO 21048 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-06-16 00:52:15.132  INFO 21048 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8889 (http)
+2020-06-16 00:52:15.147  INFO 21048 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-06-16 00:52:15.148  INFO 21048 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.30]
+2020-06-16 00:52:15.445  INFO 21048 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-06-16 00:52:15.445  INFO 21048 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 4000 ms
+2020-06-16 00:52:18.099  INFO 21048 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-06-16 00:52:18.166  INFO 21048 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2020-06-16 00:52:18.383  INFO 21048 --- [main] o.s.s.c.ThreadPoolTaskScheduler          : Initializing ExecutorService 'taskScheduler'
+2020-06-16 00:52:18.420  INFO 21048 --- [scheduling-1] com.sjl.community.schedule.HotTagTask    : 开始时间：Tue Jun 16 00:52:18 CST 2020
+2020-06-16 00:52:18.448  INFO 21048 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8889 (http) with context path ''
+2020-06-16 00:52:18.450  INFO 21048 --- [main] com.sjl.community.CommunityApplication   : Started CommunityApplication in 8.256 seconds (JVM running for 11.252)
+2020-06-16 00:52:18.453  INFO 21048 --- [scheduling-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2020-06-16 00:52:18.545  INFO 21048 --- [scheduling-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2020-06-16 00:52:18.551 DEBUG 21048 --- [scheduling-1] .Q.selectByExampleWithBLOBsWithRowbounds : ==>  Preparing: select id, title, tags, gmt_create, gmt_modified, comment_count, like_count, view_count, creator, top , description from question 
+2020-06-16 00:52:18.569 DEBUG 21048 --- [scheduling-1] .Q.selectByExampleWithBLOBsWithRowbounds : ==> Parameters: 
+2020-06-16 00:52:18.584 DEBUG 21048 --- [scheduling-1] .Q.selectByExampleWithBLOBsWithRowbounds : <==      Total: 0
+2020-06-16 00:52:18.589  INFO 21048 --- [scheduling-1] com.sjl.community.schedule.HotTagTask    : 结束时间：Tue Jun 16 00:52:18 CST 2020
+2020-06-16 00:54:12.744  INFO 3864 --- [main] com.sjl.community.CommunityApplication   : Starting CommunityApplication on DESKTOP-HC5T7NJ with PID 3864 (started by guo in D:\ideaProject\community)
+2020-06-16 00:54:12.747  INFO 3864 --- [main] com.sjl.community.CommunityApplication   : No active profile set, falling back to default profiles: default
+2020-06-16 00:54:13.389  INFO 3864 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-06-16 00:54:13.392  INFO 3864 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2020-06-16 00:54:13.430  INFO 3864 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 23ms. Found 0 Redis repository interfaces.
+2020-06-16 00:54:13.756  INFO 3864 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-06-16 00:54:14.073  INFO 3864 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8889 (http)
+2020-06-16 00:54:14.084  INFO 3864 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-06-16 00:54:14.085  INFO 3864 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.30]
+2020-06-16 00:54:14.232  INFO 3864 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-06-16 00:54:14.233  INFO 3864 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1440 ms
+2020-06-16 00:54:15.890  INFO 3864 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-06-16 00:54:15.962  INFO 3864 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2020-06-16 00:54:16.164  INFO 3864 --- [main] o.s.s.c.ThreadPoolTaskScheduler          : Initializing ExecutorService 'taskScheduler'
+2020-06-16 00:54:16.200  INFO 3864 --- [scheduling-1] com.sjl.community.schedule.HotTagTask    : 开始时间：Tue Jun 16 00:54:16 CST 2020
+2020-06-16 00:54:16.228  INFO 3864 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8889 (http) with context path ''
+2020-06-16 00:54:16.230  INFO 3864 --- [main] com.sjl.community.CommunityApplication   : Started CommunityApplication in 3.947 seconds (JVM running for 5.278)
+2020-06-16 00:54:16.230  INFO 3864 --- [scheduling-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2020-06-16 00:54:16.328  INFO 3864 --- [scheduling-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2020-06-16 00:54:16.338 DEBUG 3864 --- [scheduling-1] .Q.selectByExampleWithBLOBsWithRowbounds : ==>  Preparing: select id, title, tags, gmt_create, gmt_modified, comment_count, like_count, view_count, creator, top , description from question 
+2020-06-16 00:54:16.362 DEBUG 3864 --- [scheduling-1] .Q.selectByExampleWithBLOBsWithRowbounds : ==> Parameters: 
+2020-06-16 00:54:16.381 DEBUG 3864 --- [scheduling-1] .Q.selectByExampleWithBLOBsWithRowbounds : <==      Total: 0
+2020-06-16 00:54:16.386  INFO 3864 --- [scheduling-1] com.sjl.community.schedule.HotTagTask    : 结束时间：Tue Jun 16 00:54:16 CST 2020
+2020-06-16 00:54:23.357  INFO 3864 --- [http-nio-8889-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-06-16 00:54:23.357  INFO 3864 --- [http-nio-8889-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2020-06-16 00:54:23.363  INFO 3864 --- [http-nio-8889-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 6 ms
+2020-06-16 00:54:23.391 DEBUG 3864 --- [http-nio-8889-exec-1] c.s.c.mapper.UserMapper.selectByExample  : ==>  Preparing: select id, account_id, name, token, gmt_create, gmt_modified, bio, avatar_url, password, salt from user WHERE ( token = ? ) 
+2020-06-16 00:54:23.392 DEBUG 3864 --- [http-nio-8889-exec-1] c.s.c.mapper.UserMapper.selectByExample  : ==> Parameters: 9801b7e7-20fe-4bb4-bec2-d82adf96e1d8(String)
+2020-06-16 00:54:23.394 DEBUG 3864 --- [http-nio-8889-exec-1] c.s.c.mapper.UserMapper.selectByExample  : <==      Total: 0
+2020-06-16 00:54:23.416 DEBUG 3864 --- [http-nio-8889-exec-1] c.s.c.m.Q.countByCondition               : ==>  Preparing: select count(*) from question 
+2020-06-16 00:54:23.417 DEBUG 3864 --- [http-nio-8889-exec-1] c.s.c.m.Q.countByCondition               : ==> Parameters: 
+2020-06-16 00:54:23.420 DEBUG 3864 --- [http-nio-8889-exec-1] c.s.c.m.Q.countByCondition               : <==      Total: 1
+2020-06-16 00:54:23.788 DEBUG 3864 --- [http-nio-8889-exec-4] c.s.c.mapper.UserMapper.selectByExample  : ==>  Preparing: select id, account_id, name, token, gmt_create, gmt_modified, bio, avatar_url, password, salt from user WHERE ( token = ? ) 
+2020-06-16 00:54:23.791 DEBUG 3864 --- [http-nio-8889-exec-4] c.s.c.mapper.UserMapper.selectByExample  : ==> Parameters: 9801b7e7-20fe-4bb4-bec2-d82adf96e1d8(String)
+2020-06-16 00:54:23.791 DEBUG 3864 --- [http-nio-8889-exec-5] c.s.c.mapper.UserMapper.selectByExample  : ==>  Preparing: select id, account_id, name, token, gmt_create, gmt_modified, bio, avatar_url, password, salt from user WHERE ( token = ? ) 
+2020-06-16 00:54:23.791 DEBUG 3864 --- [http-nio-8889-exec-3] c.s.c.mapper.UserMapper.selectByExample  : ==>  Preparing: select id, account_id, name, token, gmt_create, gmt_modified, bio, avatar_url, password, salt from user WHERE ( token = ? ) 
+2020-06-16 00:54:23.791 DEBUG 3864 --- [http-nio-8889-exec-2] c.s.c.mapper.UserMapper.selectByExample  : ==>  Preparing: select id, account_id, name, token, gmt_create, gmt_modified, bio, avatar_url, password, salt from user WHERE ( token = ? ) 
+2020-06-16 00:54:23.791 DEBUG 3864 --- [http-nio-8889-exec-5] c.s.c.mapper.UserMapper.selectByExample  : ==> Parameters: 9801b7e7-20fe-4bb4-bec2-d82adf96e1d8(String)
+2020-06-16 00:54:23.791 DEBUG 3864 --- [http-nio-8889-exec-3] c.s.c.mapper.UserMapper.selectByExample  : ==> Parameters: 9801b7e7-20fe-4bb4-bec2-d82adf96e1d8(String)
+2020-06-16 00:54:23.792 DEBUG 3864 --- [http-nio-8889-exec-2] c.s.c.mapper.UserMapper.selectByExample  : ==> Parameters: 9801b7e7-20fe-4bb4-bec2-d82adf96e1d8(String)
+2020-06-16 00:54:23.792 DEBUG 3864 --- [http-nio-8889-exec-4] c.s.c.mapper.UserMapper.selectByExample  : <==      Total: 0
+2020-06-16 00:54:23.794 DEBUG 3864 --- [http-nio-8889-exec-3] c.s.c.mapper.UserMapper.selectByExample  : <==      Total: 0
+2020-06-16 00:54:23.794 DEBUG 3864 --- [http-nio-8889-exec-5] c.s.c.mapper.UserMapper.selectByExample  : <==      Total: 0
+2020-06-16 00:54:23.794 DEBUG 3864 --- [http-nio-8889-exec-2] c.s.c.mapper.UserMapper.selectByExample  : <==      Total: 0
+2020-06-16 00:54:23.798 DEBUG 3864 --- [http-nio-8889-exec-7] c.s.c.mapper.UserMapper.selectByExample  : ==>  Preparing: select id, account_id, name, token, gmt_create, gmt_modified, bio, avatar_url, password, salt from user WHERE ( token = ? ) 
+2020-06-16 00:54:23.798 DEBUG 3864 --- [http-nio-8889-exec-6] c.s.c.mapper.UserMapper.selectByExample  : ==>  Preparing: select id, account_id, name, token, gmt_create, gmt_modified, bio, avatar_url, password, salt from user WHERE ( token = ? ) 
+2020-06-16 00:54:23.799 DEBUG 3864 --- [http-nio-8889-exec-7] c.s.c.mapper.UserMapper.selectByExample  : ==> Parameters: 9801b7e7-20fe-4bb4-bec2-d82adf96e1d8(String)
+2020-06-16 00:54:23.799 DEBUG 3864 --- [http-nio-8889-exec-6] c.s.c.mapper.UserMapper.selectByExample  : ==> Parameters: 9801b7e7-20fe-4bb4-bec2-d82adf96e1d8(String)
+2020-06-16 00:54:23.800 DEBUG 3864 --- [http-nio-8889-exec-6] c.s.c.mapper.UserMapper.selectByExample  : <==      Total: 0
+2020-06-16 00:54:23.800 DEBUG 3864 --- [http-nio-8889-exec-7] c.s.c.mapper.UserMapper.selectByExample  : <==      Total: 0
+2020-06-16 00:54:23.821 DEBUG 3864 --- [http-nio-8889-exec-8] c.s.c.mapper.UserMapper.selectByExample  : ==>  Preparing: select id, account_id, name, token, gmt_create, gmt_modified, bio, avatar_url, password, salt from user WHERE ( token = ? ) 
+2020-06-16 00:54:23.821 DEBUG 3864 --- [http-nio-8889-exec-9] c.s.c.mapper.UserMapper.selectByExample  : ==>  Preparing: select id, account_id, name, token, gmt_create, gmt_modified, bio, avatar_url, password, salt from user WHERE ( token = ? ) 
+2020-06-16 00:54:23.822 DEBUG 3864 --- [http-nio-8889-exec-8] c.s.c.mapper.UserMapper.selectByExample  : ==> Parameters: 9801b7e7-20fe-4bb4-bec2-d82adf96e1d8(String)
+2020-06-16 00:54:23.822 DEBUG 3864 --- [http-nio-8889-exec-9] c.s.c.mapper.UserMapper.selectByExample  : ==> Parameters: 9801b7e7-20fe-4bb4-bec2-d82adf96e1d8(String)
+2020-06-16 00:54:23.822 DEBUG 3864 --- [http-nio-8889-exec-10] c.s.c.mapper.UserMapper.selectByExample  : ==>  Preparing: select id, account_id, name, token, gmt_create, gmt_modified, bio, avatar_url, password, salt from user WHERE ( token = ? ) 
+2020-06-16 00:54:23.822 DEBUG 3864 --- [http-nio-8889-exec-10] c.s.c.mapper.UserMapper.selectByExample  : ==> Parameters: 9801b7e7-20fe-4bb4-bec2-d82adf96e1d8(String)
+2020-06-16 00:54:23.823 DEBUG 3864 --- [http-nio-8889-exec-9] c.s.c.mapper.UserMapper.selectByExample  : <==      Total: 0
+2020-06-16 00:54:23.823 DEBUG 3864 --- [http-nio-8889-exec-8] c.s.c.mapper.UserMapper.selectByExample  : <==      Total: 0
+2020-06-16 00:54:23.823 DEBUG 3864 --- [http-nio-8889-exec-10] c.s.c.mapper.UserMapper.selectByExample  : <==      Total: 0
+2020-06-16 00:54:23.965 DEBUG 3864 --- [http-nio-8889-exec-4] c.s.c.mapper.UserMapper.selectByExample  : ==>  Preparing: select id, account_id, name, token, gmt_create, gmt_modified, bio, avatar_url, password, salt from user WHERE ( token = ? ) 
+2020-06-16 00:54:23.965 DEBUG 3864 --- [http-nio-8889-exec-4] c.s.c.mapper.UserMapper.selectByExample  : ==> Parameters: 9801b7e7-20fe-4bb4-bec2-d82adf96e1d8(String)
+2020-06-16 00:54:23.966 DEBUG 3864 --- [http-nio-8889-exec-5] c.s.c.mapper.UserMapper.selectByExample  : ==>  Preparing: select id, account_id, name, token, gmt_create, gmt_modified, bio, avatar_url, password, salt from user WHERE ( token = ? ) 
+2020-06-16 00:54:23.964 DEBUG 3864 --- [http-nio-8889-exec-1] c.s.c.mapper.UserMapper.selectByExample  : ==>  Preparing: select id, account_id, name, token, gmt_create, gmt_modified, bio, avatar_url, password, salt from user WHERE ( token = ? ) 
+2020-06-16 00:54:23.966 DEBUG 3864 --- [http-nio-8889-exec-1] c.s.c.mapper.UserMapper.selectByExample  : ==> Parameters: 9801b7e7-20fe-4bb4-bec2-d82adf96e1d8(String)
+2020-06-16 00:54:23.966 DEBUG 3864 --- [http-nio-8889-exec-4] c.s.c.mapper.UserMapper.selectByExample  : <==      Total: 0
+2020-06-16 00:54:23.966 DEBUG 3864 --- [http-nio-8889-exec-5] c.s.c.mapper.UserMapper.selectByExample  : ==> Parameters: 9801b7e7-20fe-4bb4-bec2-d82adf96e1d8(String)
+2020-06-16 00:54:23.966 DEBUG 3864 --- [http-nio-8889-exec-3] c.s.c.mapper.UserMapper.selectByExample  : ==>  Preparing: select id, account_id, name, token, gmt_create, gmt_modified, bio, avatar_url, password, salt from user WHERE ( token = ? ) 
+2020-06-16 00:54:23.966 DEBUG 3864 --- [http-nio-8889-exec-1] c.s.c.mapper.UserMapper.selectByExample  : <==      Total: 0
+2020-06-16 00:54:23.967 DEBUG 3864 --- [http-nio-8889-exec-5] c.s.c.mapper.UserMapper.selectByExample  : <==      Total: 0
+2020-06-16 00:54:23.967 DEBUG 3864 --- [http-nio-8889-exec-3] c.s.c.mapper.UserMapper.selectByExample  : ==> Parameters: 9801b7e7-20fe-4bb4-bec2-d82adf96e1d8(String)
+2020-06-16 00:54:23.969 DEBUG 3864 --- [http-nio-8889-exec-6] c.s.c.mapper.UserMapper.selectByExample  : ==>  Preparing: select id, account_id, name, token, gmt_create, gmt_modified, bio, avatar_url, password, salt from user WHERE ( token = ? ) 
+2020-06-16 00:54:23.969 DEBUG 3864 --- [http-nio-8889-exec-3] c.s.c.mapper.UserMapper.selectByExample  : <==      Total: 0
+2020-06-16 00:54:23.969 DEBUG 3864 --- [http-nio-8889-exec-6] c.s.c.mapper.UserMapper.selectByExample  : ==> Parameters: 9801b7e7-20fe-4bb4-bec2-d82adf96e1d8(String)
+2020-06-16 00:54:23.971 DEBUG 3864 --- [http-nio-8889-exec-6] c.s.c.mapper.UserMapper.selectByExample  : <==      Total: 0
+2020-06-16 00:54:23.979 DEBUG 3864 --- [http-nio-8889-exec-2] c.s.c.mapper.UserMapper.selectByExample  : ==>  Preparing: select id, account_id, name, token, gmt_create, gmt_modified, bio, avatar_url, password, salt from user WHERE ( token = ? ) 
+2020-06-16 00:54:23.979 DEBUG 3864 --- [http-nio-8889-exec-7] c.s.c.mapper.UserMapper.selectByExample  : ==>  Preparing: select id, account_id, name, token, gmt_create, gmt_modified, bio, avatar_url, password, salt from user WHERE ( token = ? ) 
+2020-06-16 00:54:23.979 DEBUG 3864 --- [http-nio-8889-exec-10] c.s.c.mapper.UserMapper.selectByExample  : ==>  Preparing: select id, account_id, name, token, gmt_create, gmt_modified, bio, avatar_url, password, salt from user WHERE ( token = ? ) 
+2020-06-16 00:54:23.979 DEBUG 3864 --- [http-nio-8889-exec-2] c.s.c.mapper.UserMapper.selectByExample  : ==> Parameters: 9801b7e7-20fe-4bb4-bec2-d82adf96e1d8(String)
+2020-06-16 00:54:23.980 DEBUG 3864 --- [http-nio-8889-exec-7] c.s.c.mapper.UserMapper.selectByExample  : ==> Parameters: 9801b7e7-20fe-4bb4-bec2-d82adf96e1d8(String)
+2020-06-16 00:54:23.980 DEBUG 3864 --- [http-nio-8889-exec-10] c.s.c.mapper.UserMapper.selectByExample  : ==> Parameters: 9801b7e7-20fe-4bb4-bec2-d82adf96e1d8(String)
+2020-06-16 00:54:23.981 DEBUG 3864 --- [http-nio-8889-exec-7] c.s.c.mapper.UserMapper.selectByExample  : <==      Total: 0
+2020-06-16 00:54:23.981 DEBUG 3864 --- [http-nio-8889-exec-2] c.s.c.mapper.UserMapper.selectByExample  : <==      Total: 0
+2020-06-16 00:54:23.981 DEBUG 3864 --- [http-nio-8889-exec-10] c.s.c.mapper.UserMapper.selectByExample  : <==      Total: 0
+2020-06-16 00:54:23.984 DEBUG 3864 --- [http-nio-8889-exec-9] c.s.c.mapper.UserMapper.selectByExample  : ==>  Preparing: select id, account_id, name, token, gmt_create, gmt_modified, bio, avatar_url, password, salt from user WHERE ( token = ? ) 
+2020-06-16 00:54:23.985 DEBUG 3864 --- [http-nio-8889-exec-9] c.s.c.mapper.UserMapper.selectByExample  : ==> Parameters: 9801b7e7-20fe-4bb4-bec2-d82adf96e1d8(String)
+2020-06-16 00:54:23.986 DEBUG 3864 --- [http-nio-8889-exec-9] c.s.c.mapper.UserMapper.selectByExample  : <==      Total: 0
+2020-06-16 00:54:24.041 DEBUG 3864 --- [http-nio-8889-exec-8] c.s.c.mapper.UserMapper.selectByExample  : ==>  Preparing: select id, account_id, name, token, gmt_create, gmt_modified, bio, avatar_url, password, salt from user WHERE ( token = ? ) 
+2020-06-16 00:54:24.041 DEBUG 3864 --- [http-nio-8889-exec-8] c.s.c.mapper.UserMapper.selectByExample  : ==> Parameters: 9801b7e7-20fe-4bb4-bec2-d82adf96e1d8(String)
+2020-06-16 00:54:24.042 DEBUG 3864 --- [http-nio-8889-exec-8] c.s.c.mapper.UserMapper.selectByExample  : <==      Total: 0
+2020-06-16 00:54:26.088 DEBUG 3864 --- [http-nio-8889-exec-4] c.s.c.mapper.UserMapper.selectByExample  : ==>  Preparing: select id, account_id, name, token, gmt_create, gmt_modified, bio, avatar_url, password, salt from user WHERE ( token = ? ) 
+2020-06-16 00:54:26.088 DEBUG 3864 --- [http-nio-8889-exec-4] c.s.c.mapper.UserMapper.selectByExample  : ==> Parameters: 9801b7e7-20fe-4bb4-bec2-d82adf96e1d8(String)
+2020-06-16 00:54:26.089 DEBUG 3864 --- [http-nio-8889-exec-4] c.s.c.mapper.UserMapper.selectByExample  : <==      Total: 0
+2020-06-16 00:55:06.271 DEBUG 3864 --- [http-nio-8889-exec-1] c.s.c.mapper.UserMapper.selectByExample  : ==>  Preparing: select id, account_id, name, token, gmt_create, gmt_modified, bio, avatar_url, password, salt from user WHERE ( token = ? ) 
+2020-06-16 00:55:06.272 DEBUG 3864 --- [http-nio-8889-exec-1] c.s.c.mapper.UserMapper.selectByExample  : ==> Parameters: 9801b7e7-20fe-4bb4-bec2-d82adf96e1d8(String)
+2020-06-16 00:55:06.273 DEBUG 3864 --- [http-nio-8889-exec-1] c.s.c.mapper.UserMapper.selectByExample  : <==      Total: 0
+2020-06-16 00:55:06.275 DEBUG 3864 --- [http-nio-8889-exec-1] c.s.c.m.Q.countByCondition               : ==>  Preparing: select count(*) from question 
+2020-06-16 00:55:06.276 DEBUG 3864 --- [http-nio-8889-exec-1] c.s.c.m.Q.countByCondition               : ==> Parameters: 
+2020-06-16 00:55:06.277 DEBUG 3864 --- [http-nio-8889-exec-1] c.s.c.m.Q.countByCondition               : <==      Total: 1
+2020-06-16 00:55:12.095 DEBUG 3864 --- [http-nio-8889-exec-5] c.s.c.mapper.UserMapper.selectByExample  : ==>  Preparing: select id, account_id, name, token, gmt_create, gmt_modified, bio, avatar_url, password, salt from user WHERE ( token = ? ) 
+2020-06-16 00:55:12.096 DEBUG 3864 --- [http-nio-8889-exec-5] c.s.c.mapper.UserMapper.selectByExample  : ==> Parameters: 9801b7e7-20fe-4bb4-bec2-d82adf96e1d8(String)
+2020-06-16 00:55:12.097 DEBUG 3864 --- [http-nio-8889-exec-5] c.s.c.mapper.UserMapper.selectByExample  : <==      Total: 0
+2020-06-16 00:55:12.218 DEBUG 3864 --- [http-nio-8889-exec-6] c.s.c.mapper.UserMapper.selectByExample  : ==>  Preparing: select id, account_id, name, token, gmt_create, gmt_modified, bio, avatar_url, password, salt from user WHERE ( token = ? ) 
+2020-06-16 00:55:12.218 DEBUG 3864 --- [http-nio-8889-exec-3] c.s.c.mapper.UserMapper.selectByExample  : ==>  Preparing: select id, account_id, name, token, gmt_create, gmt_modified, bio, avatar_url, password, salt from user WHERE ( token = ? ) 
+2020-06-16 00:55:12.218 DEBUG 3864 --- [http-nio-8889-exec-6] c.s.c.mapper.UserMapper.selectByExample  : ==> Parameters: 9801b7e7-20fe-4bb4-bec2-d82adf96e1d8(String)
+2020-06-16 00:55:12.218 DEBUG 3864 --- [http-nio-8889-exec-3] c.s.c.mapper.UserMapper.selectByExample  : ==> Parameters: 9801b7e7-20fe-4bb4-bec2-d82adf96e1d8(String)
+2020-06-16 00:55:12.219 DEBUG 3864 --- [http-nio-8889-exec-6] c.s.c.mapper.UserMapper.selectByExample  : <==      Total: 0
+2020-06-16 00:55:12.219 DEBUG 3864 --- [http-nio-8889-exec-3] c.s.c.mapper.UserMapper.selectByExample  : <==      Total: 0
+2020-06-16 00:55:12.232 DEBUG 3864 --- [http-nio-8889-exec-10] c.s.c.mapper.UserMapper.selectByExample  : ==>  Preparing: select id, account_id, name, token, gmt_create, gmt_modified, bio, avatar_url, password, salt from user WHERE ( token = ? ) 
+2020-06-16 00:55:12.232 DEBUG 3864 --- [http-nio-8889-exec-9] c.s.c.mapper.UserMapper.selectByExample  : ==>  Preparing: select id, account_id, name, token, gmt_create, gmt_modified, bio, avatar_url, password, salt from user WHERE ( token = ? ) 
+2020-06-16 00:55:12.232 DEBUG 3864 --- [http-nio-8889-exec-7] c.s.c.mapper.UserMapper.selectByExample  : ==>  Preparing: select id, account_id, name, token, gmt_create, gmt_modified, bio, avatar_url, password, salt from user WHERE ( token = ? ) 
+2020-06-16 00:55:12.232 DEBUG 3864 --- [http-nio-8889-exec-9] c.s.c.mapper.UserMapper.selectByExample  : ==> Parameters: 9801b7e7-20fe-4bb4-bec2-d82adf96e1d8(String)
+2020-06-16 00:55:12.232 DEBUG 3864 --- [http-nio-8889-exec-10] c.s.c.mapper.UserMapper.selectByExample  : ==> Parameters: 9801b7e7-20fe-4bb4-bec2-d82adf96e1d8(String)
+2020-06-16 00:55:12.232 DEBUG 3864 --- [http-nio-8889-exec-7] c.s.c.mapper.UserMapper.selectByExample  : ==> Parameters: 9801b7e7-20fe-4bb4-bec2-d82adf96e1d8(String)
+2020-06-16 00:55:12.233 DEBUG 3864 --- [http-nio-8889-exec-2] c.s.c.mapper.UserMapper.selectByExample  : ==>  Preparing: select id, account_id, name, token, gmt_create, gmt_modified, bio, avatar_url, password, salt from user WHERE ( token = ? ) 
+2020-06-16 00:55:12.233 DEBUG 3864 --- [http-nio-8889-exec-9] c.s.c.mapper.UserMapper.selectByExample  : <==      Total: 0
+2020-06-16 00:55:12.233 DEBUG 3864 --- [http-nio-8889-exec-10] c.s.c.mapper.UserMapper.selectByExample  : <==      Total: 0
+2020-06-16 00:55:12.233 DEBUG 3864 --- [http-nio-8889-exec-2] c.s.c.mapper.UserMapper.selectByExample  : ==> Parameters: 9801b7e7-20fe-4bb4-bec2-d82adf96e1d8(String)
+2020-06-16 00:55:12.233 DEBUG 3864 --- [http-nio-8889-exec-7] c.s.c.mapper.UserMapper.selectByExample  : <==      Total: 0
+2020-06-16 00:55:12.234 DEBUG 3864 --- [http-nio-8889-exec-2] c.s.c.mapper.UserMapper.selectByExample  : <==      Total: 0
+2020-06-16 00:55:12.244 DEBUG 3864 --- [http-nio-8889-exec-8] c.s.c.mapper.UserMapper.selectByExample  : ==>  Preparing: select id, account_id, name, token, gmt_create, gmt_modified, bio, avatar_url, password, salt from user WHERE ( token = ? ) 
+2020-06-16 00:55:12.244 DEBUG 3864 --- [http-nio-8889-exec-8] c.s.c.mapper.UserMapper.selectByExample  : ==> Parameters: 9801b7e7-20fe-4bb4-bec2-d82adf96e1d8(String)
+2020-06-16 00:55:12.245 DEBUG 3864 --- [http-nio-8889-exec-8] c.s.c.mapper.UserMapper.selectByExample  : <==      Total: 0
+2020-06-16 00:55:14.647 DEBUG 3864 --- [http-nio-8889-exec-4] c.s.c.mapper.UserMapper.selectByExample  : ==>  Preparing: select id, account_id, name, token, gmt_create, gmt_modified, bio, avatar_url, password, salt from user WHERE ( token = ? ) 
+2020-06-16 00:55:14.648 DEBUG 3864 --- [http-nio-8889-exec-4] c.s.c.mapper.UserMapper.selectByExample  : ==> Parameters: 9801b7e7-20fe-4bb4-bec2-d82adf96e1d8(String)
+2020-06-16 00:55:14.649 DEBUG 3864 --- [http-nio-8889-exec-4] c.s.c.mapper.UserMapper.selectByExample  : <==      Total: 0
+2020-06-16 00:55:49.579 DEBUG 3864 --- [http-nio-8889-exec-6] c.s.c.mapper.UserMapper.selectByExample  : ==>  Preparing: select id, account_id, name, token, gmt_create, gmt_modified, bio, avatar_url, password, salt from user WHERE ( token = ? ) 
+2020-06-16 00:55:49.579 DEBUG 3864 --- [http-nio-8889-exec-3] c.s.c.mapper.UserMapper.selectByExample  : ==>  Preparing: select id, account_id, name, token, gmt_create, gmt_modified, bio, avatar_url, password, salt from user WHERE ( token = ? ) 
+2020-06-16 00:55:49.579 DEBUG 3864 --- [http-nio-8889-exec-3] c.s.c.mapper.UserMapper.selectByExample  : ==> Parameters: 9801b7e7-20fe-4bb4-bec2-d82adf96e1d8(String)
+2020-06-16 00:55:49.579 DEBUG 3864 --- [http-nio-8889-exec-6] c.s.c.mapper.UserMapper.selectByExample  : ==> Parameters: 9801b7e7-20fe-4bb4-bec2-d82adf96e1d8(String)
+2020-06-16 00:55:49.580 DEBUG 3864 --- [http-nio-8889-exec-6] c.s.c.mapper.UserMapper.selectByExample  : <==      Total: 0
+2020-06-16 00:55:49.580 DEBUG 3864 --- [http-nio-8889-exec-3] c.s.c.mapper.UserMapper.selectByExample  : <==      Total: 0
+2020-06-16 01:13:33.818 DEBUG 3864 --- [http-nio-8889-exec-8] c.s.c.mapper.UserMapper.selectByExample  : ==>  Preparing: select id, account_id, name, token, gmt_create, gmt_modified, bio, avatar_url, password, salt from user WHERE ( token = ? ) 
+2020-06-16 01:13:33.819 DEBUG 3864 --- [http-nio-8889-exec-8] c.s.c.mapper.UserMapper.selectByExample  : ==> Parameters: 9801b7e7-20fe-4bb4-bec2-d82adf96e1d8(String)
+2020-06-16 01:13:33.820 DEBUG 3864 --- [http-nio-8889-exec-8] c.s.c.mapper.UserMapper.selectByExample  : <==      Total: 0
+2020-06-16 01:13:33.871 DEBUG 3864 --- [http-nio-8889-exec-4] c.s.c.mapper.UserMapper.selectByExample  : ==>  Preparing: select id, account_id, name, token, gmt_create, gmt_modified, bio, avatar_url, password, salt from user WHERE ( token = ? ) 
+2020-06-16 01:13:33.871 DEBUG 3864 --- [http-nio-8889-exec-4] c.s.c.mapper.UserMapper.selectByExample  : ==> Parameters: 9801b7e7-20fe-4bb4-bec2-d82adf96e1d8(String)
+2020-06-16 01:13:33.872 DEBUG 3864 --- [http-nio-8889-exec-4] c.s.c.mapper.UserMapper.selectByExample  : <==      Total: 0
+2020-06-16 01:13:33.879 DEBUG 3864 --- [http-nio-8889-exec-1] c.s.c.mapper.UserMapper.selectByExample  : ==>  Preparing: select id, account_id, name, token, gmt_create, gmt_modified, bio, avatar_url, password, salt from user WHERE ( token = ? ) 
+2020-06-16 01:13:33.880 DEBUG 3864 --- [http-nio-8889-exec-1] c.s.c.mapper.UserMapper.selectByExample  : ==> Parameters: 9801b7e7-20fe-4bb4-bec2-d82adf96e1d8(String)
+2020-06-16 01:13:33.880 DEBUG 3864 --- [http-nio-8889-exec-1] c.s.c.mapper.UserMapper.selectByExample  : <==      Total: 0
+2020-06-16 01:13:33.970 DEBUG 3864 --- [http-nio-8889-exec-5] c.s.c.mapper.UserMapper.selectByExample  : ==>  Preparing: select id, account_id, name, token, gmt_create, gmt_modified, bio, avatar_url, password, salt from user WHERE ( token = ? ) 
+2020-06-16 01:13:33.970 DEBUG 3864 --- [http-nio-8889-exec-6] c.s.c.mapper.UserMapper.selectByExample  : ==>  Preparing: select id, account_id, name, token, gmt_create, gmt_modified, bio, avatar_url, password, salt from user WHERE ( token = ? ) 
+2020-06-16 01:13:33.970 DEBUG 3864 --- [http-nio-8889-exec-5] c.s.c.mapper.UserMapper.selectByExample  : ==> Parameters: 9801b7e7-20fe-4bb4-bec2-d82adf96e1d8(String)
+2020-06-16 01:13:33.971 DEBUG 3864 --- [http-nio-8889-exec-6] c.s.c.mapper.UserMapper.selectByExample  : ==> Parameters: 9801b7e7-20fe-4bb4-bec2-d82adf96e1d8(String)
+2020-06-16 01:13:33.971 DEBUG 3864 --- [http-nio-8889-exec-6] c.s.c.mapper.UserMapper.selectByExample  : <==      Total: 0
+2020-06-16 01:13:33.975 DEBUG 3864 --- [http-nio-8889-exec-3] c.s.c.mapper.UserMapper.selectByExample  : ==>  Preparing: select id, account_id, name, token, gmt_create, gmt_modified, bio, avatar_url, password, salt from user WHERE ( token = ? ) 
+2020-06-16 01:13:33.975 DEBUG 3864 --- [http-nio-8889-exec-3] c.s.c.mapper.UserMapper.selectByExample  : ==> Parameters: 9801b7e7-20fe-4bb4-bec2-d82adf96e1d8(String)
+2020-06-16 01:13:33.976 DEBUG 3864 --- [http-nio-8889-exec-6] c.s.c.mapper.UserMapper.selectByExample  : ==>  Preparing: select id, account_id, name, token, gmt_create, gmt_modified, bio, avatar_url, password, salt from user WHERE ( token = ? ) 
+2020-06-16 01:13:33.976 DEBUG 3864 --- [http-nio-8889-exec-6] c.s.c.mapper.UserMapper.selectByExample  : ==> Parameters: 9801b7e7-20fe-4bb4-bec2-d82adf96e1d8(String)
+2020-06-16 01:13:33.976 DEBUG 3864 --- [http-nio-8889-exec-3] c.s.c.mapper.UserMapper.selectByExample  : <==      Total: 0
+2020-06-16 01:13:33.977 DEBUG 3864 --- [http-nio-8889-exec-6] c.s.c.mapper.UserMapper.selectByExample  : <==      Total: 0
+2020-06-16 01:13:33.980 DEBUG 3864 --- [http-nio-8889-exec-5] c.s.c.mapper.UserMapper.selectByExample  : <==      Total: 0
+2020-06-16 01:13:34.012 DEBUG 3864 --- [http-nio-8889-exec-7] c.s.c.mapper.UserMapper.selectByExample  : ==>  Preparing: select id, account_id, name, token, gmt_create, gmt_modified, bio, avatar_url, password, salt from user WHERE ( token = ? ) 
+2020-06-16 01:13:34.012 DEBUG 3864 --- [http-nio-8889-exec-7] c.s.c.mapper.UserMapper.selectByExample  : ==> Parameters: 9801b7e7-20fe-4bb4-bec2-d82adf96e1d8(String)
+2020-06-16 01:13:34.013 DEBUG 3864 --- [http-nio-8889-exec-7] c.s.c.mapper.UserMapper.selectByExample  : <==      Total: 0
+2020-06-16 01:13:44.238 DEBUG 3864 --- [http-nio-8889-exec-2] c.s.c.mapper.UserMapper.selectByExample  : ==>  Preparing: select id, account_id, name, token, gmt_create, gmt_modified, bio, avatar_url, password, salt from user WHERE ( token = ? ) 
+2020-06-16 01:13:44.239 DEBUG 3864 --- [http-nio-8889-exec-2] c.s.c.mapper.UserMapper.selectByExample  : ==> Parameters: 9801b7e7-20fe-4bb4-bec2-d82adf96e1d8(String)
+2020-06-16 01:13:44.239 DEBUG 3864 --- [http-nio-8889-exec-2] c.s.c.mapper.UserMapper.selectByExample  : <==      Total: 0
+2020-06-16 01:13:44.240 DEBUG 3864 --- [http-nio-8889-exec-9] c.s.c.mapper.UserMapper.selectByExample  : ==>  Preparing: select id, account_id, name, token, gmt_create, gmt_modified, bio, avatar_url, password, salt from user WHERE ( token = ? ) 
+2020-06-16 01:13:44.241 DEBUG 3864 --- [http-nio-8889-exec-9] c.s.c.mapper.UserMapper.selectByExample  : ==> Parameters: 9801b7e7-20fe-4bb4-bec2-d82adf96e1d8(String)
+2020-06-16 01:13:44.242 DEBUG 3864 --- [http-nio-8889-exec-9] c.s.c.mapper.UserMapper.selectByExample  : <==      Total: 0
+2020-06-16 01:13:44.242 DEBUG 3864 --- [http-nio-8889-exec-4] c.s.c.mapper.UserMapper.selectByExample  : ==>  Preparing: select id, account_id, name, token, gmt_create, gmt_modified, bio, avatar_url, password, salt from user WHERE ( token = ? ) 
+2020-06-16 01:13:44.243 DEBUG 3864 --- [http-nio-8889-exec-4] c.s.c.mapper.UserMapper.selectByExample  : ==> Parameters: 9801b7e7-20fe-4bb4-bec2-d82adf96e1d8(String)
+2020-06-16 01:13:44.243 DEBUG 3864 --- [http-nio-8889-exec-8] c.s.c.mapper.UserMapper.selectByExample  : ==>  Preparing: select id, account_id, name, token, gmt_create, gmt_modified, bio, avatar_url, password, salt from user WHERE ( token = ? ) 
+2020-06-16 01:13:44.244 DEBUG 3864 --- [http-nio-8889-exec-8] c.s.c.mapper.UserMapper.selectByExample  : ==> Parameters: 9801b7e7-20fe-4bb4-bec2-d82adf96e1d8(String)
+2020-06-16 01:13:44.244 DEBUG 3864 --- [http-nio-8889-exec-4] c.s.c.mapper.UserMapper.selectByExample  : <==      Total: 0
+2020-06-16 01:13:44.245 DEBUG 3864 --- [http-nio-8889-exec-8] c.s.c.mapper.UserMapper.selectByExample  : <==      Total: 0
+2020-06-16 01:13:44.248 DEBUG 3864 --- [http-nio-8889-exec-1] c.s.c.mapper.UserMapper.selectByExample  : ==>  Preparing: select id, account_id, name, token, gmt_create, gmt_modified, bio, avatar_url, password, salt from user WHERE ( token = ? ) 
+2020-06-16 01:13:44.249 DEBUG 3864 --- [http-nio-8889-exec-1] c.s.c.mapper.UserMapper.selectByExample  : ==> Parameters: 9801b7e7-20fe-4bb4-bec2-d82adf96e1d8(String)
+2020-06-16 01:13:44.250 DEBUG 3864 --- [http-nio-8889-exec-1] c.s.c.mapper.UserMapper.selectByExample  : <==      Total: 0
+2020-06-16 01:13:44.252 DEBUG 3864 --- [http-nio-8889-exec-10] c.s.c.mapper.UserMapper.selectByExample  : ==>  Preparing: select id, account_id, name, token, gmt_create, gmt_modified, bio, avatar_url, password, salt from user WHERE ( token = ? ) 
+2020-06-16 01:13:44.252 DEBUG 3864 --- [http-nio-8889-exec-10] c.s.c.mapper.UserMapper.selectByExample  : ==> Parameters: 9801b7e7-20fe-4bb4-bec2-d82adf96e1d8(String)
+2020-06-16 01:13:44.253 DEBUG 3864 --- [http-nio-8889-exec-10] c.s.c.mapper.UserMapper.selectByExample  : <==      Total: 0
+2020-06-16 01:13:44.399 DEBUG 3864 --- [http-nio-8889-exec-3] c.s.c.mapper.UserMapper.selectByExample  : ==>  Preparing: select id, account_id, name, token, gmt_create, gmt_modified, bio, avatar_url, password, salt from user WHERE ( token = ? ) 
+2020-06-16 01:13:44.399 DEBUG 3864 --- [http-nio-8889-exec-3] c.s.c.mapper.UserMapper.selectByExample  : ==> Parameters: 9801b7e7-20fe-4bb4-bec2-d82adf96e1d8(String)
+2020-06-16 01:13:44.400 DEBUG 3864 --- [http-nio-8889-exec-3] c.s.c.mapper.UserMapper.selectByExample  : <==      Total: 0
+2020-06-16 01:14:07.095 DEBUG 3864 --- [http-nio-8889-exec-6] c.s.c.mapper.UserMapper.selectByExample  : ==>  Preparing: select id, account_id, name, token, gmt_create, gmt_modified, bio, avatar_url, password, salt from user WHERE ( token = ? ) 
+2020-06-16 01:14:07.095 DEBUG 3864 --- [http-nio-8889-exec-6] c.s.c.mapper.UserMapper.selectByExample  : ==> Parameters: 9801b7e7-20fe-4bb4-bec2-d82adf96e1d8(String)
+2020-06-16 01:14:07.096 DEBUG 3864 --- [http-nio-8889-exec-6] c.s.c.mapper.UserMapper.selectByExample  : <==      Total: 0
+2020-06-16 01:14:07.097 DEBUG 3864 --- [http-nio-8889-exec-6] c.s.c.m.Q.countByCondition               : ==>  Preparing: select count(*) from question 
+2020-06-16 01:14:07.097 DEBUG 3864 --- [http-nio-8889-exec-6] c.s.c.m.Q.countByCondition               : ==> Parameters: 
+2020-06-16 01:14:07.100 DEBUG 3864 --- [http-nio-8889-exec-6] c.s.c.m.Q.countByCondition               : <==      Total: 1
+2020-06-16 01:14:07.260 DEBUG 3864 --- [http-nio-8889-exec-5] c.s.c.mapper.UserMapper.selectByExample  : ==>  Preparing: select id, account_id, name, token, gmt_create, gmt_modified, bio, avatar_url, password, salt from user WHERE ( token = ? ) 
+2020-06-16 01:14:07.261 DEBUG 3864 --- [http-nio-8889-exec-5] c.s.c.mapper.UserMapper.selectByExample  : ==> Parameters: 9801b7e7-20fe-4bb4-bec2-d82adf96e1d8(String)
+2020-06-16 01:14:07.262 DEBUG 3864 --- [http-nio-8889-exec-5] c.s.c.mapper.UserMapper.selectByExample  : <==      Total: 0
