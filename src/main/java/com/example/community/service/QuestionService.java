@@ -78,7 +78,7 @@ public class QuestionService {
             questionDTOList.add(questionDTO);
         }
 
-        paginationDTO.setQuestions(questionDTOList);
+        paginationDTO.setData(questionDTOList);
         return paginationDTO;
     }
 
@@ -107,7 +107,6 @@ public class QuestionService {
 
         paginationDTO.setPagination(totalPage, page);
 
-
         //size*(size-1)
         Integer offset = size * (page - 1);
         QuestionExample example = new QuestionExample();
@@ -125,7 +124,7 @@ public class QuestionService {
             questionDTOList.add(questionDTO);
         }
 
-        paginationDTO.setQuestions(questionDTOList);
+        paginationDTO.setData(questionDTOList);
         return paginationDTO;
     }
 
