@@ -2,14 +2,21 @@
 <html xmlns:th="http://www.thymeleaf.org">
 <head>
     <title th:text="${question.title}"></title>
-    <meta name="viewport" http-equiv="Content-Type" content="text/html width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0; charset=UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <meta name="google-site-verification" content="QGf2OqDw91EjWtNE07HoLJi0x0G2rIYylk6jn6JEoEQ" />
     <link rel="stylesheet" href="/css/bootstrap.min.css">
     <link rel="stylesheet" href="/css/bootstrap-theme.min.css">
     <link rel="stylesheet" href="/css/community.css">
+    <link rel="stylesheet" href="/css/editormd.min.css">
+    <link rel="stylesheet" href="/css/editormd.preview.min.css">
     <script src="/js/jquery-3.4.1.min.js"></script>
     <script src="/js/bootstrap.min.js" type="application/javascript"></script>
     <script src="/js/moment.js" type="application/javascript"></script>
     <script src="/js/community.js" type="application/javascript"></script>
+    <script src="/js/editormd.min.js" type="application/javascript"></script>
+    <script src="/js/lib/prettify.min.js" type="application/javascript"></script>
+    <script src="/js/lib/marked.min.js" type="application/javascript"></script>
 </head>
 <body>
 <!--<p th:text="'Hello, ' + ${name} + '!'" />-->
@@ -17,7 +24,7 @@
 <div class="container-fluid main">
     <div class="row">
         <!--左边主要内容-->
-        <div class="col-lg-9 col-md-12 col-sm-12 col-xs-12">
+        <div class="col-lg-10 col-md-12 col-sm-12 col-xs-12">
             <!--正文-->
             <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                 <h4 class="question-title"><span th:text="${question.title}"></span></h4>
@@ -34,7 +41,14 @@
                 </span>
                 <hr class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                 <!--内容-->
-                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12" th:text="${question.description}"></div>
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12" id="question-view">
+                    <textarea style="display:none;" th:text="${question.description}"></textarea>
+                </div>
+                <script type="text/javascript">
+                    $(function() {
+                        editormd.markdownToHTML("question-view", {});
+                    });
+                </script>
                 <!--标签-->
                 <hr class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                 <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
@@ -117,7 +131,7 @@
         </div>
 
         <!--右边信息块-->
-        <div class="col-lg-3 col-md-12 col-sm-12 col-xs-12">
+        <div class="col-lg-2 col-md-12 col-sm-12 col-xs-12">
             <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                 <h4 class="question-title">发起人</h4>
                 <div class="media">
