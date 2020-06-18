@@ -4,6 +4,7 @@
         "http://mybatis.org/dtd/mybatis-generator-config_1_0.dtd">
 
 <generatorConfiguration>
+
     <!--数据库基本数据设置-->
     <context id="DB2Tables" targetRuntime="MyBatis3">
         <!--实现分页功能的插件    -->

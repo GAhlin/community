@@ -12,6 +12,7 @@
 - [菜鸟教程](https://www.runoob.com/mysql/mysql-insert-query.html)
 - [Github第三方登录官方教程](https://developer.github.com/apps/)
 - [BootStrap官方教程](https://v3.bootcss.com/components/)
+- [阿里云OSS Java SDK教程](https://ak-console.aliyun.com/#/)
 
 ##第三方工具
 - [Git](https://git-scm.com/download)

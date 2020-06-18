@@ -25,6 +25,13 @@
                     <li th:if="${session.user != null}" title="请先登录">
                         <a href="/publish">提问</a>
                     </li>
+                    <!--<li>
+                        <a th:href="@{/profile/replies}">
+                            <img th:if="${session.unreadCount!=null&&session.unreadCount>0}" src="/images/noticed.png">
+                            <img th:unless="${session.unreadCount!=null&&session.unreadCount>0}" src="/images/notice.png">
+                            最新回复
+                        </a>
+                    </li>-->
                     <li>
                         <a href="/profile/replies">通知
                             <span th:if="${session.unreadCount!=0}">

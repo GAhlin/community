@@ -8,6 +8,12 @@ function post() {
     comment2target(questionId, 1, content);
 }
 
+/**
+ * 二级评论
+ * @param targetId
+ * @param type
+ * @param content
+ */
 function comment2target(targetId, type, content) {
     if (!content) {
         alert("输入内容不能为空！！！");
@@ -119,10 +125,12 @@ function collapseComment(e) {
     }
 }
 
+//展示标签
 function showSelectTag() {
     $("#select-tag").show();
 }
 
+//选择标签
 function selectTag(e) {
     var value = e.getAttribute("data-tag");
     var previous = $("#tag").val();
@@ -134,4 +142,31 @@ function selectTag(e) {
         }
     }
 }
+
+$(function () {
+    var editor = editormd("question-editor", {
+        width: "100%",
+        height: 350,
+        path: "/js/lib/",
+        delay: 0,
+        watch: false ,
+        placeholder: "请输入问题描述...",
+        searchReplace: true,
+        autofocus: false,
+        imageUpload: true,
+        imageFormats: ["jpg", "jpeg", "gif", "png", "bmp", "webp"],
+        imageUploadURL: "/file/upload",
+        toolbarIcons : function() {
+            return [
+                "undo", "redo", "|",
+                "bold", "del", "italic", "quote", "|",
+                "preview", "watch", "|",
+                "link","image", "fullscreen", "|",
+                "h1", "h2", "h3" , "h4", "h5", "h6", "|",
+                "list-ul", "list-ol", "hr", "|",
+                "code", "table", "preformatted-text", "clear"
+            ]
+        },
+    });
+});
 
