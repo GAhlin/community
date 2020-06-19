@@ -8,6 +8,7 @@ import com.example.community.service.UserService;
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
 import io.swagger.annotations.ApiParam;
+import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Controller;
@@ -21,6 +22,7 @@ import java.util.UUID;
 
 @Api(tags = "AuthorizeController", description = "登录管理")
 @Controller
+@Slf4j
 public class AuthorizeController {
 
     @Autowired
@@ -60,11 +62,14 @@ public class AuthorizeController {
             user.setAccountId(String.valueOf(githubUser.getId()));
             user.setAvatarUrl(githubUser.getAvatar_url());
             userService.createOrUpdate(user);
-            response.addCookie(new Cookie("token", token));
+            Cookie cookie = new Cookie("token", token);
+            cookie.setMaxAge(60 * 60 * 24 * 30 * 6);
+            response.addCookie(cookie);
             //登录成功，写cookie和session
             return "redirect:/";
         } else {
             //登录失败，重新登录
+            log.error("callback get github error, {}", githubUser);
             return "redirect:/";
         }
     }

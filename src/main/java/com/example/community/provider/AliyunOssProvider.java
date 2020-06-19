@@ -5,6 +5,7 @@ import com.aliyun.oss.OSS;
 import com.aliyun.oss.OSSClientBuilder;
 import com.example.community.exception.CustomizeErrorCode;
 import com.example.community.exception.CustomizeException;
+import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Component;
 
@@ -14,6 +15,7 @@ import java.util.Date;
 import java.util.UUID;
 
 @Component
+@Slf4j
 public class AliyunOssProvider {
 
     //这里的配置可以在properties或者yml中进行配置
@@ -52,6 +54,7 @@ public class AliyunOssProvider {
             return url.toString();
 
         } catch (Exception e) {
+            log.error("upload error,{}", fileName, e);
             e.printStackTrace();
         } finally {
             // 关闭OSSClient。

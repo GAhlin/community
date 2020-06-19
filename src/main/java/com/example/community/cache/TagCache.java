@@ -37,6 +37,11 @@ public class TagCache {
         tool.setCategoryName("开发工具");
         tool.setTags(Arrays.asList("mvn", "git", "github", "vim", "xcode", "idea", "maven", "eclipse", "vs-code"));
         tagDTOS.add(tool);
+
+        TagDTO other = new TagDTO();
+        other.setCategoryName("其他");
+        other.setTags(Arrays.asList("吐槽", "测试", "找bug", "其他"));
+        tagDTOS.add(other);
         return tagDTOS;
     }
 
@@ -44,7 +49,8 @@ public class TagCache {
         String[] split = StringUtils.split(tags, ",");
         List<TagDTO> tagDTOS = get();
         List<String> tagList = tagDTOS.stream().flatMap(tag -> tag.getTags().stream()).collect(Collectors.toList());
-        String invalid = Arrays.stream(split).filter(t -> !tagList.contains(t)).collect(Collectors.joining(","));
+        //为空不能提交
+        String invalid = Arrays.stream(split).filter(t -> StringUtils.isBlank(t) || !tagList.contains(t)).collect(Collectors.joining(","));
         return invalid;
     }
 }

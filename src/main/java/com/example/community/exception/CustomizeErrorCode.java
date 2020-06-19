@@ -17,7 +17,8 @@ public enum CustomizeErrorCode implements ICustomizeErrorCode {
     SEND_EMAIL_FAIL(2013, "邮件发送失败"),
     EMAIL_ALREADY_EXISTS(2014, "邮箱已注册"),
     PWD_NOT_EQUAL(2015, "两次输入的密码不一致"),
-    EMAIL_NOT_EXISTS(2016, "邮箱未注册")
+    EMAIL_NOT_EXISTS(2016, "邮箱未注册"),
+    INVALID_OPERATION(2017, "兄弟，是不是走错房间了？"),
     ;
 
     private Integer code;
