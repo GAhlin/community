@@ -184,3 +184,10 @@ body {
 .user-oper-icon {
     width: 10%;
 }
+
+.footer-word {
+    color: #888;
+    text-align: center;
+    padding: 30px 0 10px;
+    font-size: 12px;
+}
