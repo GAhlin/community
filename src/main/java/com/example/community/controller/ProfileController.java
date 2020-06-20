@@ -32,7 +32,7 @@ public class ProfileController {
     public String profile(HttpServletRequest request,
                           @PathVariable(name = "action") String action,
                           @RequestParam(name = "page", defaultValue = "1") @ApiParam("页码") Integer page,
-                          @RequestParam(name = "size", defaultValue = "5") @ApiParam("每页数量") Integer size,
+                          @RequestParam(name = "size", defaultValue = "8") @ApiParam("每页数量") Integer size,
                           Model model
                           ) {
         User user = (User) request.getSession().getAttribute("user");

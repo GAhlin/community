@@ -10,7 +10,7 @@
 <div class="container-fluid main">
     <div class="row">
         <div class="col-lg-9 col-md-12 col-sm-12 col-xs-12">
-            <h2><span th:text="${sectionName}"></span> </h2>
+            <h3><span th:text="${sectionName}"></span> </h3>
             <hr>
 
             <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12" th:if="${section == 'questions'}">
@@ -37,7 +37,7 @@
                 </div>
                 <!--分页条-->
                 <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                    <nav aria-label="Page navigation">
+                    <nav aria-label="Page navigation" class="pull-right">
                         <ul class="pagination">
                             <li th:if="${pagination.showFirstPage}">
                                 <a th:href="@{'/profile/'+${section}(page=${1})}" aria-label="Previous">
@@ -80,7 +80,7 @@
                     </div>
                 </div>
                 <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                    <nav aria-label="Page navigation">
+                    <nav aria-label="Page navigation" class="pull-right">
                         <ul class="pagination">
                             <li th:if="${pagination.showFirstPage}">
                                 <a th:href="@{'/profile/'+${section}(page=${1})}" aria-label="Previous">

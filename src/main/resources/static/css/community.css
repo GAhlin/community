@@ -34,14 +34,23 @@
     }
 }
 
+* {
+    margin: 0;
+    padding: 0;
+}
+
 body {
     /*background-color: #efefef;*/
     background-image: url("/images/index-bg.png");
 }
 
 .main {
-    background-color: white;
+    /*background-color: white;*/
+    /*margin: 30px;*/
     margin: 30px;
+    background-color: #fff;
+    box-shadow: 6px 6px 10px gray;
+    border-radius: 4px;
 }
 
 .btn-success {
@@ -106,10 +115,6 @@ body {
     margin: 50px;
 }
 
-.media-body {
-    padding-top: 5px;
-}
-
 .comment {
     margin: 10px 0;
 }
@@ -171,6 +176,7 @@ body {
 
 .img-weChat {
     width: 40%;
+    margin-bottom: 10px;
 }
 
 .publish-tag {

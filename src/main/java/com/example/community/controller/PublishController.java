@@ -62,11 +62,12 @@ public class PublishController {
         model.addAttribute("tag", tag);
         model.addAttribute("tags", TagCache.get());
 
-        if (title == null || title == "") {
+        //title == null || title == ""  会导致可以输入空格
+        if (StringUtils.isBlank(title)) {
             model.addAttribute("error", "标题不能为空");
             return "publish";
         }
-        if (description == null || description == "") {
+        if (StringUtils.isBlank(description)) {
             model.addAttribute("error", "问题补充不能为空");
             return "publish";
         }
@@ -76,7 +77,7 @@ public class PublishController {
         }
 
         String invalid = TagCache.filterInvalid(tag);
-        if (StringUtils.isNotBlank(invalid)) {
+        if (StringUtils.isBlank(tag)) {
             model.addAttribute("error", "输入非法标签：" + invalid);
             return "publish";
         }

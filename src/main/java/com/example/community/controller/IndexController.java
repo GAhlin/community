@@ -1,5 +1,6 @@
 package com.example.community.controller;
 
+import com.example.community.cache.HotTagCache;
 import com.example.community.dto.PaginationDTO;
 import com.example.community.service.QuestionService;
 import io.swagger.annotations.Api;
@@ -12,6 +13,7 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 
 import javax.servlet.http.HttpServletRequest;
+import java.util.List;
 
 @Api(tags = "IndexController", description = "首页查询")
 @Controller
@@ -20,19 +22,23 @@ public class IndexController {
     @Autowired
     private QuestionService questionService;
 
+    @Autowired
+    private HotTagCache hotTagCache;
+
     @ApiOperation("分页查询问题列表")
     @GetMapping("/")
-    public String index(HttpServletRequest request,
-                        Model model,
+    public String index(Model model,
                         @RequestParam(name = "page", defaultValue = "1") @ApiParam("页码") Integer page,
-                        @RequestParam(name = "size", defaultValue = "10") @ApiParam("每页数量") Integer size,
-                        @RequestParam(name = "search", required = false) @ApiParam("搜索问题") String search) {
+                        @RequestParam(name = "size", defaultValue = "6") @ApiParam("每页数量") Integer size,
+                        @RequestParam(name = "search", required = false) @ApiParam("搜索问题") String search,
+                        @RequestParam(name = "tag", required = false) @ApiParam("热门标签") String tag) {
 
-        PaginationDTO pagination = questionService.list(search, page, size);
+        PaginationDTO pagination = questionService.list(search, tag, page, size);
+        List<String> tags = hotTagCache.getHots();
         model.addAttribute("pagination", pagination);
-        if (search != null) {
-            model.addAttribute("search", search);
-        }
+        model.addAttribute("search", search);
+        model.addAttribute("tag", tag);
+        model.addAttribute("tags", tags);
         return "index";
     }
 }

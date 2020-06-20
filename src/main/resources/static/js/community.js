@@ -162,7 +162,7 @@ $(function () {
                 "bold", "del", "italic", "quote", "|",
                 "preview", "watch", "|",
                 "link","image", "fullscreen", "|",
-                "h1", "h2", "h3" , "h4", "h5", "h6", "|",
+                "h1", "h2", "h3" , "h4", "|",
                 "list-ul", "list-ol", "hr", "|",
                 "code", "table", "preformatted-text", "clear"
             ]
