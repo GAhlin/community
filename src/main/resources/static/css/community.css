@@ -197,3 +197,38 @@ body {
     padding: 30px 0 10px;
     font-size: 12px;
 }
+
+.login-body {
+    background-image: url("/images/login-bg2.jpg");
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%,-50%);
+    -moz-transform: translate(-50%,-50%);
+    -o-transform: translate(-50%,-50%);
+    transform: translate(-50%,-50%);
+}
+
+.login-main {
+    box-shadow: 6px 6px 10px gray;
+    border-radius: 4px;
+    background-color: #fff;
+}
+
+.login-left {
+    height: 100%;
+    border-right: 1px solid #D2D2D2;
+}
+
+.login-right {
+    height: 100%;
+}
+
+.login-other-all {
+    padding: 40px 22px;
+}
+
+.login-other {
+    display: block;
+    height: 40px;
+}

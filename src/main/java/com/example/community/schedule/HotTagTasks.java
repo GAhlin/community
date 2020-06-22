@@ -23,15 +23,16 @@ public class HotTagTasks {
     @Autowired
     private HotTagCache hotTagCache;
 
-    @Scheduled(fixedRate = 1000 * 60 * 60 * 3)//四个小时
+    @Scheduled(fixedRate = 1000 * 60 * 60 * 4)//四个小时
     public void hotTagSchedule() {
         log.info("开始时间： {}", new Date());
         int offset = 0;
-        int limit = 5;
+        int limit = 20;
         List<Question> list = new ArrayList<>();
 
         Map<String, Integer> priorities = new HashMap<>();
         while (offset == 0 || list.size() == limit) {
+            //将问题提取出来
             list = questionMapper.selectByExampleWithRowbounds(new QuestionExample(), new RowBounds(offset, limit));
             for (Question question : list) {
                 String[] tags = StringUtils.split(question.getTag(), ",");

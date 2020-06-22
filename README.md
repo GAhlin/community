@@ -13,6 +13,7 @@
 - [Github第三方登录官方教程](https://developer.github.com/apps/)
 - [BootStrap官方教程](https://v3.bootcss.com/components/)
 - [阿里云OSS Java SDK教程](https://ak-console.aliyun.com/#/)
+- [Alibaba Cloud Toolkit Idea一键部署插件](https://help.aliyun.com/product/29966.html)
 
 ##第三方工具
 - [Git](https://git-scm.com/download)
