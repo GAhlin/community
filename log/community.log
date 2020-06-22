@@ -135,3 +135,115 @@
 2020-06-22 20:50:40.284  INFO 15216 --- [http-nio-8887-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
 2020-06-22 20:50:40.285  INFO 15216 --- [http-nio-8887-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
 2020-06-22 20:50:40.290  INFO 15216 --- [http-nio-8887-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 5 ms
+2020-06-22 21:35:50.388  INFO 19956 --- [restartedMain] c.e.community.CommunityApplication       : Starting CommunityApplication on DESKTOP-HC5T7NJ with PID 19956 (D:\ideaProject\community\target\classes started by guo in D:\ideaProject\community)
+2020-06-22 21:35:50.392  INFO 19956 --- [restartedMain] c.e.community.CommunityApplication       : No active profile set, falling back to default profiles: default
+2020-06-22 21:35:50.453  INFO 19956 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2020-06-22 21:35:50.454  INFO 19956 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2020-06-22 21:35:52.078  INFO 19956 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8887 (http)
+2020-06-22 21:35:52.087  INFO 19956 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-06-22 21:35:52.087  INFO 19956 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.35]
+2020-06-22 21:35:52.196  INFO 19956 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-06-22 21:35:52.197  INFO 19956 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1742 ms
+2020-06-22 21:35:52.242  INFO 19956 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2020-06-22 21:35:52.416  INFO 19956 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2020-06-22 21:35:52.419  INFO 19956 --- [restartedMain] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:mysql://localhost:3306/community?serverTimezone=GMT%2B8'
+2020-06-22 21:35:53.177  INFO 19956 --- [restartedMain] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2020-06-22 21:35:53.253  INFO 19956 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-06-22 21:35:53.298  INFO 19956 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2020-06-22 21:35:53.328  INFO 19956 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2020-06-22 21:35:53.461  INFO 19956 --- [restartedMain] o.s.s.c.ThreadPoolTaskScheduler          : Initializing ExecutorService 'taskScheduler'
+2020-06-22 21:35:53.728  INFO 19956 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8887 (http) with context path ''
+2020-06-22 21:35:53.729  INFO 19956 --- [restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2020-06-22 21:35:53.742  INFO 19956 --- [restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2020-06-22 21:35:53.775  INFO 19956 --- [restartedMain] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2020-06-22 21:35:53.929  INFO 19956 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: profileUsingGET_1
+2020-06-22 21:35:53.963  INFO 19956 --- [scheduling-1] c.e.community.schedule.HotTagTasks       : 开始时间： Mon Jun 22 21:35:53 CST 2020
+2020-06-22 21:35:53.966  INFO 19956 --- [restartedMain] c.e.community.CommunityApplication       : Started CommunityApplication in 4.064 seconds (JVM running for 5.506)
+2020-06-22 21:35:54.031  INFO 19956 --- [scheduling-1] c.e.community.schedule.HotTagTasks       : 结束时间： Mon Jun 22 21:35:54 CST 2020
+2020-06-22 21:35:55.761  INFO 19956 --- [http-nio-8887-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-06-22 21:35:55.761  INFO 19956 --- [http-nio-8887-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2020-06-22 21:35:55.768  INFO 19956 --- [http-nio-8887-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 7 ms
+2020-06-22 21:38:59.680  INFO 2300 --- [restartedMain] c.e.community.CommunityApplication       : Starting CommunityApplication on DESKTOP-HC5T7NJ with PID 2300 (D:\ideaProject\community\target\classes started by guo in D:\ideaProject\community)
+2020-06-22 21:38:59.683  INFO 2300 --- [restartedMain] c.e.community.CommunityApplication       : No active profile set, falling back to default profiles: default
+2020-06-22 21:38:59.736  INFO 2300 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2020-06-22 21:38:59.736  INFO 2300 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2020-06-22 21:39:01.211  INFO 2300 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8887 (http)
+2020-06-22 21:39:01.218  INFO 2300 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-06-22 21:39:01.218  INFO 2300 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.35]
+2020-06-22 21:39:01.322  INFO 2300 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-06-22 21:39:01.322  INFO 2300 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1586 ms
+2020-06-22 21:39:01.364  INFO 2300 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2020-06-22 21:39:01.457  INFO 2300 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2020-06-22 21:39:01.460  INFO 2300 --- [restartedMain] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:mysql://localhost:3306/community?serverTimezone=GMT%2B8'
+2020-06-22 21:39:02.085  INFO 2300 --- [restartedMain] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2020-06-22 21:39:02.163  INFO 2300 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-06-22 21:39:02.197  INFO 2300 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2020-06-22 21:39:02.220  INFO 2300 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2020-06-22 21:39:02.324  INFO 2300 --- [restartedMain] o.s.s.c.ThreadPoolTaskScheduler          : Initializing ExecutorService 'taskScheduler'
+2020-06-22 21:39:02.585  INFO 2300 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8887 (http) with context path ''
+2020-06-22 21:39:02.586  INFO 2300 --- [restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2020-06-22 21:39:02.597  INFO 2300 --- [restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2020-06-22 21:39:02.638  INFO 2300 --- [restartedMain] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2020-06-22 21:39:02.873  INFO 2300 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: profileUsingGET_1
+2020-06-22 21:39:02.903  INFO 2300 --- [scheduling-1] c.e.community.schedule.HotTagTasks       : 开始时间： Mon Jun 22 21:39:02 CST 2020
+2020-06-22 21:39:02.906  INFO 2300 --- [restartedMain] c.e.community.CommunityApplication       : Started CommunityApplication in 3.632 seconds (JVM running for 5.01)
+2020-06-22 21:39:02.968  INFO 2300 --- [scheduling-1] c.e.community.schedule.HotTagTasks       : 结束时间： Mon Jun 22 21:39:02 CST 2020
+2020-06-22 21:39:05.246  INFO 2300 --- [http-nio-8887-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-06-22 21:39:05.246  INFO 2300 --- [http-nio-8887-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2020-06-22 21:39:05.256  INFO 2300 --- [http-nio-8887-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 9 ms
+2020-06-22 21:43:29.627  INFO 19772 --- [restartedMain] c.e.community.CommunityApplication       : Starting CommunityApplication on DESKTOP-HC5T7NJ with PID 19772 (D:\ideaProject\community\target\classes started by guo in D:\ideaProject\community)
+2020-06-22 21:43:29.633  INFO 19772 --- [restartedMain] c.e.community.CommunityApplication       : No active profile set, falling back to default profiles: default
+2020-06-22 21:43:29.731  INFO 19772 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2020-06-22 21:43:29.731  INFO 19772 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2020-06-22 21:43:31.430  INFO 19772 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8887 (http)
+2020-06-22 21:43:31.437  INFO 19772 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-06-22 21:43:31.437  INFO 19772 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.35]
+2020-06-22 21:43:31.541  INFO 19772 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-06-22 21:43:31.542  INFO 19772 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1810 ms
+2020-06-22 21:43:31.581  INFO 19772 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2020-06-22 21:43:31.675  INFO 19772 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2020-06-22 21:43:31.679  INFO 19772 --- [restartedMain] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:mysql://localhost:3306/community?serverTimezone=GMT%2B8'
+2020-06-22 21:43:32.342  INFO 19772 --- [restartedMain] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2020-06-22 21:43:32.410  INFO 19772 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-06-22 21:43:32.447  INFO 19772 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2020-06-22 21:43:32.471  INFO 19772 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2020-06-22 21:43:32.575  INFO 19772 --- [restartedMain] o.s.s.c.ThreadPoolTaskScheduler          : Initializing ExecutorService 'taskScheduler'
+2020-06-22 21:43:32.831  INFO 19772 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8887 (http) with context path ''
+2020-06-22 21:43:32.832  INFO 19772 --- [restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2020-06-22 21:43:32.844  INFO 19772 --- [restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2020-06-22 21:43:32.873  INFO 19772 --- [restartedMain] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2020-06-22 21:43:33.021  INFO 19772 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: profileUsingGET_1
+2020-06-22 21:43:33.048  INFO 19772 --- [scheduling-1] c.e.community.schedule.HotTagTasks       : 开始时间： Mon Jun 22 21:43:33 CST 2020
+2020-06-22 21:43:33.050  INFO 19772 --- [restartedMain] c.e.community.CommunityApplication       : Started CommunityApplication in 3.998 seconds (JVM running for 5.455)
+2020-06-22 21:43:33.110  INFO 19772 --- [scheduling-1] c.e.community.schedule.HotTagTasks       : 结束时间： Mon Jun 22 21:43:33 CST 2020
+2020-06-22 21:43:34.176  INFO 19772 --- [http-nio-8887-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-06-22 21:43:34.176  INFO 19772 --- [http-nio-8887-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2020-06-22 21:43:34.183  INFO 19772 --- [http-nio-8887-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 7 ms
+2020-06-22 21:46:13.735  INFO 3596 --- [restartedMain] c.e.community.CommunityApplication       : Starting CommunityApplication on DESKTOP-HC5T7NJ with PID 3596 (D:\ideaProject\community\target\classes started by guo in D:\ideaProject\community)
+2020-06-22 21:46:13.738  INFO 3596 --- [restartedMain] c.e.community.CommunityApplication       : No active profile set, falling back to default profiles: default
+2020-06-22 21:46:13.807  INFO 3596 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2020-06-22 21:46:13.808  INFO 3596 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2020-06-22 21:46:15.564  INFO 3596 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8887 (http)
+2020-06-22 21:46:15.572  INFO 3596 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-06-22 21:46:15.572  INFO 3596 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.35]
+2020-06-22 21:46:15.677  INFO 3596 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-06-22 21:46:15.678  INFO 3596 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1870 ms
+2020-06-22 21:46:15.719  INFO 3596 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2020-06-22 21:46:15.826  INFO 3596 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2020-06-22 21:46:15.831  INFO 3596 --- [restartedMain] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:mysql://localhost:3306/community?serverTimezone=GMT%2B8'
+2020-06-22 21:46:16.554  INFO 3596 --- [restartedMain] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2020-06-22 21:46:16.630  INFO 3596 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-06-22 21:46:16.668  INFO 3596 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2020-06-22 21:46:16.693  INFO 3596 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2020-06-22 21:46:16.806  INFO 3596 --- [restartedMain] o.s.s.c.ThreadPoolTaskScheduler          : Initializing ExecutorService 'taskScheduler'
+2020-06-22 21:46:17.075  INFO 3596 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8887 (http) with context path ''
+2020-06-22 21:46:17.076  INFO 3596 --- [restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2020-06-22 21:46:17.090  INFO 3596 --- [restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2020-06-22 21:46:17.124  INFO 3596 --- [restartedMain] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2020-06-22 21:46:17.127  INFO 3596 --- [http-nio-8887-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-06-22 21:46:17.127  INFO 3596 --- [http-nio-8887-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2020-06-22 21:46:17.134  INFO 3596 --- [http-nio-8887-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 7 ms
+2020-06-22 21:46:17.304  INFO 3596 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: profileUsingGET_1
+2020-06-22 21:46:17.341  INFO 3596 --- [scheduling-1] c.e.community.schedule.HotTagTasks       : 开始时间： Mon Jun 22 21:46:17 CST 2020
+2020-06-22 21:46:17.347  INFO 3596 --- [restartedMain] c.e.community.CommunityApplication       : Started CommunityApplication in 4.07 seconds (JVM running for 5.581)
+2020-06-22 21:46:17.357  INFO 3596 --- [scheduling-1] c.e.community.schedule.HotTagTasks       : 结束时间： Mon Jun 22 21:46:17 CST 2020
