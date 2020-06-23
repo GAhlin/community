@@ -1,6 +1,6 @@
-##GAVIN的博客系统
+## GAVIN的博客系统
 
-##资料
+## 资料
 
 - [Spring 文档](https://spring.io)
 - [Spring Web文档](https://spring.io/guides/gs/serving-web-content/)
@@ -15,7 +15,7 @@
 - [阿里云OSS Java SDK教程](https://ak-console.aliyun.com/#/)
 - [Alibaba Cloud Toolkit Idea一键部署插件](https://help.aliyun.com/product/29966.html)
 
-##第三方工具
+## 第三方工具
 - [Git](https://git-scm.com/download)
 - [Lombok](https://www.projectlombok.org/)
 - [Swagger UI](https://github.com/swagger-api/swagger-ui)
