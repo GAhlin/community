@@ -22,14 +22,19 @@
                     <button type="submit" class="btn btn-default">搜索</button>
                 </form>
                 <ul class="nav navbar-nav navbar-right">
-                    <li th:if="${session.user == null}" data-toggle="tooltip" data-placement="bottom" title="请先登录">
-                        <a href="#" th:alt-title="">提问</a>
+                    <li>
+                        <a type="button"  data-toggle="modal" data-target="#myModal" style="cursor:pointer;">
+                            须知
+                        </a>
                     </li>
-                    <li th:if="${session.user != null}" data-toggle="tooltip" data-placement="bottom">
+                    <li th:if="${session.user == null}">
+                        <a data-toggle="tooltip" data-placement="bottom" title="请登录" >提问</a>
+                    </li>
+                    <li th:if="${session.user != null}">
                         <a href="/publish">提问</a>
                     </li>
                     <li>
-                        <a th:if="${session.unreadCount==0}" data-toggle="tooltip" data-placement="bottom" title="目前还没有新通知" href="/profile/replies">通知
+                        <a th:if="${session.unreadCount==0}" data-toggle="tooltip" data-placement="bottom" title="0" href="/profile/replies">通知
                             <span th:if="${session.unreadCount!=0}">
                                 <span class="badge" th:text="${session.unreadCount}"></span>
                             </span>
@@ -53,6 +58,39 @@
             </div>
         </div>
     </nav>
+
+    <!-- 模态框（Modal） -->
+    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">
+                        &times;
+                    </button>
+                    <h4 class="modal-title" id="myModalLabel">
+                        用户须知 ^_^
+                    </h4>
+                </div>
+                <div class="modal-body">
+                    &emsp;&emsp;欢迎大家来到本站，为了您的良好体验，如果发现bug请务必联系我， 您也可以提出对本站的建议，非常感谢，可以扫描
+                    <b>首页右下的二维码</b>
+                    加我好友，顺便交个朋友~
+                    <br>
+                    &emsp;&emsp;更多功能正在开发中...
+                </div>
+                <div class="modal-footer">
+                    <div class="pull-left">
+                        <b>获取本站源码：</b>
+                        <a href="https://github.com/GAhlin/community">GitHub</a>
+                        &nbsp;如果对您有帮助，恳请一个
+                        <b>star</b>
+                    </div>
+                    <button type="button" class="btn btn-default" data-dismiss="modal">OK
+                    </button>
+                </div>
+            </div><!-- /.modal-content -->
+        </div><!-- /.modal -->
+    </div>
 </div>
 
 </body>

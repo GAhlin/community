@@ -187,3 +187,16 @@ function deleteQuestion(qid) {
     }
 }
 
+/**
+ * 未登录提问
+ */
+function unLoginPublish() {
+    if (confirm("请先登录！")) {
+        // window.location.href = "/login";
+    }
+}
+
+$(function () {
+    $('[data-toggle="tooltip"]').tooltip()
+});
+
