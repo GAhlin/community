@@ -23,7 +23,7 @@
                 </form>
                 <ul class="nav navbar-nav navbar-right">
                     <li th:if="${session.user == null}" data-toggle="tooltip" data-placement="bottom" title="请先登录">
-                        <a href="https://github.com/login/oauth/authorize?client_id=4ffdcfe8addf056de377&redirect_uri=http://localhost:8887/callback&scope=user&state=1">提问</a>
+                        <a href="#" th:alt-title="">提问</a>
                     </li>
                     <li th:if="${session.user != null}" data-toggle="tooltip" data-placement="bottom">
                         <a href="/publish">提问</a>

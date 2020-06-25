@@ -29,8 +29,9 @@
                         <span th:text="${question.commentCount}"></span> 个回复 • <span
                                 th:text="${question.viewCount}"></span> 次浏览 • <span
                                 th:text="${#dates.format(question.gmtCreate,'yyyy-MM-dd HH:mm')}"></span>
-
-                        <a th:href="@{'/question/delete/'+${question.id}}" class="community-menu"
+<!--th:href="@{'/question/delete/'+${question.id}}"-->
+                        <a  class="community-menu" th:data-qid="${question.id}"
+                            onclick="deleteQuestion(this)"
                                th:if="${session.user != null && session.user.id == question.creator}">
                             <span class="glyphicon glyphicon-trash pull-right "
                                   aria-hidden="true">删除</span>
