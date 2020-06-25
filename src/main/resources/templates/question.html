@@ -11,10 +11,13 @@
 <div class="container-fluid main">
     <div class="row">
         <!--左边主要内容-->
-        <div class="col-lg-10 col-md-12 col-sm-12 col-xs-12">
+        <div class="col-lg-9 col-md-12 col-sm-12 col-xs-12">
             <!--正文-->
             <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                <h4 class="question-title"><span th:text="${question.title}"></span></h4>
+                <h4 class="question-title">
+                    <img src="/images/book.svg" class="question-title-left-icon">
+                    <span th:text="${question.title}"></span>
+                </h4>
                 <span class="text-desc">
                 作者：<span th:text="${question.user.name}"></span> &nbsp;|
                 发布时间：<span th:text="${#dates.format(question.gmtCreate,'yyyy-MM-dd HH:mm')}"></span> &nbsp;|
@@ -50,6 +53,7 @@
             <!--回复-->
             <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                 <h4>
+                    <img src="/images/chat.svg" class="question-title-left-icon">
                     <span th:text="${question.commentCount}"></span> 个回复
                 </h4>
                 <hr class="col-lg-12 col-md-12 col-sm-12 col-xs-12 comment-hr">
@@ -94,6 +98,7 @@
             <!--回复输入框-->
             <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                 <h4>
+                    <img src="/images/check-circle.svg" class="question-title-left-icon">
                     提交回复
                 </h4>
                 <br>
@@ -119,9 +124,12 @@
         </div>
 
         <!--右边信息块-->
-        <div class="col-lg-2 col-md-12 col-sm-12 col-xs-12">
+        <div class="col-lg-3 col-md-12 col-sm-12 col-xs-12">
             <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                <h4 class="question-title">发起人</h4>
+                <h4 class="question-title">
+                    <img src="/images/person.svg" class="nav-title-icon">
+                    发起人
+                </h4>
                 <div class="media">
                     <div class="media-left">
                         <a href="#">
@@ -136,19 +144,26 @@
                     </div>
                 </div>
             </div>
+            <br>
 
             <!--微信号-->
-            <hr class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
             <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                <h4>联系站长</h4>
+                <hr class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                <h4>
+                    <img src="/images/rooter.svg" class="nav-title-icon">
+                    联系站长
+                </h4>
                 <img src="/images/weChat.jpg" class="img-thumbnail img-weChat">
             </div>
-
+            <br>
 
             <!--相关问题-->
-            <hr class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
             <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                <h4>相关问题</h4>
+                <hr class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                <h4>
+                    <img src="/images/question.svg" class="nav-title-icon">
+                    相关问题
+                </h4>
                 <ul class="question-related">
                     <li th:each="related: ${relatedQuestions}" class="question-related-li">
                         ☞&nbsp;<a th:href="@{'/question/' + ${related.id}}" th:text="${related.title}"></a>

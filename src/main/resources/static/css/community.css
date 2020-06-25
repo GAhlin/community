@@ -177,7 +177,12 @@ body {
 
 .img-weChat {
     width: 40%;
-    margin-bottom: 10px;
+    /*margin-bottom: 10px;*/
+}
+
+.img-qq {
+    width: 35%;
+    /*margin-bottom: 10px;*/
 }
 
 .publish-tag {
@@ -258,3 +263,12 @@ body {
 .nav-title-icon {
     width: 10%;
 }
+
+.question-title-left-icon {
+    width: 2%;
+}
+
+/*
+.question-title-right-icon {
+    width: 15%;
+}*/

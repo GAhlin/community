@@ -34,10 +34,14 @@
                         <a href="/publish">提问</a>
                     </li>
                     <li>
-                        <a th:if="${session.unreadCount==0}" data-toggle="tooltip" data-placement="bottom" title="0" href="/profile/replies">通知
+                        <a th:if="${session.unreadCount!=0}" href="/profile/replies">通知
                             <span th:if="${session.unreadCount!=0}">
                                 <span class="badge" th:text="${session.unreadCount}"></span>
                             </span>
+                        </a>
+                    </li>
+                    <li>
+                        <a th:if="${session.unreadCount==0}" data-toggle="tooltip" data-placement="bottom" title="0" href="/profile/replies">通知
                         </a>
                     </li>
                     <li class="dropdown" th:if="${session.user != null}">
