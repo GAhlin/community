@@ -3,6 +3,7 @@ package com.example.community.controller;
 import com.example.community.dto.CommentDTO;
 import com.example.community.dto.QuestionDTO;
 import com.example.community.enums.CommentTypeEnum;
+import com.example.community.model.User;
 import com.example.community.service.CommentService;
 import com.example.community.service.QuestionService;
 import io.swagger.annotations.Api;
@@ -14,6 +15,7 @@ import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 
+import javax.servlet.http.HttpServletRequest;
 import java.util.List;
 
 @Api(tags = "QuestionController", description = "问题详情")
@@ -39,5 +41,20 @@ public class QuestionController {
         model.addAttribute("comments", comments);
         model.addAttribute("relatedQuestions", relatedQuestions);
         return "question";
+    }
+
+    /**
+     * 删除问题
+     * @param id
+     * @param request
+     * @return
+     */
+    @GetMapping("/question/delete/{id}")
+    public String deleteQuestion(@PathVariable(name = "id") Long id, HttpServletRequest request) {
+        User user = (User) request.getSession().getAttribute("user");
+        if (user != null) {
+            questionService.deleteQuestion(id, user.getId());
+        }
+        return "redirect:/profile/questions";
     }
 }

@@ -34,6 +34,14 @@ public class QuestionService {
     @Autowired
     private QuestionExtMapper questionExtMapper;
 
+    /**
+     * 首页，搜索后的分页信息
+     * @param search
+     * @param tag
+     * @param page
+     * @param size
+     * @return
+     */
     public PaginationDTO list(String search, String tag, Integer page, Integer size) {
         if (StringUtils.isNotBlank(search)) {
             String[] tags = StringUtils.split(search, " ");
@@ -104,6 +112,13 @@ public class QuestionService {
         return paginationDTO;
     }
 
+    /**
+     * 我的问题，获取分页信息
+     * @param userId
+     * @param page
+     * @param size
+     * @return
+     */
     public PaginationDTO list(Long userId, Integer page, Integer size) {
 
         PaginationDTO paginationDTO = new PaginationDTO();
@@ -134,6 +149,8 @@ public class QuestionService {
         QuestionExample example = new QuestionExample();
         example.createCriteria()
                 .andCreatorEqualTo(userId);
+        //倒序排序
+        example.setOrderByClause("gmt_create desc");
         List<Question> questionList = questionMapper.selectByExampleWithRowbounds(example, new RowBounds(offset, size));
 
         List<QuestionDTO> questionDTOList = new ArrayList<>();
@@ -150,6 +167,11 @@ public class QuestionService {
         return paginationDTO;
     }
 
+    /**
+     * 根据问题id，查询详情
+     * @param id
+     * @return
+     */
     public QuestionDTO getById(Long id) {
         Question question = questionMapper.selectByPrimaryKey(id);
         //处理异常
@@ -163,6 +185,10 @@ public class QuestionService {
         return questionDTO;
     }
 
+    /**
+     * 根据id是否存在，创建或修改问题
+     * @param question
+     */
     public void createOrUpdate(Question question) {
         //如果id=0，说明第一次创建
         if (question.getId() == null) {
@@ -201,6 +227,10 @@ public class QuestionService {
         }
     }
 
+    /**
+     * 增加阅读数
+     * @param id
+     */
     public void incView(Long id) {
         Question question = new Question();
         question.setId(id);
@@ -208,6 +238,11 @@ public class QuestionService {
         questionExtMapper.incView(question);
     }
 
+    /**
+     * 查询相关问题
+     * @param queryDTO
+     * @return
+     */
     public List<QuestionDTO> selectRelated(QuestionDTO queryDTO) {
         if (StringUtils.isBlank(queryDTO.getTag())) {
             return new ArrayList<>();
@@ -228,5 +263,19 @@ public class QuestionService {
             return questionDTO;
         }).collect(Collectors.toList());
         return questionDTOS;
+    }
+
+    /**
+     * 删除问题
+     * @param id
+     * @param userId
+     */
+    public void deleteQuestion(Long id, Long userId) {
+        Question question = questionMapper.selectByPrimaryKey(id);
+        if (question.getCreator().equals(userId)) {
+            questionMapper.deleteByPrimaryKey(id);
+        } else {
+            throw new CustomizeException(CustomizeErrorCode.IS_NOT_LEGAL);
+        }
     }
 }

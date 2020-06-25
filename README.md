@@ -23,7 +23,7 @@
 - [Markdown插件](http://editor.md.ipandao.com/)
 - [PageHelper分页插件](https://github.com/pagehelper/Mybatis-PageHelper)
 
-##脚本
+## 脚本
 ````
 create table user
 (
