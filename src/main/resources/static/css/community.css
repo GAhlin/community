@@ -268,7 +268,11 @@ body {
     width: 2%;
 }
 
-/*
-.question-title-right-icon {
-    width: 15%;
-}*/
+.index-gif {
+    margin-bottom: 10px;
+    width: 80%
+}
+
+.red {
+    color: red !important;
+}

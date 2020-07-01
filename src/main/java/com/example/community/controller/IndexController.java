@@ -31,14 +31,15 @@ public class IndexController {
                         @RequestParam(name = "page", defaultValue = "1") @ApiParam("页码") Integer page,
                         @RequestParam(name = "size", defaultValue = "6") @ApiParam("每页数量") Integer size,
                         @RequestParam(name = "search", required = false) @ApiParam("搜索问题") String search,
-                        @RequestParam(name = "tag", required = false) @ApiParam("热门标签") String tag) {
-
-        PaginationDTO pagination = questionService.list(search, tag, page, size);
+                        @RequestParam(name = "tag", required = false) @ApiParam("热门标签") String tag,
+                        @RequestParam(value = "sort", required = false) @ApiParam("时间排序") String sort) {
+        PaginationDTO pagination = questionService.list(search, tag, sort, page, size);
         List<String> tags = hotTagCache.getHots();
         model.addAttribute("pagination", pagination);
         model.addAttribute("search", search);
         model.addAttribute("tag", tag);
         model.addAttribute("tags", tags);
+        model.addAttribute("sort", sort);
         return "index";
     }
 }

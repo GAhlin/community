@@ -24,8 +24,13 @@ public class NotificationController {
     public String profile(HttpServletRequest request,
                           @PathVariable(name = "id") Long id) {
         User user = (User) request.getSession().getAttribute("user");
+
         if (user == null) {
             return "redirect:/";
+        }
+        if (id == 0) {
+            this.notificationService.readAll(user.getId());
+            return "redirect:/profile/replies";
         }
 
         NotificationDTO notificationDTO = notificationService.read(id, user);
@@ -33,7 +38,6 @@ public class NotificationController {
                 NotificationTypeEnum.REPLY_QUESTION.getType() ==(notificationDTO.getType())) {
             return "redirect:/question/" + notificationDTO.getOuterid();
         }
-
         return "profile";
     }
 }

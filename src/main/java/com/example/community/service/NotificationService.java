@@ -111,4 +111,22 @@ public class NotificationService {
         notificationDTO.setTypeName(NotificationTypeEnum.nameOfType(notification.getType()));
         return notificationDTO;
     }
+
+    /**
+     * 一键已读
+     * @param userId
+     */
+    public void readAll(Long userId) {
+        NotificationExample example = new NotificationExample();
+        example.createCriteria().andReceiverEqualTo(userId);
+        List<Notification> notifications = this.notificationMapper.selectByExample(example);
+        for (Notification notification : notifications) {
+            notification.setStatus(NotificationStatusEnum.READ.getStatus());
+            NotificationExample example1 = new NotificationExample();
+            example1.createCriteria()
+                    .andIdEqualTo(notification.getId())
+                    .andReceiverEqualTo(notification.getReceiver());
+            this.notificationMapper.updateByExampleSelective(notification, example1);
+        }
+    }
 }
