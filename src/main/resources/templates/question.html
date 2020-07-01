@@ -40,11 +40,13 @@
                     });
                 </script>
                 <!--标签-->
-                <br class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                <hr class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 hot-tag-list question-hot-tag-list">
                     <span class="label label-info question-tag" th:each="tag : ${question.tag.split(',')}">
                         <span class="glyphicon glyphicon-tags"></span>
-                        <span class="label label-info" th:text="${tag}"></span>
+                        <a th:href="@{/(tag=${tag})}">
+                            <span class="label label-info" th:text="${tag}"></span>
+                        </a>
                     </span>
                 </div>
                 <hr class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
@@ -56,6 +58,7 @@
                     <img src="/images/chat.svg" class="question-title-left-icon">
                     <span th:text="${question.commentCount}"></span> 个回复
                 </h4>
+                <br>
                 <hr class="col-lg-12 col-md-12 col-sm-12 col-xs-12 comment-hr">
                 <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 comments" th:each="comment : ${comments}">
                     <div class="media">
@@ -67,7 +70,7 @@
                         </div>
                         <div class="media-body" th:id="${'comment-body-'+comment.id}">
                             <h6 class="media-heading">
-                                <span th:text="${comment.user.name}"></span>
+                                <span th:text="${comment.user.name}" style="color: #999"></span>
                             </h6>
                             <div th:text="${comment.content}"></div>
                             <div class="menu">
@@ -78,7 +81,7 @@
                                     <span th:text="${comment.commentCount}"></span>
                                 </span>
                                 <span class="pull-right"
-                                      th:text="${#dates.format(comment.gmtCreate,'yyyy-MM-dd')}"></span>
+                                      th:text="${#dates.format(comment.gmtCreate,'yyyy-MM-dd HH:mm:ss')}"></span>
                             </div>
 
                             <!--二级评论-->
@@ -99,20 +102,20 @@
             <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                 <h4>
                     <img src="/images/check-circle.svg" class="question-title-left-icon">
-                    提交回复
+                    提交评论
                 </h4>
                 <br>
                 <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 comment-hr" id="comment_section">
                     <div class="media">
                         <div class="media-left">
                             <a href="#">
-                                <img class="media-object img-rounded"
-                                     th:src="${session.user != null ? session.user.avatarUrl : '/images/user.png'}">
+                                <img class="media-object img-rounded user_avatar"
+                                     th:src="${session.user != null ? session.user.avatarUrl : '/images/default-avatar.png'}">
                             </a>
                         </div>
                         <div class="media-body">
                             <h5 class="media-heading">
-                                <span th:text="${session.user != null ? session.user.name : '匿名用户'}"></span>
+                                <span th:text="${session.user != null ? session.user.name : '匿名用户'}" style="color: #999"></span>
                             </h5>
                         </div>
                     </div>
@@ -139,21 +142,10 @@
                     </div>
                     <div class="media-body">
                         <h5 class="media-heading">
-                            <span th:text="${question.user.name}"></span>
+                            <span th:text="${question.user.name}" style="color: #999"></span>
                         </h5>
                     </div>
                 </div>
-            </div>
-            <br>
-
-            <!--微信号-->
-            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                <hr class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                <h4>
-                    <img src="/images/rooter.svg" class="nav-title-icon">
-                    联系站长
-                </h4>
-                <img src="/images/weChat.jpg" class="img-thumbnail img-weChat">
             </div>
             <br>
 
@@ -166,10 +158,27 @@
                 </h4>
                 <ul class="question-related">
                     <li th:each="related: ${relatedQuestions}" class="question-related-li">
-                        ☞&nbsp;<a th:href="@{'/question/' + ${related.id}}" th:text="${related.title}"></a>
+                        <img src="/images/pencil.svg" style="width: 5%">
+                        <a th:href="@{'/question/' + ${related.id}}" th:text="${related.title}"></a>
                     </li>
                 </ul>
             </div>
+
+            <!--推荐内容-->
+            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                <hr class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                <h4>
+                <img src="/images/bookmark.svg" class="nav-title-icon">
+                推荐内容
+            </h4>
+            <div>
+                <!--<img src="/images/coder.jpg" class="img-thumbnail">-->
+                <img class="index-gif" src="/images/mysql.gif">
+            </div>
+            <br>
+            </div>
+
+
         </div>
     </div>
 </div>

@@ -260,6 +260,10 @@ body {
     word-wrap: break-word;
 }
 
+.question-hot-tag-list {
+    padding-left: 0;padding-bottom: 10px;
+}
+
 .nav-title-icon {
     width: 10%;
 }
@@ -275,4 +279,10 @@ body {
 
 .red {
     color: red !important;
+}
+
+.user_avatar {
+    width: 45px;
+    height: 45px;
+    border: 1px #eee solid;
 }

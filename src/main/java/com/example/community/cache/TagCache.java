@@ -15,32 +15,32 @@ public class TagCache {
         TagDTO program = new TagDTO();
 
         program.setCategoryName("开发语言");
-        program.setTags(Arrays.asList("js", "php", "css", "html", "html5", "java", "node", "python", "golang", "c", "c#", "shell"));
+        program.setTags(Arrays.asList("java", "c/c++", "python", "golang", "c#", "php", "javascript", "scala", "html", "html5", "css", "node·js", "objective-c", "typescript", "shell", "swift", "sass", "ruby", "bash", "less", "asp·net", "lua", "coffeescript", "actionscript", "rust", "erlang", "perl"));
         tagDTOS.add(program);
 
         TagDTO framework = new TagDTO();
         framework.setCategoryName("平台框架");
-        framework.setTags(Arrays.asList("Spring", "Spring Boot", "Mybatis", "Spring MVC", "django"));
+        framework.setTags(Arrays.asList("spring", "springmvc", "springboot", "springcloud", "mybatis", "bootstrap", "express", "django", "flask", "yii", "ruby-on-rails", "tornado", "koa", "struts", "laravel"));
         tagDTOS.add(framework);
 
         TagDTO server = new TagDTO();
         server.setCategoryName("服务器");
-        server.setTags(Arrays.asList("linux", "docker", "ubuntu", "centos", "hadoop", "nginx", "apache"));
+        server.setTags(Arrays.asList("linux", "nginx", "docker", "apache", "ubuntu", "centos", "缓存", "tomcat", "负载均衡", "unix", "hadoop", "windows-server"));
         tagDTOS.add(server);
 
         TagDTO db = new TagDTO();
         db.setCategoryName("数据库");
-        db.setTags(Arrays.asList("mysql", "redis", "sql", "mongodb", "oracle", "nosql", "sqlite"));
+        db.setTags(Arrays.asList("mysql", "redis", "mongodb", "sql", "oracle", "nosql", "memcached", "elasticsearch", "sqlserver", "postgresql", "sqlite"));
         tagDTOS.add(db);
 
         TagDTO tool = new TagDTO();
         tool.setCategoryName("开发工具");
-        tool.setTags(Arrays.asList("mvn", "git", "github", "vim", "xcode", "idea", "maven", "eclipse", "vs-code"));
+        tool.setTags(Arrays.asList("intellij-idea", "git", "github", "vscode", "vim", "sublime", "eclipse", "xcode", "maven", "ide", "svn", "android-studio", "atom", "emacs", "textmate", "hg"));
         tagDTOS.add(tool);
 
         TagDTO other = new TagDTO();
         other.setCategoryName("其他");
-        other.setTags(Arrays.asList("吐槽", "测试", "找bug", "其他"));
+        other.setTags(Arrays.asList("找bug", "测试", "冒泡", "交友", "生活", "电影", "音乐", "读书", "美食", "游戏", "科技", "数码", "理财"));
         tagDTOS.add(other);
         return tagDTOS;
     }
