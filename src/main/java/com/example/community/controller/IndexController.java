@@ -32,7 +32,8 @@ public class IndexController {
                         @RequestParam(name = "size", defaultValue = "6") @ApiParam("每页数量") Integer size,
                         @RequestParam(name = "search", required = false) @ApiParam("搜索问题") String search,
                         @RequestParam(name = "tag", required = false) @ApiParam("热门标签") String tag,
-                        @RequestParam(value = "sort", required = false) @ApiParam("时间排序") String sort) {
+                        @RequestParam(name = "sortName", required = false) @ApiParam("排序名称") String sortName,
+                        @RequestParam(value = "sort", required = false) @ApiParam("问题排序") String sort) {
         PaginationDTO pagination = questionService.list(search, tag, sort, page, size);
         List<String> tags = hotTagCache.getHots();
         model.addAttribute("pagination", pagination);
@@ -40,6 +41,11 @@ public class IndexController {
         model.addAttribute("tag", tag);
         model.addAttribute("tags", tags);
         model.addAttribute("sort", sort);
+        if ("" == sortName) {
+            sortName = "最新";
+            model.addAttribute("sortName", sortName);
+        }
+        model.addAttribute("sortName", sortName);
         return "index";
     }
 }

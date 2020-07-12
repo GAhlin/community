@@ -286,3 +286,12 @@ body {
     height: 45px;
     border: 1px #eee solid;
 }
+
+.phone-sortQuestion{
+    list-style:none;
+    margin-right: 10px;
+}
+
+.profileFrame{
+    height: 45rem;
+}

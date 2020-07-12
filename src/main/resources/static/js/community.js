@@ -158,6 +158,7 @@ $(function () {
         imageUploadURL: "/file/upload",
         toolbarIcons : function() {
             return [
+                "visible-lg",
                 "undo", "redo", "|",
                 "bold", "del", "italic", "quote", "|",
                 "preview", "watch", "|",
@@ -199,4 +200,5 @@ function unLoginPublish() {
 $(function () {
     $('[data-toggle="tooltip"]').tooltip()
 });
+
 
