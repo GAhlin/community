@@ -62,7 +62,7 @@
                         </ul>
                     </li>
                     <li th:unless="${session.user != null}">
-                        <a href="https://github.com/login/oauth/authorize?client_id=4ffdcfe8addf056de377&redirect_uri=http://localhost:8887/callback&scope=user&state=1">登录</a>
+                        <a  type="button"  data-toggle="modal" data-target="#loginModal" style="cursor:pointer;">登录</a>
                     </li>
                 </ul>
             </div>
@@ -98,6 +98,39 @@
                     </div>
                     <button type="button" class="btn btn-default" data-dismiss="modal">OK
                     </button>
+                </div>
+            </div><!-- /.modal-content -->
+        </div><!-- /.modal -->
+    </div>
+
+    <!-- 模态框（Modal） -->
+    <div class="modal fade" id="loginModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">
+                        &times;
+                    </button>
+                    <h4 class="modal-title" id="loginModalLabel">
+                        请选择快捷登录方式！
+                    </h4>
+                </div>
+                <div class="modal-body" style="text-align: center">
+                    <div class="row loginModelRow">
+                        <img src="/images/github.svg" style="width: 5%">
+                        <a href="https://github.com/login/oauth/authorize?client_id=4ffdcfe8addf056de377&redirect_uri=http://localhost:8887/callback&scope=user&state=1">GitHub登录</a>
+                    </div>
+                    <div class="row loginModelRow">
+                        <img src="/images/QQ.svg" style="width: 5%">
+                        <a href="https://github.com/login/oauth/authorize?client_id=4ffdcfe8addf056de377&redirect_uri=http://localhost:8887/callback&scope=user&state=1">QQ登录</a>
+                    </div>
+                    <div class=" row loginModelRow">
+                        <img src="/images/wechat.svg" style="width: 5%">
+                        <a href="https://github.com/login/oauth/authorize?client_id=4ffdcfe8addf056de377&redirect_uri=http://localhost:8887/callback&scope=user&state=1">微信登录</a>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">OK</button>
                 </div>
             </div><!-- /.modal-content -->
         </div><!-- /.modal -->

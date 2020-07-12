@@ -295,3 +295,7 @@ body {
 .profileFrame{
     height: 45rem;
 }
+
+.loginModelRow{
+    margin: 1rem;
+}

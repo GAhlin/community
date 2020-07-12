@@ -41,11 +41,12 @@ public class IndexController {
         model.addAttribute("tag", tag);
         model.addAttribute("tags", tags);
         model.addAttribute("sort", sort);
-        if ("" == sortName) {
+        if (sortName==null) {
             sortName = "最新";
             model.addAttribute("sortName", sortName);
+        } else {
+            model.addAttribute("sortName", sortName);
         }
-        model.addAttribute("sortName", sortName);
         return "index";
     }
 }
