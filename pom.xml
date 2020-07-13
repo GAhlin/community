@@ -117,6 +117,7 @@
     </dependencies>
 
     <build>
+        <finalName>community</finalName>
         <plugins>
             <!-- spring-boot 的 maven 插件 -->
             <plugin>

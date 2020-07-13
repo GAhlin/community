@@ -146,7 +146,7 @@ function selectTag(e) {
 $(function () {
     var editor = editormd("question-editor", {
         width: "100%",
-        height: 350,
+        height: 500,
         path: "/js/lib/",
         delay: 0,
         watch: false ,
