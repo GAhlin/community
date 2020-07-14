@@ -118,11 +118,11 @@
                 <div class="modal-body" style="text-align: center">
                     <div class="row loginModelRow">
                         <img src="/images/github.svg" style="width: 5%">
-                        <a href="https://github.com/login/oauth/authorize?client_id=4ffdcfe8addf056de377&redirect_uri=http://localhost:8887/callback&scope=user&state=1">GitHub登录</a>
+                        <a th:href="@{https://github.com/login/oauth/authorize(client_id='4ffdcfe8addf056de377',redirect_uri=${#httpServletRequest.getServletContext().getAttribute('redirectUri')},scope='user',state=1)}">GitHub登录</a>
                     </div>
                     <div class="row loginModelRow">
                         <img src="/images/QQ.svg" style="width: 5%">
-                        <a href="https://github.com/login/oauth/authorize?client_id=4ffdcfe8addf056de377&redirect_uri=http://localhost:8887/callback&scope=user&state=1">QQ登录</a>
+                        <a th:href="@{https://github.com/login/oauth/authorize(client_id=${@environment.getProperty('github.client.id')},redirect_uri=${@environment.getProperty('github.redirect.uri')},scope='user',state=1)}">QQ登录</a>
                     </div>
                     <div class=" row loginModelRow">
                         <img src="/images/wechat.svg" style="width: 5%">
@@ -130,6 +130,7 @@
                     </div>
                 </div>
                 <div class="modal-footer">
+                    推荐使用QQ登录哦！
                     <button type="button" class="btn btn-default" data-dismiss="modal">OK</button>
                 </div>
             </div><!-- /.modal-content -->

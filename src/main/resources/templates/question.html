@@ -15,7 +15,8 @@
             <!--正文-->
             <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                 <h4 class="question-title">
-                    <img src="/images/book.svg" class="question-title-left-icon">
+                    <img src="/images/book.svg" class="question-title-left-icon hidden-md hidden-sm hidden-xs">
+                    <img src="/images/book.svg" class="nav-title-icon hidden-lg">
                     <span th:text="${question.title}"></span>
                 </h4>
                 <span class="text-desc">
@@ -55,7 +56,8 @@
             <!--回复-->
             <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                 <h4>
-                    <img src="/images/chat.svg" class="question-title-left-icon">
+                    <img src="/images/chat.svg" class="question-title-left-icon hidden-md hidden-sm hidden-xs">
+                    <img src="/images/chat.svg" class="nav-title-icon hidden-lg">
                     <span th:text="${question.commentCount}"></span> 个回复
                 </h4>
                 <br>
@@ -101,7 +103,8 @@
             <!--回复输入框-->
             <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                 <h4>
-                    <img src="/images/check-circle.svg" class="question-title-left-icon">
+                    <img src="/images/check-circle.svg" class="question-title-left-icon hidden-md hidden-sm hidden-xs">
+                    <img src="/images/check-circle.svg" class="nav-title-icon hidden-lg">
                     提交评论
                 </h4>
                 <br>

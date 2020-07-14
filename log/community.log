@@ -1,74 +1,129 @@
-2020-07-13 23:35:11.408  INFO 18268 --- [restartedMain] c.e.community.CommunityApplication       : Starting CommunityApplication on DESKTOP-HC5T7NJ with PID 18268 (D:\ideaProject\community\target\classes started by guo in D:\ideaProject\community)
-2020-07-13 23:35:11.429  INFO 18268 --- [restartedMain] c.e.community.CommunityApplication       : No active profile set, falling back to default profiles: default
-2020-07-13 23:35:11.621  INFO 18268 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
-2020-07-13 23:35:11.622  INFO 18268 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
-2020-07-13 23:35:18.157  INFO 18268 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8887 (http)
-2020-07-13 23:35:18.198  INFO 18268 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2020-07-13 23:35:18.199  INFO 18268 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.35]
-2020-07-13 23:35:18.322  INFO 18268 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2020-07-13 23:35:18.322  INFO 18268 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 6700 ms
-2020-07-13 23:35:18.459  INFO 18268 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2020-07-13 23:35:18.709  INFO 18268 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2020-07-13 23:35:18.713  INFO 18268 --- [restartedMain] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:mysql:///community?serverTimezone=GMT%2B8'
-2020-07-13 23:35:19.924  INFO 18268 --- [restartedMain] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
-2020-07-13 23:35:20.299  INFO 18268 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
-2020-07-13 23:35:20.605  INFO 18268 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
-2020-07-13 23:35:20.702  INFO 18268 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
-2020-07-13 23:35:21.311  INFO 18268 --- [restartedMain] o.s.s.c.ThreadPoolTaskScheduler          : Initializing ExecutorService 'taskScheduler'
-2020-07-13 23:35:21.663  INFO 18268 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8887 (http) with context path ''
-2020-07-13 23:35:21.665  INFO 18268 --- [restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
-2020-07-13 23:35:21.750  INFO 18268 --- [restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
-2020-07-13 23:35:21.814  INFO 18268 --- [restartedMain] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
-2020-07-13 23:35:22.296  INFO 18268 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: profileUsingGET_1
-2020-07-13 23:35:22.398  INFO 18268 --- [scheduling-1] c.e.community.schedule.HotTagTasks       : 开始时间： Mon Jul 13 23:35:22 CST 2020
-2020-07-13 23:35:22.424  INFO 18268 --- [restartedMain] c.e.community.CommunityApplication       : Started CommunityApplication in 12.069 seconds (JVM running for 15.169)
-2020-07-13 23:35:22.562  INFO 18268 --- [scheduling-1] c.e.community.schedule.HotTagTasks       : 结束时间： Mon Jul 13 23:35:22 CST 2020
-2020-07-13 23:35:31.831  INFO 18268 --- [http-nio-8887-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2020-07-13 23:35:31.832  INFO 18268 --- [http-nio-8887-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2020-07-13 23:35:31.838  INFO 18268 --- [http-nio-8887-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 6 ms
-2020-07-13 23:36:40.127  WARN 18268 --- [http-nio-8887-exec-9] com.aliyun.oss                           : [Server]Unable to execute HTTP request: You have no right to access this object because of bucket acl.
-[ErrorCode]: AccessDenied
-[RequestId]: 5F0C7F885369E83936CC2491
-[HostId]: dangelion.oss-cn-beijing.aliyuncs.com
-[ResponseError]:
-<?xml version="1.0" encoding="UTF-8"?>
-<Error>
-  <Code>AccessDenied</Code>
-  <Message>You have no right to access this object because of bucket acl.</Message>
-  <RequestId>5F0C7F885369E83936CC2491</RequestId>
-  <HostId>dangelion.oss-cn-beijing.aliyuncs.com</HostId>
-</Error>
+2020-07-15 00:02:08.071  INFO 20456 --- [restartedMain] c.e.community.CommunityApplication       : Starting CommunityApplication on DESKTOP-HC5T7NJ with PID 20456 (D:\ideaProject\community\target\classes started by guo in D:\ideaProject\community)
+2020-07-15 00:02:08.079  INFO 20456 --- [restartedMain] c.e.community.CommunityApplication       : No active profile set, falling back to default profiles: default
+2020-07-15 00:02:08.181  INFO 20456 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2020-07-15 00:02:08.182  INFO 20456 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2020-07-15 00:02:11.543  INFO 20456 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8887 (http)
+2020-07-15 00:02:11.558  INFO 20456 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-07-15 00:02:11.558  INFO 20456 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.35]
+2020-07-15 00:02:11.723  INFO 20456 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-07-15 00:02:11.724  INFO 20456 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 3542 ms
+2020-07-15 00:02:11.796  INFO 20456 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2020-07-15 00:02:11.976  INFO 20456 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2020-07-15 00:02:11.980  INFO 20456 --- [restartedMain] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:mysql:///community?characterEncoding=utf-8&serverTimezone=GMT%2B8'
+2020-07-15 00:02:13.548  INFO 20456 --- [restartedMain] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2020-07-15 00:02:13.700  INFO 20456 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-07-15 00:02:13.786  INFO 20456 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2020-07-15 00:02:13.990  INFO 20456 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2020-07-15 00:02:14.360  INFO 20456 --- [restartedMain] o.s.s.c.ThreadPoolTaskScheduler          : Initializing ExecutorService 'taskScheduler'
+2020-07-15 00:02:14.875  INFO 20456 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8887 (http) with context path ''
+2020-07-15 00:02:14.876  INFO 20456 --- [restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2020-07-15 00:02:14.890  INFO 20456 --- [restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2020-07-15 00:02:14.932  INFO 20456 --- [restartedMain] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2020-07-15 00:02:15.053  INFO 20456 --- [http-nio-8887-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-07-15 00:02:15.053  INFO 20456 --- [http-nio-8887-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2020-07-15 00:02:15.071  INFO 20456 --- [http-nio-8887-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 18 ms
+2020-07-15 00:02:15.260  INFO 20456 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: profileUsingGET_1
+2020-07-15 00:02:15.290  INFO 20456 --- [scheduling-1] c.e.community.schedule.HotTagTasks       : 开始时间： Wed Jul 15 00:02:15 CST 2020
+2020-07-15 00:02:15.293  INFO 20456 --- [restartedMain] c.e.community.CommunityApplication       : Started CommunityApplication in 7.906 seconds (JVM running for 10.408)
+2020-07-15 00:02:15.365  INFO 20456 --- [scheduling-1] c.e.community.schedule.HotTagTasks       : 结束时间： Wed Jul 15 00:02:15 CST 2020
+2020-07-15 00:03:48.712  INFO 2776 --- [restartedMain] c.e.community.CommunityApplication       : Starting CommunityApplication on DESKTOP-HC5T7NJ with PID 2776 (D:\ideaProject\community\target\classes started by guo in D:\ideaProject\community)
+2020-07-15 00:03:48.715  INFO 2776 --- [restartedMain] c.e.community.CommunityApplication       : No active profile set, falling back to default profiles: default
+2020-07-15 00:03:48.768  INFO 2776 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2020-07-15 00:03:48.769  INFO 2776 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2020-07-15 00:03:50.559  INFO 2776 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8887 (http)
+2020-07-15 00:03:50.572  INFO 2776 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-07-15 00:03:50.572  INFO 2776 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.35]
+2020-07-15 00:03:50.735  INFO 2776 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-07-15 00:03:50.736  INFO 2776 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1967 ms
+2020-07-15 00:03:51.576  INFO 2776 --- [restartedMain] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2020-07-15 00:03:51.667  INFO 2776 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-07-15 00:03:51.713  INFO 2776 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2020-07-15 00:03:51.744  INFO 2776 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2020-07-15 00:03:51.859  INFO 2776 --- [restartedMain] o.s.s.c.ThreadPoolTaskScheduler          : Initializing ExecutorService 'taskScheduler'
+2020-07-15 00:03:52.144  INFO 2776 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8887 (http) with context path ''
+2020-07-15 00:03:52.146  INFO 2776 --- [restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2020-07-15 00:03:52.157  INFO 2776 --- [restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2020-07-15 00:03:52.188  INFO 2776 --- [restartedMain] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2020-07-15 00:03:52.340  INFO 2776 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: profileUsingGET_1
+2020-07-15 00:03:52.369  INFO 2776 --- [scheduling-1] c.e.community.schedule.HotTagTasks       : 开始时间： Wed Jul 15 00:03:52 CST 2020
+2020-07-15 00:03:52.372  INFO 2776 --- [restartedMain] c.e.community.CommunityApplication       : Started CommunityApplication in 4.053 seconds (JVM running for 5.519)
+2020-07-15 00:03:52.406  INFO 2776 --- [scheduling-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2020-07-15 00:03:52.500  INFO 2776 --- [scheduling-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2020-07-15 00:03:52.533  INFO 2776 --- [scheduling-1] c.e.community.schedule.HotTagTasks       : 结束时间： Wed Jul 15 00:03:52 CST 2020
+2020-07-15 00:03:53.718  INFO 2776 --- [http-nio-8887-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-07-15 00:03:53.718  INFO 2776 --- [http-nio-8887-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2020-07-15 00:03:53.723  INFO 2776 --- [http-nio-8887-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 5 ms
+2020-07-15 00:08:35.224  INFO 12772 --- [restartedMain] c.e.community.CommunityApplication       : Starting CommunityApplication on DESKTOP-HC5T7NJ with PID 12772 (D:\ideaProject\community\target\classes started by guo in D:\ideaProject\community)
+2020-07-15 00:08:35.226  INFO 12772 --- [restartedMain] c.e.community.CommunityApplication       : No active profile set, falling back to default profiles: default
+2020-07-15 00:08:35.280  INFO 12772 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2020-07-15 00:08:35.280  INFO 12772 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2020-07-15 00:08:37.261  INFO 12772 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8887 (http)
+2020-07-15 00:08:37.284  INFO 12772 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-07-15 00:08:37.285  INFO 12772 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.35]
+2020-07-15 00:08:37.494  INFO 12772 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-07-15 00:08:37.495  INFO 12772 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 2215 ms
+2020-07-15 00:08:38.378  INFO 12772 --- [restartedMain] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2020-07-15 00:08:38.459  INFO 12772 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-07-15 00:08:38.508  INFO 12772 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2020-07-15 00:08:38.541  INFO 12772 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2020-07-15 00:08:38.659  INFO 12772 --- [restartedMain] o.s.s.c.ThreadPoolTaskScheduler          : Initializing ExecutorService 'taskScheduler'
+2020-07-15 00:08:38.938  INFO 12772 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8887 (http) with context path ''
+2020-07-15 00:08:38.939  INFO 12772 --- [restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2020-07-15 00:08:38.950  INFO 12772 --- [restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2020-07-15 00:08:38.979  INFO 12772 --- [restartedMain] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2020-07-15 00:08:39.167  INFO 12772 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: profileUsingGET_1
+2020-07-15 00:08:39.195  INFO 12772 --- [scheduling-1] c.e.community.schedule.HotTagTasks       : 开始时间： Wed Jul 15 00:08:39 CST 2020
+2020-07-15 00:08:39.198  INFO 12772 --- [restartedMain] c.e.community.CommunityApplication       : Started CommunityApplication in 4.335 seconds (JVM running for 5.837)
+2020-07-15 00:08:39.224  INFO 12772 --- [scheduling-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2020-07-15 00:08:39.329  INFO 12772 --- [scheduling-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2020-07-15 00:08:39.365  INFO 12772 --- [scheduling-1] c.e.community.schedule.HotTagTasks       : 结束时间： Wed Jul 15 00:08:39 CST 2020
+2020-07-15 00:08:41.697  INFO 12772 --- [http-nio-8887-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-07-15 00:08:41.698  INFO 12772 --- [http-nio-8887-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2020-07-15 00:08:41.703  INFO 12772 --- [http-nio-8887-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 5 ms
+2020-07-15 00:10:37.676  INFO 17532 --- [restartedMain] c.e.community.CommunityApplication       : Starting CommunityApplication on DESKTOP-HC5T7NJ with PID 17532 (D:\ideaProject\community\target\classes started by guo in D:\ideaProject\community)
+2020-07-15 00:10:37.690  INFO 17532 --- [restartedMain] c.e.community.CommunityApplication       : No active profile set, falling back to default profiles: default
+2020-07-15 00:10:37.746  INFO 17532 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2020-07-15 00:10:37.747  INFO 17532 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2020-07-15 00:10:39.310  INFO 17532 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8887 (http)
+2020-07-15 00:10:39.317  INFO 17532 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-07-15 00:10:39.317  INFO 17532 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.35]
+2020-07-15 00:10:39.416  INFO 17532 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-07-15 00:10:39.416  INFO 17532 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1669 ms
+2020-07-15 00:10:40.113  INFO 17532 --- [restartedMain] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2020-07-15 00:10:40.181  INFO 17532 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-07-15 00:10:40.217  INFO 17532 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2020-07-15 00:10:40.240  INFO 17532 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2020-07-15 00:10:40.344  INFO 17532 --- [restartedMain] o.s.s.c.ThreadPoolTaskScheduler          : Initializing ExecutorService 'taskScheduler'
+2020-07-15 00:10:40.595  INFO 17532 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8887 (http) with context path ''
+2020-07-15 00:10:40.596  INFO 17532 --- [restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2020-07-15 00:10:40.609  INFO 17532 --- [restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2020-07-15 00:10:40.638  INFO 17532 --- [restartedMain] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2020-07-15 00:10:40.784  INFO 17532 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: profileUsingGET_1
+2020-07-15 00:10:40.815  INFO 17532 --- [scheduling-1] c.e.community.schedule.HotTagTasks       : 开始时间： Wed Jul 15 00:10:40 CST 2020
+2020-07-15 00:10:40.819  INFO 17532 --- [restartedMain] c.e.community.CommunityApplication       : Started CommunityApplication in 3.598 seconds (JVM running for 5.121)
+2020-07-15 00:10:40.844  INFO 17532 --- [scheduling-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2020-07-15 00:10:40.944  INFO 17532 --- [scheduling-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2020-07-15 00:10:40.978  INFO 17532 --- [scheduling-1] c.e.community.schedule.HotTagTasks       : 结束时间： Wed Jul 15 00:10:40 CST 2020
+2020-07-15 00:10:53.144  INFO 17532 --- [http-nio-8887-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-07-15 00:10:53.144  INFO 17532 --- [http-nio-8887-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2020-07-15 00:10:53.149  INFO 17532 --- [http-nio-8887-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 5 ms
+2020-07-15 00:11:47.800 ERROR 17532 --- [http-nio-8887-exec-7] c.e.community.provider.GithubProvider    : getAccessToken error,AccessTokenDTO(client_id=4ffdcfe8addf056de377, client_secret=bbb6d81ea32761c2415abf952e3125f85be6aaaa, code=67f37b4557ffb10760d6, redirect_uri=http://localhost:8887/callback, state=1)
 
-2020-07-13 23:36:40.137 ERROR 18268 --- [http-nio-8887-exec-9] c.e.c.provider.AliyunOssProvider         : upload error,c5546719-09d9-4a61-ae81-557856d85d1c.png
-
-com.aliyun.oss.OSSException: You have no right to access this object because of bucket acl.
-[ErrorCode]: AccessDenied
-[RequestId]: 5F0C7F885369E83936CC2491
-[HostId]: dangelion.oss-cn-beijing.aliyuncs.com
-[ResponseError]:
-<?xml version="1.0" encoding="UTF-8"?>
-<Error>
-  <Code>AccessDenied</Code>
-  <Message>You have no right to access this object because of bucket acl.</Message>
-  <RequestId>5F0C7F885369E83936CC2491</RequestId>
-  <HostId>dangelion.oss-cn-beijing.aliyuncs.com</HostId>
-</Error>
-
-	at com.aliyun.oss.common.utils.ExceptionFactory.createOSSException(ExceptionFactory.java:100) ~[aliyun-sdk-oss-3.8.0.jar:na]
-	at com.aliyun.oss.internal.OSSErrorResponseHandler.handle(OSSErrorResponseHandler.java:70) ~[aliyun-sdk-oss-3.8.0.jar:na]
-	at com.aliyun.oss.common.comm.ServiceClient.handleResponse(ServiceClient.java:257) ~[aliyun-sdk-oss-3.8.0.jar:na]
-	at com.aliyun.oss.common.comm.ServiceClient.sendRequestImpl(ServiceClient.java:140) ~[aliyun-sdk-oss-3.8.0.jar:na]
-	at com.aliyun.oss.common.comm.ServiceClient.sendRequest(ServiceClient.java:70) ~[aliyun-sdk-oss-3.8.0.jar:na]
-	at com.aliyun.oss.internal.OSSOperation.send(OSSOperation.java:83) ~[aliyun-sdk-oss-3.8.0.jar:na]
-	at com.aliyun.oss.internal.OSSOperation.doOperation(OSSOperation.java:145) ~[aliyun-sdk-oss-3.8.0.jar:na]
-	at com.aliyun.oss.internal.OSSOperation.doOperation(OSSOperation.java:102) ~[aliyun-sdk-oss-3.8.0.jar:na]
-	at com.aliyun.oss.internal.OSSObjectOperation.writeObjectInternal(OSSObjectOperation.java:1125) ~[aliyun-sdk-oss-3.8.0.jar:na]
-	at com.aliyun.oss.internal.OSSObjectOperation.putObject(OSSObjectOperation.java:130) ~[aliyun-sdk-oss-3.8.0.jar:na]
-	at com.aliyun.oss.OSSClient.putObject(OSSClient.java:491) ~[aliyun-sdk-oss-3.8.0.jar:na]
-	at com.aliyun.oss.OSSClient.putObject(OSSClient.java:475) ~[aliyun-sdk-oss-3.8.0.jar:na]
-	at com.aliyun.oss.OSSClient.putObject(OSSClient.java:469) ~[aliyun-sdk-oss-3.8.0.jar:na]
-	at com.example.community.provider.AliyunOssProvider.upload(AliyunOssProvider.java:48) ~[classes/:na]
-	at com.example.community.controller.FileController.uploadFile(FileController.java:37) [classes/:na]
+java.net.SocketTimeoutException: timeout
+	at okio.Okio$4.newTimeoutException(Okio.java:232) ~[okio-1.17.2.jar:na]
+	at okio.AsyncTimeout.exit(AsyncTimeout.java:286) ~[okio-1.17.2.jar:na]
+	at okio.AsyncTimeout$2.read(AsyncTimeout.java:241) ~[okio-1.17.2.jar:na]
+	at okio.RealBufferedSource.request(RealBufferedSource.java:72) ~[okio-1.17.2.jar:na]
+	at okio.RealBufferedSource.require(RealBufferedSource.java:65) ~[okio-1.17.2.jar:na]
+	at okio.RealBufferedSource.readHexadecimalUnsignedLong(RealBufferedSource.java:307) ~[okio-1.17.2.jar:na]
+	at okhttp3.internal.http1.Http1ExchangeCodec$ChunkedSource.readChunkSize(Http1ExchangeCodec.java:492) ~[okhttp-3.14.9.jar:na]
+	at okhttp3.internal.http1.Http1ExchangeCodec$ChunkedSource.read(Http1ExchangeCodec.java:471) ~[okhttp-3.14.9.jar:na]
+	at okhttp3.internal.connection.Exchange$ResponseBodySource.read(Exchange.java:286) ~[okhttp-3.14.9.jar:na]
+	at okio.RealBufferedSource.select(RealBufferedSource.java:100) ~[okio-1.17.2.jar:na]
+	at okhttp3.internal.Util.bomAwareCharset(Util.java:467) ~[okhttp-3.14.9.jar:na]
+	at okhttp3.ResponseBody.string(ResponseBody.java:181) ~[okhttp-3.14.9.jar:na]
+	at com.example.community.provider.GithubProvider.getAccessToken(GithubProvider.java:25) ~[classes/:na]
+	at com.example.community.controller.AuthorizeController.callback(AuthorizeController.java:55) [classes/:na]
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0_171]
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:1.8.0_171]
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.8.0_171]
@@ -82,8 +137,105 @@ com.aliyun.oss.OSSException: You have no right to access this object because of 
 	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1040) [spring-webmvc-5.2.6.RELEASE.jar:5.2.6.RELEASE]
 	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:943) [spring-webmvc-5.2.6.RELEASE.jar:5.2.6.RELEASE]
 	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006) [spring-webmvc-5.2.6.RELEASE.jar:5.2.6.RELEASE]
-	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:909) [spring-webmvc-5.2.6.RELEASE.jar:5.2.6.RELEASE]
-	at javax.servlet.http.HttpServlet.service(HttpServlet.java:660) [tomcat-embed-core-9.0.35.jar:9.0.35]
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898) [spring-webmvc-5.2.6.RELEASE.jar:5.2.6.RELEASE]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:634) [tomcat-embed-core-9.0.35.jar:9.0.35]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883) [spring-webmvc-5.2.6.RELEASE.jar:5.2.6.RELEASE]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:741) [tomcat-embed-core-9.0.35.jar:9.0.35]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231) [tomcat-embed-core-9.0.35.jar:9.0.35]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [tomcat-embed-core-9.0.35.jar:9.0.35]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53) [tomcat-embed-websocket-9.0.35.jar:9.0.35]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) [tomcat-embed-core-9.0.35.jar:9.0.35]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [tomcat-embed-core-9.0.35.jar:9.0.35]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) [spring-web-5.2.6.RELEASE.jar:5.2.6.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) [spring-web-5.2.6.RELEASE.jar:5.2.6.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) [tomcat-embed-core-9.0.35.jar:9.0.35]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [tomcat-embed-core-9.0.35.jar:9.0.35]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) [spring-web-5.2.6.RELEASE.jar:5.2.6.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) [spring-web-5.2.6.RELEASE.jar:5.2.6.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) [tomcat-embed-core-9.0.35.jar:9.0.35]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [tomcat-embed-core-9.0.35.jar:9.0.35]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) [spring-web-5.2.6.RELEASE.jar:5.2.6.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) [spring-web-5.2.6.RELEASE.jar:5.2.6.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) [tomcat-embed-core-9.0.35.jar:9.0.35]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [tomcat-embed-core-9.0.35.jar:9.0.35]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202) [tomcat-embed-core-9.0.35.jar:9.0.35]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96) [tomcat-embed-core-9.0.35.jar:9.0.35]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541) [tomcat-embed-core-9.0.35.jar:9.0.35]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139) [tomcat-embed-core-9.0.35.jar:9.0.35]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92) [tomcat-embed-core-9.0.35.jar:9.0.35]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74) [tomcat-embed-core-9.0.35.jar:9.0.35]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343) [tomcat-embed-core-9.0.35.jar:9.0.35]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:373) [tomcat-embed-core-9.0.35.jar:9.0.35]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65) [tomcat-embed-core-9.0.35.jar:9.0.35]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:868) [tomcat-embed-core-9.0.35.jar:9.0.35]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1590) [tomcat-embed-core-9.0.35.jar:9.0.35]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) [tomcat-embed-core-9.0.35.jar:9.0.35]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149) [na:1.8.0_171]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624) [na:1.8.0_171]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) [tomcat-embed-core-9.0.35.jar:9.0.35]
+	at java.lang.Thread.run(Thread.java:748) [na:1.8.0_171]
+Caused by: java.net.SocketTimeoutException: Read timed out
+	at java.net.SocketInputStream.socketRead0(Native Method) ~[na:1.8.0_171]
+	at java.net.SocketInputStream.socketRead(SocketInputStream.java:116) ~[na:1.8.0_171]
+	at java.net.SocketInputStream.read(SocketInputStream.java:171) ~[na:1.8.0_171]
+	at java.net.SocketInputStream.read(SocketInputStream.java:141) ~[na:1.8.0_171]
+	at sun.security.ssl.InputRecord.readFully(InputRecord.java:465) ~[na:1.8.0_171]
+	at sun.security.ssl.InputRecord.read(InputRecord.java:503) ~[na:1.8.0_171]
+	at sun.security.ssl.SSLSocketImpl.readRecord(SSLSocketImpl.java:983) ~[na:1.8.0_171]
+	at sun.security.ssl.SSLSocketImpl.readDataRecord(SSLSocketImpl.java:940) ~[na:1.8.0_171]
+	at sun.security.ssl.AppInputStream.read(AppInputStream.java:105) ~[na:1.8.0_171]
+	at okio.Okio$2.read(Okio.java:140) ~[okio-1.17.2.jar:na]
+	at okio.AsyncTimeout$2.read(AsyncTimeout.java:237) ~[okio-1.17.2.jar:na]
+	... 61 common frames omitted
+
+2020-07-15 00:11:48.750 ERROR 17532 --- [http-nio-8887-exec-7] c.e.community.provider.GithubProvider    : getUser error,null
+
+java.net.SocketException: Connection reset
+	at java.net.SocketInputStream.read(SocketInputStream.java:210) ~[na:1.8.0_171]
+	at java.net.SocketInputStream.read(SocketInputStream.java:141) ~[na:1.8.0_171]
+	at sun.security.ssl.InputRecord.readFully(InputRecord.java:465) ~[na:1.8.0_171]
+	at sun.security.ssl.InputRecord.read(InputRecord.java:503) ~[na:1.8.0_171]
+	at sun.security.ssl.SSLSocketImpl.readRecord(SSLSocketImpl.java:983) ~[na:1.8.0_171]
+	at sun.security.ssl.SSLSocketImpl.performInitialHandshake(SSLSocketImpl.java:1385) ~[na:1.8.0_171]
+	at sun.security.ssl.SSLSocketImpl.startHandshake(SSLSocketImpl.java:1413) ~[na:1.8.0_171]
+	at sun.security.ssl.SSLSocketImpl.startHandshake(SSLSocketImpl.java:1397) ~[na:1.8.0_171]
+	at okhttp3.internal.connection.RealConnection.connectTls(RealConnection.java:336) ~[okhttp-3.14.9.jar:na]
+	at okhttp3.internal.connection.RealConnection.establishProtocol(RealConnection.java:300) ~[okhttp-3.14.9.jar:na]
+	at okhttp3.internal.connection.RealConnection.connect(RealConnection.java:185) ~[okhttp-3.14.9.jar:na]
+	at okhttp3.internal.connection.ExchangeFinder.findConnection(ExchangeFinder.java:224) ~[okhttp-3.14.9.jar:na]
+	at okhttp3.internal.connection.ExchangeFinder.findHealthyConnection(ExchangeFinder.java:108) ~[okhttp-3.14.9.jar:na]
+	at okhttp3.internal.connection.ExchangeFinder.find(ExchangeFinder.java:88) ~[okhttp-3.14.9.jar:na]
+	at okhttp3.internal.connection.Transmitter.newExchange(Transmitter.java:169) ~[okhttp-3.14.9.jar:na]
+	at okhttp3.internal.connection.ConnectInterceptor.intercept(ConnectInterceptor.java:41) ~[okhttp-3.14.9.jar:na]
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:142) ~[okhttp-3.14.9.jar:na]
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:117) ~[okhttp-3.14.9.jar:na]
+	at okhttp3.internal.cache.CacheInterceptor.intercept(CacheInterceptor.java:94) ~[okhttp-3.14.9.jar:na]
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:142) ~[okhttp-3.14.9.jar:na]
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:117) ~[okhttp-3.14.9.jar:na]
+	at okhttp3.internal.http.BridgeInterceptor.intercept(BridgeInterceptor.java:93) ~[okhttp-3.14.9.jar:na]
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:142) ~[okhttp-3.14.9.jar:na]
+	at okhttp3.internal.http.RetryAndFollowUpInterceptor.intercept(RetryAndFollowUpInterceptor.java:88) ~[okhttp-3.14.9.jar:na]
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:142) ~[okhttp-3.14.9.jar:na]
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:117) ~[okhttp-3.14.9.jar:na]
+	at okhttp3.RealCall.getResponseWithInterceptorChain(RealCall.java:229) ~[okhttp-3.14.9.jar:na]
+	at okhttp3.RealCall.execute(RealCall.java:81) ~[okhttp-3.14.9.jar:na]
+	at com.example.community.provider.GithubProvider.getUser(GithubProvider.java:41) ~[classes/:na]
+	at com.example.community.controller.AuthorizeController.callback(AuthorizeController.java:56) [classes/:na]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0_171]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:1.8.0_171]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.8.0_171]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[na:1.8.0_171]
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:190) [spring-web-5.2.6.RELEASE.jar:5.2.6.RELEASE]
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:138) [spring-web-5.2.6.RELEASE.jar:5.2.6.RELEASE]
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:105) [spring-webmvc-5.2.6.RELEASE.jar:5.2.6.RELEASE]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:879) [spring-webmvc-5.2.6.RELEASE.jar:5.2.6.RELEASE]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:793) [spring-webmvc-5.2.6.RELEASE.jar:5.2.6.RELEASE]
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87) [spring-webmvc-5.2.6.RELEASE.jar:5.2.6.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1040) [spring-webmvc-5.2.6.RELEASE.jar:5.2.6.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:943) [spring-webmvc-5.2.6.RELEASE.jar:5.2.6.RELEASE]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006) [spring-webmvc-5.2.6.RELEASE.jar:5.2.6.RELEASE]
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898) [spring-webmvc-5.2.6.RELEASE.jar:5.2.6.RELEASE]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:634) [tomcat-embed-core-9.0.35.jar:9.0.35]
 	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883) [spring-webmvc-5.2.6.RELEASE.jar:5.2.6.RELEASE]
 	at javax.servlet.http.HttpServlet.service(HttpServlet.java:741) [tomcat-embed-core-9.0.35.jar:9.0.35]
 	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231) [tomcat-embed-core-9.0.35.jar:9.0.35]
@@ -120,172 +272,413 @@ com.aliyun.oss.OSSException: You have no right to access this object because of 
 	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) [tomcat-embed-core-9.0.35.jar:9.0.35]
 	at java.lang.Thread.run(Thread.java:748) [na:1.8.0_171]
 
-2020-07-13 23:36:40.144  WARN 18268 --- [http-nio-8887-exec-9] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [com.example.community.exception.CustomizeException: 上传出错了，请检查你的文件格式！]
-2020-07-13 23:45:46.121  INFO 19764 --- [restartedMain] c.e.community.CommunityApplication       : Starting CommunityApplication on DESKTOP-HC5T7NJ with PID 19764 (D:\ideaProject\community\target\classes started by guo in D:\ideaProject\community)
-2020-07-13 23:45:46.126  INFO 19764 --- [restartedMain] c.e.community.CommunityApplication       : No active profile set, falling back to default profiles: default
-2020-07-13 23:45:46.212  INFO 19764 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
-2020-07-13 23:45:46.212  INFO 19764 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
-2020-07-13 23:45:48.138  INFO 19764 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8887 (http)
-2020-07-13 23:45:48.146  INFO 19764 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2020-07-13 23:45:48.146  INFO 19764 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.35]
-2020-07-13 23:45:48.259  INFO 19764 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2020-07-13 23:45:48.260  INFO 19764 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 2045 ms
-2020-07-13 23:45:48.302  INFO 19764 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2020-07-13 23:45:48.459  INFO 19764 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2020-07-13 23:45:48.463  INFO 19764 --- [restartedMain] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:mysql:///community?serverTimezone=GMT%2B8'
-2020-07-13 23:45:49.243  INFO 19764 --- [restartedMain] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
-2020-07-13 23:45:49.326  INFO 19764 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
-2020-07-13 23:45:49.374  INFO 19764 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
-2020-07-13 23:45:49.399  INFO 19764 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
-2020-07-13 23:45:49.522  INFO 19764 --- [restartedMain] o.s.s.c.ThreadPoolTaskScheduler          : Initializing ExecutorService 'taskScheduler'
-2020-07-13 23:45:49.839  INFO 19764 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8887 (http) with context path ''
-2020-07-13 23:45:49.841  INFO 19764 --- [restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
-2020-07-13 23:45:49.857  INFO 19764 --- [restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
-2020-07-13 23:45:49.895  INFO 19764 --- [restartedMain] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
-2020-07-13 23:45:50.104  INFO 19764 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: profileUsingGET_1
-2020-07-13 23:45:50.145  INFO 19764 --- [scheduling-1] c.e.community.schedule.HotTagTasks       : 开始时间： Mon Jul 13 23:45:50 CST 2020
-2020-07-13 23:45:50.148  INFO 19764 --- [restartedMain] c.e.community.CommunityApplication       : Started CommunityApplication in 4.578 seconds (JVM running for 6.154)
-2020-07-13 23:45:50.210  INFO 19764 --- [scheduling-1] c.e.community.schedule.HotTagTasks       : 结束时间： Mon Jul 13 23:45:50 CST 2020
-2020-07-13 23:46:24.346  INFO 19764 --- [http-nio-8887-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2020-07-13 23:46:24.347  INFO 19764 --- [http-nio-8887-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2020-07-13 23:46:24.352  INFO 19764 --- [http-nio-8887-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 5 ms
-2020-07-13 23:47:33.052  INFO 3972 --- [restartedMain] c.e.community.CommunityApplication       : Starting CommunityApplication on DESKTOP-HC5T7NJ with PID 3972 (D:\ideaProject\community\target\classes started by guo in D:\ideaProject\community)
-2020-07-13 23:47:33.055  INFO 3972 --- [restartedMain] c.e.community.CommunityApplication       : No active profile set, falling back to default profiles: default
-2020-07-13 23:47:33.133  INFO 3972 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
-2020-07-13 23:47:33.133  INFO 3972 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
-2020-07-13 23:47:34.704  INFO 3972 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8887 (http)
-2020-07-13 23:47:34.711  INFO 3972 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2020-07-13 23:47:34.711  INFO 3972 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.35]
-2020-07-13 23:47:34.806  INFO 3972 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2020-07-13 23:47:34.806  INFO 3972 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1673 ms
-2020-07-13 23:47:34.846  INFO 3972 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2020-07-13 23:47:34.940  INFO 3972 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2020-07-13 23:47:34.943  INFO 3972 --- [restartedMain] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:mysql:///community?serverTimezone=GMT%2B8'
-2020-07-13 23:47:35.598  INFO 3972 --- [restartedMain] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
-2020-07-13 23:47:35.673  INFO 3972 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
-2020-07-13 23:47:35.709  INFO 3972 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
-2020-07-13 23:47:35.740  INFO 3972 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
-2020-07-13 23:47:35.858  INFO 3972 --- [restartedMain] o.s.s.c.ThreadPoolTaskScheduler          : Initializing ExecutorService 'taskScheduler'
-2020-07-13 23:47:36.124  INFO 3972 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8887 (http) with context path ''
-2020-07-13 23:47:36.126  INFO 3972 --- [restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
-2020-07-13 23:47:36.140  INFO 3972 --- [restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
-2020-07-13 23:47:36.173  INFO 3972 --- [restartedMain] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
-2020-07-13 23:47:36.320  INFO 3972 --- [http-nio-8887-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2020-07-13 23:47:36.320  INFO 3972 --- [http-nio-8887-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2020-07-13 23:47:36.326  INFO 3972 --- [http-nio-8887-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 6 ms
-2020-07-13 23:47:36.343  INFO 3972 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: profileUsingGET_1
-2020-07-13 23:47:36.392  INFO 3972 --- [scheduling-1] c.e.community.schedule.HotTagTasks       : 开始时间： Mon Jul 13 23:47:36 CST 2020
-2020-07-13 23:47:36.395  INFO 3972 --- [restartedMain] c.e.community.CommunityApplication       : Started CommunityApplication in 3.735 seconds (JVM running for 5.149)
-2020-07-13 23:47:36.438  INFO 3972 --- [scheduling-1] c.e.community.schedule.HotTagTasks       : 结束时间： Mon Jul 13 23:47:36 CST 2020
-2020-07-13 23:47:48.401  INFO 1864 --- [restartedMain] c.e.community.CommunityApplication       : Starting CommunityApplication on DESKTOP-HC5T7NJ with PID 1864 (D:\ideaProject\community\target\classes started by guo in D:\ideaProject\community)
-2020-07-13 23:47:48.405  INFO 1864 --- [restartedMain] c.e.community.CommunityApplication       : No active profile set, falling back to default profiles: default
-2020-07-13 23:47:48.471  INFO 1864 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
-2020-07-13 23:47:48.471  INFO 1864 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
-2020-07-13 23:47:50.028  INFO 1864 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8887 (http)
-2020-07-13 23:47:50.034  INFO 1864 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2020-07-13 23:47:50.035  INFO 1864 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.35]
-2020-07-13 23:47:50.138  INFO 1864 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2020-07-13 23:47:50.138  INFO 1864 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1666 ms
-2020-07-13 23:47:50.180  INFO 1864 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2020-07-13 23:47:50.275  INFO 1864 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2020-07-13 23:47:50.278  INFO 1864 --- [restartedMain] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:mysql:///community?serverTimezone=GMT%2B8'
-2020-07-13 23:47:50.944  INFO 1864 --- [restartedMain] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
-2020-07-13 23:47:51.015  INFO 1864 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
-2020-07-13 23:47:51.051  INFO 1864 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
-2020-07-13 23:47:51.075  INFO 1864 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
-2020-07-13 23:47:51.184  INFO 1864 --- [restartedMain] o.s.s.c.ThreadPoolTaskScheduler          : Initializing ExecutorService 'taskScheduler'
-2020-07-13 23:47:51.437  INFO 1864 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8887 (http) with context path ''
-2020-07-13 23:47:51.438  INFO 1864 --- [restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
-2020-07-13 23:47:51.448  INFO 1864 --- [restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
-2020-07-13 23:47:51.478  INFO 1864 --- [restartedMain] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
-2020-07-13 23:47:51.635  INFO 1864 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: profileUsingGET_1
-2020-07-13 23:47:51.672  INFO 1864 --- [scheduling-1] c.e.community.schedule.HotTagTasks       : 开始时间： Mon Jul 13 23:47:51 CST 2020
-2020-07-13 23:47:51.676  INFO 1864 --- [restartedMain] c.e.community.CommunityApplication       : Started CommunityApplication in 3.747 seconds (JVM running for 5.185)
-2020-07-13 23:47:51.736  INFO 1864 --- [scheduling-1] c.e.community.schedule.HotTagTasks       : 结束时间： Mon Jul 13 23:47:51 CST 2020
-2020-07-13 23:47:53.900  INFO 1864 --- [http-nio-8887-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2020-07-13 23:47:53.900  INFO 1864 --- [http-nio-8887-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2020-07-13 23:47:53.907  INFO 1864 --- [http-nio-8887-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 7 ms
-2020-07-13 23:48:12.506  INFO 10160 --- [restartedMain] c.e.community.CommunityApplication       : Starting CommunityApplication on DESKTOP-HC5T7NJ with PID 10160 (D:\ideaProject\community\target\classes started by guo in D:\ideaProject\community)
-2020-07-13 23:48:12.508  INFO 10160 --- [restartedMain] c.e.community.CommunityApplication       : No active profile set, falling back to default profiles: default
-2020-07-13 23:48:12.560  INFO 10160 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
-2020-07-13 23:48:12.560  INFO 10160 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
-2020-07-13 23:48:14.029  INFO 10160 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8887 (http)
-2020-07-13 23:48:14.038  INFO 10160 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2020-07-13 23:48:14.038  INFO 10160 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.35]
-2020-07-13 23:48:14.132  INFO 10160 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2020-07-13 23:48:14.133  INFO 10160 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1573 ms
-2020-07-13 23:48:14.172  INFO 10160 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2020-07-13 23:48:14.266  INFO 10160 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2020-07-13 23:48:14.271  INFO 10160 --- [restartedMain] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:mysql:///community?serverTimezone=GMT%2B8'
-2020-07-13 23:48:14.944  INFO 10160 --- [restartedMain] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
-2020-07-13 23:48:15.016  INFO 10160 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
-2020-07-13 23:48:15.053  INFO 10160 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
-2020-07-13 23:48:15.076  INFO 10160 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
-2020-07-13 23:48:15.183  INFO 10160 --- [restartedMain] o.s.s.c.ThreadPoolTaskScheduler          : Initializing ExecutorService 'taskScheduler'
-2020-07-13 23:48:15.439  INFO 10160 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8887 (http) with context path ''
-2020-07-13 23:48:15.440  INFO 10160 --- [restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
-2020-07-13 23:48:15.451  INFO 10160 --- [restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
-2020-07-13 23:48:15.481  INFO 10160 --- [restartedMain] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
-2020-07-13 23:48:15.616  INFO 10160 --- [http-nio-8887-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2020-07-13 23:48:15.616  INFO 10160 --- [http-nio-8887-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2020-07-13 23:48:15.623  INFO 10160 --- [http-nio-8887-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 6 ms
-2020-07-13 23:48:15.646  INFO 10160 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: profileUsingGET_1
-2020-07-13 23:48:15.681  INFO 10160 --- [scheduling-1] c.e.community.schedule.HotTagTasks       : 开始时间： Mon Jul 13 23:48:15 CST 2020
-2020-07-13 23:48:15.684  INFO 10160 --- [restartedMain] c.e.community.CommunityApplication       : Started CommunityApplication in 3.639 seconds (JVM running for 5.037)
-2020-07-13 23:48:15.715  INFO 10160 --- [scheduling-1] c.e.community.schedule.HotTagTasks       : 结束时间： Mon Jul 13 23:48:15 CST 2020
-2020-07-13 23:48:44.784  INFO 6884 --- [restartedMain] c.e.community.CommunityApplication       : Starting CommunityApplication on DESKTOP-HC5T7NJ with PID 6884 (D:\ideaProject\community\target\classes started by guo in D:\ideaProject\community)
-2020-07-13 23:48:44.788  INFO 6884 --- [restartedMain] c.e.community.CommunityApplication       : No active profile set, falling back to default profiles: default
-2020-07-13 23:48:44.843  INFO 6884 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
-2020-07-13 23:48:44.844  INFO 6884 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
-2020-07-13 23:48:46.418  INFO 6884 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8887 (http)
-2020-07-13 23:48:46.424  INFO 6884 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2020-07-13 23:48:46.425  INFO 6884 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.35]
-2020-07-13 23:48:46.515  INFO 6884 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2020-07-13 23:48:46.516  INFO 6884 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1672 ms
-2020-07-13 23:48:46.557  INFO 6884 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2020-07-13 23:48:46.661  INFO 6884 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2020-07-13 23:48:46.665  INFO 6884 --- [restartedMain] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:mysql:///community?serverTimezone=GMT%2B8'
-2020-07-13 23:48:47.404  INFO 6884 --- [restartedMain] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
-2020-07-13 23:48:47.479  INFO 6884 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
-2020-07-13 23:48:47.517  INFO 6884 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
-2020-07-13 23:48:47.542  INFO 6884 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
-2020-07-13 23:48:47.653  INFO 6884 --- [restartedMain] o.s.s.c.ThreadPoolTaskScheduler          : Initializing ExecutorService 'taskScheduler'
-2020-07-13 23:48:47.915  INFO 6884 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8887 (http) with context path ''
-2020-07-13 23:48:47.915  INFO 6884 --- [restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
-2020-07-13 23:48:47.928  INFO 6884 --- [restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
-2020-07-13 23:48:47.963  INFO 6884 --- [restartedMain] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
-2020-07-13 23:48:47.970  INFO 6884 --- [http-nio-8887-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2020-07-13 23:48:47.970  INFO 6884 --- [http-nio-8887-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2020-07-13 23:48:47.975  INFO 6884 --- [http-nio-8887-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 5 ms
-2020-07-13 23:48:48.148  INFO 6884 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: profileUsingGET_1
-2020-07-13 23:48:48.182  INFO 6884 --- [scheduling-1] c.e.community.schedule.HotTagTasks       : 开始时间： Mon Jul 13 23:48:48 CST 2020
-2020-07-13 23:48:48.186  INFO 6884 --- [restartedMain] c.e.community.CommunityApplication       : Started CommunityApplication in 3.894 seconds (JVM running for 5.301)
-2020-07-13 23:48:48.193  INFO 6884 --- [scheduling-1] c.e.community.schedule.HotTagTasks       : 结束时间： Mon Jul 13 23:48:48 CST 2020
-2020-07-13 23:49:50.719  INFO 14108 --- [restartedMain] c.e.community.CommunityApplication       : Starting CommunityApplication on DESKTOP-HC5T7NJ with PID 14108 (D:\ideaProject\community\target\classes started by guo in D:\ideaProject\community)
-2020-07-13 23:49:50.722  INFO 14108 --- [restartedMain] c.e.community.CommunityApplication       : No active profile set, falling back to default profiles: default
-2020-07-13 23:49:50.781  INFO 14108 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
-2020-07-13 23:49:50.782  INFO 14108 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
-2020-07-13 23:49:52.344  INFO 14108 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8887 (http)
-2020-07-13 23:49:52.355  INFO 14108 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2020-07-13 23:49:52.355  INFO 14108 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.35]
-2020-07-13 23:49:52.451  INFO 14108 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2020-07-13 23:49:52.451  INFO 14108 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1669 ms
-2020-07-13 23:49:52.493  INFO 14108 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2020-07-13 23:49:52.591  INFO 14108 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2020-07-13 23:49:52.594  INFO 14108 --- [restartedMain] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:mysql:///community?serverTimezone=GMT%2B8'
-2020-07-13 23:49:53.305  INFO 14108 --- [restartedMain] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
-2020-07-13 23:49:53.379  INFO 14108 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
-2020-07-13 23:49:53.418  INFO 14108 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
-2020-07-13 23:49:53.443  INFO 14108 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
-2020-07-13 23:49:53.551  INFO 14108 --- [restartedMain] o.s.s.c.ThreadPoolTaskScheduler          : Initializing ExecutorService 'taskScheduler'
-2020-07-13 23:49:53.839  INFO 14108 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8887 (http) with context path ''
-2020-07-13 23:49:53.840  INFO 14108 --- [restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
-2020-07-13 23:49:53.854  INFO 14108 --- [restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
-2020-07-13 23:49:53.891  INFO 14108 --- [restartedMain] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
-2020-07-13 23:49:54.083  INFO 14108 --- [http-nio-8887-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2020-07-13 23:49:54.083  INFO 14108 --- [http-nio-8887-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2020-07-13 23:49:54.086  INFO 14108 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: profileUsingGET_1
-2020-07-13 23:49:54.092  INFO 14108 --- [http-nio-8887-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 9 ms
-2020-07-13 23:49:54.131  INFO 14108 --- [scheduling-1] c.e.community.schedule.HotTagTasks       : 开始时间： Mon Jul 13 23:49:54 CST 2020
-2020-07-13 23:49:54.137  INFO 14108 --- [restartedMain] c.e.community.CommunityApplication       : Started CommunityApplication in 3.833 seconds (JVM running for 5.194)
-2020-07-13 23:49:54.197  INFO 14108 --- [scheduling-1] c.e.community.schedule.HotTagTasks       : 结束时间： Mon Jul 13 23:49:54 CST 2020
+2020-07-15 00:11:48.752 ERROR 17532 --- [http-nio-8887-exec-7] c.e.c.controller.AuthorizeController     : callback get github error, null
+2020-07-15 00:12:02.758 ERROR 17532 --- [http-nio-8887-exec-10] c.e.community.provider.GithubProvider    : getUser error,e13cdf80c552c85a9a8573f073f2cab4b3b9d313
+
+java.net.SocketException: Connection reset
+	at java.net.SocketInputStream.read(SocketInputStream.java:210) ~[na:1.8.0_171]
+	at java.net.SocketInputStream.read(SocketInputStream.java:141) ~[na:1.8.0_171]
+	at sun.security.ssl.InputRecord.readFully(InputRecord.java:465) ~[na:1.8.0_171]
+	at sun.security.ssl.InputRecord.read(InputRecord.java:503) ~[na:1.8.0_171]
+	at sun.security.ssl.SSLSocketImpl.readRecord(SSLSocketImpl.java:983) ~[na:1.8.0_171]
+	at sun.security.ssl.SSLSocketImpl.performInitialHandshake(SSLSocketImpl.java:1385) ~[na:1.8.0_171]
+	at sun.security.ssl.SSLSocketImpl.startHandshake(SSLSocketImpl.java:1413) ~[na:1.8.0_171]
+	at sun.security.ssl.SSLSocketImpl.startHandshake(SSLSocketImpl.java:1397) ~[na:1.8.0_171]
+	at okhttp3.internal.connection.RealConnection.connectTls(RealConnection.java:336) ~[okhttp-3.14.9.jar:na]
+	at okhttp3.internal.connection.RealConnection.establishProtocol(RealConnection.java:300) ~[okhttp-3.14.9.jar:na]
+	at okhttp3.internal.connection.RealConnection.connect(RealConnection.java:185) ~[okhttp-3.14.9.jar:na]
+	at okhttp3.internal.connection.ExchangeFinder.findConnection(ExchangeFinder.java:224) ~[okhttp-3.14.9.jar:na]
+	at okhttp3.internal.connection.ExchangeFinder.findHealthyConnection(ExchangeFinder.java:108) ~[okhttp-3.14.9.jar:na]
+	at okhttp3.internal.connection.ExchangeFinder.find(ExchangeFinder.java:88) ~[okhttp-3.14.9.jar:na]
+	at okhttp3.internal.connection.Transmitter.newExchange(Transmitter.java:169) ~[okhttp-3.14.9.jar:na]
+	at okhttp3.internal.connection.ConnectInterceptor.intercept(ConnectInterceptor.java:41) ~[okhttp-3.14.9.jar:na]
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:142) ~[okhttp-3.14.9.jar:na]
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:117) ~[okhttp-3.14.9.jar:na]
+	at okhttp3.internal.cache.CacheInterceptor.intercept(CacheInterceptor.java:94) ~[okhttp-3.14.9.jar:na]
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:142) ~[okhttp-3.14.9.jar:na]
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:117) ~[okhttp-3.14.9.jar:na]
+	at okhttp3.internal.http.BridgeInterceptor.intercept(BridgeInterceptor.java:93) ~[okhttp-3.14.9.jar:na]
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:142) ~[okhttp-3.14.9.jar:na]
+	at okhttp3.internal.http.RetryAndFollowUpInterceptor.intercept(RetryAndFollowUpInterceptor.java:88) ~[okhttp-3.14.9.jar:na]
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:142) ~[okhttp-3.14.9.jar:na]
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:117) ~[okhttp-3.14.9.jar:na]
+	at okhttp3.RealCall.getResponseWithInterceptorChain(RealCall.java:229) ~[okhttp-3.14.9.jar:na]
+	at okhttp3.RealCall.execute(RealCall.java:81) ~[okhttp-3.14.9.jar:na]
+	at com.example.community.provider.GithubProvider.getUser(GithubProvider.java:41) ~[classes/:na]
+	at com.example.community.controller.AuthorizeController.callback(AuthorizeController.java:56) [classes/:na]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0_171]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:1.8.0_171]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.8.0_171]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[na:1.8.0_171]
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:190) [spring-web-5.2.6.RELEASE.jar:5.2.6.RELEASE]
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:138) [spring-web-5.2.6.RELEASE.jar:5.2.6.RELEASE]
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:105) [spring-webmvc-5.2.6.RELEASE.jar:5.2.6.RELEASE]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:879) [spring-webmvc-5.2.6.RELEASE.jar:5.2.6.RELEASE]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:793) [spring-webmvc-5.2.6.RELEASE.jar:5.2.6.RELEASE]
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87) [spring-webmvc-5.2.6.RELEASE.jar:5.2.6.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1040) [spring-webmvc-5.2.6.RELEASE.jar:5.2.6.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:943) [spring-webmvc-5.2.6.RELEASE.jar:5.2.6.RELEASE]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006) [spring-webmvc-5.2.6.RELEASE.jar:5.2.6.RELEASE]
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898) [spring-webmvc-5.2.6.RELEASE.jar:5.2.6.RELEASE]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:634) [tomcat-embed-core-9.0.35.jar:9.0.35]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883) [spring-webmvc-5.2.6.RELEASE.jar:5.2.6.RELEASE]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:741) [tomcat-embed-core-9.0.35.jar:9.0.35]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231) [tomcat-embed-core-9.0.35.jar:9.0.35]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [tomcat-embed-core-9.0.35.jar:9.0.35]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53) [tomcat-embed-websocket-9.0.35.jar:9.0.35]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) [tomcat-embed-core-9.0.35.jar:9.0.35]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [tomcat-embed-core-9.0.35.jar:9.0.35]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) [spring-web-5.2.6.RELEASE.jar:5.2.6.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) [spring-web-5.2.6.RELEASE.jar:5.2.6.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) [tomcat-embed-core-9.0.35.jar:9.0.35]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [tomcat-embed-core-9.0.35.jar:9.0.35]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) [spring-web-5.2.6.RELEASE.jar:5.2.6.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) [spring-web-5.2.6.RELEASE.jar:5.2.6.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) [tomcat-embed-core-9.0.35.jar:9.0.35]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [tomcat-embed-core-9.0.35.jar:9.0.35]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) [spring-web-5.2.6.RELEASE.jar:5.2.6.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) [spring-web-5.2.6.RELEASE.jar:5.2.6.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) [tomcat-embed-core-9.0.35.jar:9.0.35]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [tomcat-embed-core-9.0.35.jar:9.0.35]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202) [tomcat-embed-core-9.0.35.jar:9.0.35]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96) [tomcat-embed-core-9.0.35.jar:9.0.35]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541) [tomcat-embed-core-9.0.35.jar:9.0.35]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139) [tomcat-embed-core-9.0.35.jar:9.0.35]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92) [tomcat-embed-core-9.0.35.jar:9.0.35]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74) [tomcat-embed-core-9.0.35.jar:9.0.35]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343) [tomcat-embed-core-9.0.35.jar:9.0.35]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:373) [tomcat-embed-core-9.0.35.jar:9.0.35]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65) [tomcat-embed-core-9.0.35.jar:9.0.35]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:868) [tomcat-embed-core-9.0.35.jar:9.0.35]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1590) [tomcat-embed-core-9.0.35.jar:9.0.35]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) [tomcat-embed-core-9.0.35.jar:9.0.35]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149) [na:1.8.0_171]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624) [na:1.8.0_171]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) [tomcat-embed-core-9.0.35.jar:9.0.35]
+	at java.lang.Thread.run(Thread.java:748) [na:1.8.0_171]
+
+2020-07-15 00:12:02.761 ERROR 17532 --- [http-nio-8887-exec-10] c.e.c.controller.AuthorizeController     : callback get github error, null
+2020-07-15 00:12:16.289  INFO 19248 --- [restartedMain] c.e.community.CommunityApplication       : Starting CommunityApplication on DESKTOP-HC5T7NJ with PID 19248 (D:\ideaProject\community\target\classes started by guo in D:\ideaProject\community)
+2020-07-15 00:12:16.292  INFO 19248 --- [restartedMain] c.e.community.CommunityApplication       : No active profile set, falling back to default profiles: default
+2020-07-15 00:12:16.346  INFO 19248 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2020-07-15 00:12:16.347  INFO 19248 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2020-07-15 00:12:17.906  INFO 19248 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8887 (http)
+2020-07-15 00:12:17.912  INFO 19248 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-07-15 00:12:17.913  INFO 19248 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.35]
+2020-07-15 00:12:18.014  INFO 19248 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-07-15 00:12:18.014  INFO 19248 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1667 ms
+2020-07-15 00:12:18.687  INFO 19248 --- [restartedMain] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2020-07-15 00:12:18.757  INFO 19248 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-07-15 00:12:18.792  INFO 19248 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2020-07-15 00:12:18.815  INFO 19248 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2020-07-15 00:12:18.919  INFO 19248 --- [restartedMain] o.s.s.c.ThreadPoolTaskScheduler          : Initializing ExecutorService 'taskScheduler'
+2020-07-15 00:12:19.173  INFO 19248 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8887 (http) with context path ''
+2020-07-15 00:12:19.174  INFO 19248 --- [restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2020-07-15 00:12:19.185  INFO 19248 --- [restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2020-07-15 00:12:19.219  INFO 19248 --- [restartedMain] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2020-07-15 00:12:19.368  INFO 19248 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: profileUsingGET_1
+2020-07-15 00:12:19.397  INFO 19248 --- [scheduling-1] c.e.community.schedule.HotTagTasks       : 开始时间： Wed Jul 15 00:12:19 CST 2020
+2020-07-15 00:12:19.399  INFO 19248 --- [restartedMain] c.e.community.CommunityApplication       : Started CommunityApplication in 3.556 seconds (JVM running for 5.347)
+2020-07-15 00:12:19.423  INFO 19248 --- [scheduling-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2020-07-15 00:12:19.517  INFO 19248 --- [scheduling-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2020-07-15 00:12:19.549  INFO 19248 --- [scheduling-1] c.e.community.schedule.HotTagTasks       : 结束时间： Wed Jul 15 00:12:19 CST 2020
+2020-07-15 00:12:40.556  INFO 19248 --- [http-nio-8887-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-07-15 00:12:40.556  INFO 19248 --- [http-nio-8887-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2020-07-15 00:12:40.561  INFO 19248 --- [http-nio-8887-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 4 ms
+2020-07-15 00:13:25.752  INFO 19168 --- [restartedMain] c.e.community.CommunityApplication       : Starting CommunityApplication on DESKTOP-HC5T7NJ with PID 19168 (D:\ideaProject\community\target\classes started by guo in D:\ideaProject\community)
+2020-07-15 00:13:25.759  INFO 19168 --- [restartedMain] c.e.community.CommunityApplication       : No active profile set, falling back to default profiles: default
+2020-07-15 00:13:25.877  INFO 19168 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2020-07-15 00:13:25.878  INFO 19168 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2020-07-15 00:13:28.320  INFO 19168 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8887 (http)
+2020-07-15 00:13:28.333  INFO 19168 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-07-15 00:13:28.333  INFO 19168 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.35]
+2020-07-15 00:13:28.436  INFO 19168 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-07-15 00:13:28.436  INFO 19168 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 2558 ms
+2020-07-15 00:13:29.149  INFO 19168 --- [restartedMain] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2020-07-15 00:13:29.323  INFO 19168 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-07-15 00:13:29.365  INFO 19168 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2020-07-15 00:13:29.389  INFO 19168 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2020-07-15 00:13:29.493  INFO 19168 --- [restartedMain] o.s.s.c.ThreadPoolTaskScheduler          : Initializing ExecutorService 'taskScheduler'
+2020-07-15 00:13:29.818  INFO 19168 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8887 (http) with context path ''
+2020-07-15 00:13:29.820  INFO 19168 --- [restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2020-07-15 00:13:29.834  INFO 19168 --- [restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2020-07-15 00:13:29.870  INFO 19168 --- [http-nio-8887-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-07-15 00:13:29.870  INFO 19168 --- [http-nio-8887-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2020-07-15 00:13:29.878  INFO 19168 --- [http-nio-8887-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 8 ms
+2020-07-15 00:13:29.878  INFO 19168 --- [restartedMain] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2020-07-15 00:13:29.958  INFO 19168 --- [http-nio-8887-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2020-07-15 00:13:30.069  INFO 19168 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: profileUsingGET_1
+2020-07-15 00:13:30.102  INFO 19168 --- [http-nio-8887-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2020-07-15 00:13:30.105  INFO 19168 --- [scheduling-1] c.e.community.schedule.HotTagTasks       : 开始时间： Wed Jul 15 00:13:30 CST 2020
+2020-07-15 00:13:30.109  INFO 19168 --- [restartedMain] c.e.community.CommunityApplication       : Started CommunityApplication in 4.992 seconds (JVM running for 7.436)
+2020-07-15 00:13:30.156  INFO 19168 --- [scheduling-1] c.e.community.schedule.HotTagTasks       : 结束时间： Wed Jul 15 00:13:30 CST 2020
+2020-07-15 00:16:37.401  INFO 15412 --- [restartedMain] c.e.community.CommunityApplication       : Starting CommunityApplication on DESKTOP-HC5T7NJ with PID 15412 (D:\ideaProject\community\target\classes started by guo in D:\ideaProject\community)
+2020-07-15 00:16:37.405  INFO 15412 --- [restartedMain] c.e.community.CommunityApplication       : No active profile set, falling back to default profiles: default
+2020-07-15 00:16:37.477  INFO 15412 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2020-07-15 00:16:37.477  INFO 15412 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2020-07-15 00:16:39.041  INFO 15412 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8887 (http)
+2020-07-15 00:16:39.048  INFO 15412 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-07-15 00:16:39.049  INFO 15412 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.35]
+2020-07-15 00:16:39.149  INFO 15412 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-07-15 00:16:39.149  INFO 15412 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1672 ms
+2020-07-15 00:16:39.868  INFO 15412 --- [restartedMain] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2020-07-15 00:16:39.938  INFO 15412 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-07-15 00:16:39.974  INFO 15412 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2020-07-15 00:16:39.997  INFO 15412 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2020-07-15 00:16:40.110  INFO 15412 --- [restartedMain] o.s.s.c.ThreadPoolTaskScheduler          : Initializing ExecutorService 'taskScheduler'
+2020-07-15 00:16:40.387  INFO 15412 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8887 (http) with context path ''
+2020-07-15 00:16:40.389  INFO 15412 --- [restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2020-07-15 00:16:40.403  INFO 15412 --- [restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2020-07-15 00:16:40.450  INFO 15412 --- [restartedMain] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2020-07-15 00:16:40.623  INFO 15412 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: profileUsingGET_1
+2020-07-15 00:16:40.656  INFO 15412 --- [scheduling-1] c.e.community.schedule.HotTagTasks       : 开始时间： Wed Jul 15 00:16:40 CST 2020
+2020-07-15 00:16:40.659  INFO 15412 --- [restartedMain] c.e.community.CommunityApplication       : Started CommunityApplication in 3.697 seconds (JVM running for 5.719)
+2020-07-15 00:16:40.693  INFO 15412 --- [scheduling-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2020-07-15 00:16:40.799  INFO 15412 --- [scheduling-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2020-07-15 00:16:40.840  INFO 15412 --- [scheduling-1] c.e.community.schedule.HotTagTasks       : 结束时间： Wed Jul 15 00:16:40 CST 2020
+2020-07-15 00:16:46.128  INFO 15412 --- [http-nio-8887-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-07-15 00:16:46.128  INFO 15412 --- [http-nio-8887-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2020-07-15 00:16:46.135  INFO 15412 --- [http-nio-8887-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 7 ms
+2020-07-15 00:17:19.571  INFO 20428 --- [restartedMain] c.e.community.CommunityApplication       : Starting CommunityApplication on DESKTOP-HC5T7NJ with PID 20428 (D:\ideaProject\community\target\classes started by guo in D:\ideaProject\community)
+2020-07-15 00:17:19.574  INFO 20428 --- [restartedMain] c.e.community.CommunityApplication       : No active profile set, falling back to default profiles: default
+2020-07-15 00:17:19.634  INFO 20428 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2020-07-15 00:17:19.634  INFO 20428 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2020-07-15 00:17:21.078  INFO 20428 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8887 (http)
+2020-07-15 00:17:21.086  INFO 20428 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-07-15 00:17:21.086  INFO 20428 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.35]
+2020-07-15 00:17:21.185  INFO 20428 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-07-15 00:17:21.185  INFO 20428 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1550 ms
+2020-07-15 00:17:21.889  INFO 20428 --- [restartedMain] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2020-07-15 00:17:21.972  INFO 20428 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-07-15 00:17:22.013  INFO 20428 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2020-07-15 00:17:22.036  INFO 20428 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2020-07-15 00:17:22.141  INFO 20428 --- [restartedMain] o.s.s.c.ThreadPoolTaskScheduler          : Initializing ExecutorService 'taskScheduler'
+2020-07-15 00:17:22.410  INFO 20428 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8887 (http) with context path ''
+2020-07-15 00:17:22.411  INFO 20428 --- [restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2020-07-15 00:17:22.424  INFO 20428 --- [restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2020-07-15 00:17:22.459  INFO 20428 --- [restartedMain] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2020-07-15 00:17:22.620  INFO 20428 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: profileUsingGET_1
+2020-07-15 00:17:22.647  INFO 20428 --- [scheduling-1] c.e.community.schedule.HotTagTasks       : 开始时间： Wed Jul 15 00:17:22 CST 2020
+2020-07-15 00:17:22.649  INFO 20428 --- [restartedMain] c.e.community.CommunityApplication       : Started CommunityApplication in 3.492 seconds (JVM running for 5.564)
+2020-07-15 00:17:22.675  INFO 20428 --- [scheduling-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2020-07-15 00:17:22.766  INFO 20428 --- [scheduling-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2020-07-15 00:17:22.799  INFO 20428 --- [scheduling-1] c.e.community.schedule.HotTagTasks       : 结束时间： Wed Jul 15 00:17:22 CST 2020
+2020-07-15 00:17:30.186  INFO 20428 --- [http-nio-8887-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-07-15 00:17:30.186  INFO 20428 --- [http-nio-8887-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2020-07-15 00:17:30.191  INFO 20428 --- [http-nio-8887-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 5 ms
+2020-07-15 00:18:35.699  INFO 8304 --- [restartedMain] c.e.community.CommunityApplication       : Starting CommunityApplication on DESKTOP-HC5T7NJ with PID 8304 (D:\ideaProject\community\target\classes started by guo in D:\ideaProject\community)
+2020-07-15 00:18:35.702  INFO 8304 --- [restartedMain] c.e.community.CommunityApplication       : No active profile set, falling back to default profiles: default
+2020-07-15 00:18:35.760  INFO 8304 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2020-07-15 00:18:35.760  INFO 8304 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2020-07-15 00:18:37.236  INFO 8304 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8887 (http)
+2020-07-15 00:18:37.242  INFO 8304 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-07-15 00:18:37.243  INFO 8304 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.35]
+2020-07-15 00:18:37.342  INFO 8304 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-07-15 00:18:37.343  INFO 8304 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1583 ms
+2020-07-15 00:18:38.089  INFO 8304 --- [restartedMain] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2020-07-15 00:18:38.181  INFO 8304 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-07-15 00:18:38.219  INFO 8304 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2020-07-15 00:18:38.241  INFO 8304 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2020-07-15 00:18:38.359  INFO 8304 --- [restartedMain] o.s.s.c.ThreadPoolTaskScheduler          : Initializing ExecutorService 'taskScheduler'
+2020-07-15 00:18:38.640  INFO 8304 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8887 (http) with context path ''
+2020-07-15 00:18:38.641  INFO 8304 --- [restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2020-07-15 00:18:38.652  INFO 8304 --- [restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2020-07-15 00:18:38.680  INFO 8304 --- [restartedMain] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2020-07-15 00:18:38.822  INFO 8304 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: profileUsingGET_1
+2020-07-15 00:18:38.848  INFO 8304 --- [scheduling-1] c.e.community.schedule.HotTagTasks       : 开始时间： Wed Jul 15 00:18:38 CST 2020
+2020-07-15 00:18:38.850  INFO 8304 --- [restartedMain] c.e.community.CommunityApplication       : Started CommunityApplication in 3.573 seconds (JVM running for 5.646)
+2020-07-15 00:18:38.874  INFO 8304 --- [scheduling-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2020-07-15 00:18:38.968  INFO 8304 --- [scheduling-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2020-07-15 00:18:39.001  INFO 8304 --- [scheduling-1] c.e.community.schedule.HotTagTasks       : 结束时间： Wed Jul 15 00:18:39 CST 2020
+2020-07-15 00:18:41.815  INFO 8304 --- [http-nio-8887-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-07-15 00:18:41.816  INFO 8304 --- [http-nio-8887-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2020-07-15 00:18:41.824  INFO 8304 --- [http-nio-8887-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 8 ms
+2020-07-15 00:19:14.148  INFO 18864 --- [restartedMain] c.e.community.CommunityApplication       : Starting CommunityApplication on DESKTOP-HC5T7NJ with PID 18864 (D:\ideaProject\community\target\classes started by guo in D:\ideaProject\community)
+2020-07-15 00:19:14.152  INFO 18864 --- [restartedMain] c.e.community.CommunityApplication       : No active profile set, falling back to default profiles: default
+2020-07-15 00:19:14.227  INFO 18864 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2020-07-15 00:19:14.228  INFO 18864 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2020-07-15 00:19:16.255  INFO 18864 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8887 (http)
+2020-07-15 00:19:16.265  INFO 18864 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-07-15 00:19:16.266  INFO 18864 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.35]
+2020-07-15 00:19:16.371  INFO 18864 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-07-15 00:19:16.372  INFO 18864 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 2144 ms
+2020-07-15 00:19:17.083  INFO 18864 --- [restartedMain] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2020-07-15 00:19:17.158  INFO 18864 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-07-15 00:19:17.198  INFO 18864 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2020-07-15 00:19:17.224  INFO 18864 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2020-07-15 00:19:17.348  INFO 18864 --- [restartedMain] o.s.s.c.ThreadPoolTaskScheduler          : Initializing ExecutorService 'taskScheduler'
+2020-07-15 00:19:17.605  INFO 18864 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8887 (http) with context path ''
+2020-07-15 00:19:17.606  INFO 18864 --- [restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2020-07-15 00:19:17.618  INFO 18864 --- [restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2020-07-15 00:19:17.653  INFO 18864 --- [restartedMain] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2020-07-15 00:19:17.821  INFO 18864 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: profileUsingGET_1
+2020-07-15 00:19:17.832  INFO 18864 --- [http-nio-8887-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-07-15 00:19:17.832  INFO 18864 --- [http-nio-8887-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2020-07-15 00:19:17.840  INFO 18864 --- [http-nio-8887-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 8 ms
+2020-07-15 00:19:17.857  INFO 18864 --- [scheduling-1] c.e.community.schedule.HotTagTasks       : 开始时间： Wed Jul 15 00:19:17 CST 2020
+2020-07-15 00:19:17.863  INFO 18864 --- [restartedMain] c.e.community.CommunityApplication       : Started CommunityApplication in 4.346 seconds (JVM running for 5.934)
+2020-07-15 00:19:17.894  INFO 18864 --- [scheduling-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2020-07-15 00:19:18.000  INFO 18864 --- [scheduling-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2020-07-15 00:19:18.045  INFO 18864 --- [scheduling-1] c.e.community.schedule.HotTagTasks       : 结束时间： Wed Jul 15 00:19:18 CST 2020
+2020-07-15 00:20:15.578  INFO 19260 --- [restartedMain] c.e.community.CommunityApplication       : Starting CommunityApplication on DESKTOP-HC5T7NJ with PID 19260 (D:\ideaProject\community\target\classes started by guo in D:\ideaProject\community)
+2020-07-15 00:20:15.581  INFO 19260 --- [restartedMain] c.e.community.CommunityApplication       : No active profile set, falling back to default profiles: default
+2020-07-15 00:20:15.648  INFO 19260 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2020-07-15 00:20:15.648  INFO 19260 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2020-07-15 00:20:17.399  INFO 19260 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8887 (http)
+2020-07-15 00:20:17.407  INFO 19260 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-07-15 00:20:17.407  INFO 19260 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.35]
+2020-07-15 00:20:17.501  INFO 19260 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-07-15 00:20:17.501  INFO 19260 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1853 ms
+2020-07-15 00:20:18.195  INFO 19260 --- [restartedMain] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2020-07-15 00:20:18.265  INFO 19260 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-07-15 00:20:18.299  INFO 19260 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2020-07-15 00:20:18.323  INFO 19260 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2020-07-15 00:20:18.423  INFO 19260 --- [restartedMain] o.s.s.c.ThreadPoolTaskScheduler          : Initializing ExecutorService 'taskScheduler'
+2020-07-15 00:20:18.675  INFO 19260 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8887 (http) with context path ''
+2020-07-15 00:20:18.676  INFO 19260 --- [restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2020-07-15 00:20:18.686  INFO 19260 --- [restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2020-07-15 00:20:18.715  INFO 19260 --- [restartedMain] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2020-07-15 00:20:18.859  INFO 19260 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: profileUsingGET_1
+2020-07-15 00:20:18.887  INFO 19260 --- [scheduling-1] c.e.community.schedule.HotTagTasks       : 开始时间： Wed Jul 15 00:20:18 CST 2020
+2020-07-15 00:20:18.890  INFO 19260 --- [restartedMain] c.e.community.CommunityApplication       : Started CommunityApplication in 3.775 seconds (JVM running for 5.611)
+2020-07-15 00:20:18.913  INFO 19260 --- [scheduling-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2020-07-15 00:20:19.019  INFO 19260 --- [scheduling-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2020-07-15 00:20:19.053  INFO 19260 --- [scheduling-1] c.e.community.schedule.HotTagTasks       : 结束时间： Wed Jul 15 00:20:19 CST 2020
+2020-07-15 00:20:19.237  INFO 19260 --- [http-nio-8887-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-07-15 00:20:19.238  INFO 19260 --- [http-nio-8887-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2020-07-15 00:20:19.244  INFO 19260 --- [http-nio-8887-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 6 ms
+2020-07-15 00:22:38.794  INFO 11060 --- [restartedMain] c.e.community.CommunityApplication       : Starting CommunityApplication on DESKTOP-HC5T7NJ with PID 11060 (D:\ideaProject\community\target\classes started by guo in D:\ideaProject\community)
+2020-07-15 00:22:38.797  INFO 11060 --- [restartedMain] c.e.community.CommunityApplication       : No active profile set, falling back to default profiles: default
+2020-07-15 00:22:38.868  INFO 11060 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2020-07-15 00:22:38.869  INFO 11060 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2020-07-15 00:22:40.347  INFO 11060 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8887 (http)
+2020-07-15 00:22:40.354  INFO 11060 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-07-15 00:22:40.355  INFO 11060 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.35]
+2020-07-15 00:22:40.453  INFO 11060 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-07-15 00:22:40.453  INFO 11060 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1584 ms
+2020-07-15 00:22:41.226  INFO 11060 --- [restartedMain] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2020-07-15 00:22:41.294  INFO 11060 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-07-15 00:22:41.328  INFO 11060 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2020-07-15 00:22:41.352  INFO 11060 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2020-07-15 00:22:41.453  INFO 11060 --- [restartedMain] o.s.s.c.ThreadPoolTaskScheduler          : Initializing ExecutorService 'taskScheduler'
+2020-07-15 00:22:41.725  INFO 11060 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8887 (http) with context path ''
+2020-07-15 00:22:41.726  INFO 11060 --- [restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2020-07-15 00:22:41.738  INFO 11060 --- [restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2020-07-15 00:22:41.769  INFO 11060 --- [restartedMain] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2020-07-15 00:22:41.911  INFO 11060 --- [http-nio-8887-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-07-15 00:22:41.911  INFO 11060 --- [http-nio-8887-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2020-07-15 00:22:41.916  INFO 11060 --- [http-nio-8887-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 5 ms
+2020-07-15 00:22:41.931  INFO 11060 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: profileUsingGET_1
+2020-07-15 00:22:41.966  INFO 11060 --- [scheduling-1] c.e.community.schedule.HotTagTasks       : 开始时间： Wed Jul 15 00:22:41 CST 2020
+2020-07-15 00:22:41.970  INFO 11060 --- [restartedMain] c.e.community.CommunityApplication       : Started CommunityApplication in 3.678 seconds (JVM running for 5.571)
+2020-07-15 00:22:41.976  INFO 11060 --- [scheduling-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2020-07-15 00:22:42.079  INFO 11060 --- [scheduling-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2020-07-15 00:22:42.124  INFO 11060 --- [scheduling-1] c.e.community.schedule.HotTagTasks       : 结束时间： Wed Jul 15 00:22:42 CST 2020
+2020-07-15 00:24:13.603  INFO 3024 --- [restartedMain] c.e.community.CommunityApplication       : Starting CommunityApplication on DESKTOP-HC5T7NJ with PID 3024 (D:\ideaProject\community\target\classes started by guo in D:\ideaProject\community)
+2020-07-15 00:24:13.607  INFO 3024 --- [restartedMain] c.e.community.CommunityApplication       : No active profile set, falling back to default profiles: default
+2020-07-15 00:24:13.676  INFO 3024 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2020-07-15 00:24:13.677  INFO 3024 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2020-07-15 00:24:15.293  INFO 3024 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8887 (http)
+2020-07-15 00:24:15.300  INFO 3024 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-07-15 00:24:15.300  INFO 3024 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.35]
+2020-07-15 00:24:15.404  INFO 3024 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-07-15 00:24:15.405  INFO 3024 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1728 ms
+2020-07-15 00:24:16.108  INFO 3024 --- [restartedMain] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2020-07-15 00:24:16.180  INFO 3024 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-07-15 00:24:16.224  INFO 3024 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2020-07-15 00:24:16.258  INFO 3024 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2020-07-15 00:24:16.379  INFO 3024 --- [restartedMain] o.s.s.c.ThreadPoolTaskScheduler          : Initializing ExecutorService 'taskScheduler'
+2020-07-15 00:24:16.639  INFO 3024 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8887 (http) with context path ''
+2020-07-15 00:24:16.640  INFO 3024 --- [restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2020-07-15 00:24:16.651  INFO 3024 --- [restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2020-07-15 00:24:16.684  INFO 3024 --- [restartedMain] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2020-07-15 00:24:16.790  INFO 3024 --- [http-nio-8887-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-07-15 00:24:16.790  INFO 3024 --- [http-nio-8887-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2020-07-15 00:24:16.797  INFO 3024 --- [http-nio-8887-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 7 ms
+2020-07-15 00:24:16.847  INFO 3024 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: profileUsingGET_1
+2020-07-15 00:24:16.860  INFO 3024 --- [http-nio-8887-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2020-07-15 00:24:16.878  INFO 3024 --- [scheduling-1] c.e.community.schedule.HotTagTasks       : 开始时间： Wed Jul 15 00:24:16 CST 2020
+2020-07-15 00:24:16.880  INFO 3024 --- [restartedMain] c.e.community.CommunityApplication       : Started CommunityApplication in 3.81 seconds (JVM running for 5.702)
+2020-07-15 00:24:16.967  INFO 3024 --- [http-nio-8887-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2020-07-15 00:24:17.016  INFO 3024 --- [scheduling-1] c.e.community.schedule.HotTagTasks       : 结束时间： Wed Jul 15 00:24:17 CST 2020
+2020-07-15 00:25:44.968  INFO 21292 --- [restartedMain] c.e.community.CommunityApplication       : Starting CommunityApplication on DESKTOP-HC5T7NJ with PID 21292 (D:\ideaProject\community\target\classes started by guo in D:\ideaProject\community)
+2020-07-15 00:25:44.972  INFO 21292 --- [restartedMain] c.e.community.CommunityApplication       : No active profile set, falling back to default profiles: default
+2020-07-15 00:25:45.034  INFO 21292 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2020-07-15 00:25:45.034  INFO 21292 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2020-07-15 00:25:46.618  INFO 21292 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8887 (http)
+2020-07-15 00:25:46.624  INFO 21292 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-07-15 00:25:46.625  INFO 21292 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.35]
+2020-07-15 00:25:46.719  INFO 21292 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-07-15 00:25:46.719  INFO 21292 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1685 ms
+2020-07-15 00:25:47.469  INFO 21292 --- [restartedMain] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2020-07-15 00:25:47.539  INFO 21292 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-07-15 00:25:47.576  INFO 21292 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2020-07-15 00:25:47.599  INFO 21292 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2020-07-15 00:25:47.703  INFO 21292 --- [restartedMain] o.s.s.c.ThreadPoolTaskScheduler          : Initializing ExecutorService 'taskScheduler'
+2020-07-15 00:25:47.964  INFO 21292 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8887 (http) with context path ''
+2020-07-15 00:25:47.966  INFO 21292 --- [restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2020-07-15 00:25:47.979  INFO 21292 --- [restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2020-07-15 00:25:48.014  INFO 21292 --- [http-nio-8887-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-07-15 00:25:48.014  INFO 21292 --- [http-nio-8887-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2020-07-15 00:25:48.014  INFO 21292 --- [restartedMain] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2020-07-15 00:25:48.020  INFO 21292 --- [http-nio-8887-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 6 ms
+2020-07-15 00:25:48.085  INFO 21292 --- [http-nio-8887-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2020-07-15 00:25:48.174  INFO 21292 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: profileUsingGET_1
+2020-07-15 00:25:48.210  INFO 21292 --- [scheduling-1] c.e.community.schedule.HotTagTasks       : 开始时间： Wed Jul 15 00:25:48 CST 2020
+2020-07-15 00:25:48.212  INFO 21292 --- [http-nio-8887-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2020-07-15 00:25:48.215  INFO 21292 --- [restartedMain] c.e.community.CommunityApplication       : Started CommunityApplication in 3.67 seconds (JVM running for 5.516)
+2020-07-15 00:25:48.250  INFO 21292 --- [scheduling-1] c.e.community.schedule.HotTagTasks       : 结束时间： Wed Jul 15 00:25:48 CST 2020
+2020-07-15 00:28:17.667  INFO 19800 --- [restartedMain] c.e.community.CommunityApplication       : Starting CommunityApplication on DESKTOP-HC5T7NJ with PID 19800 (D:\ideaProject\community\target\classes started by guo in D:\ideaProject\community)
+2020-07-15 00:28:17.670  INFO 19800 --- [restartedMain] c.e.community.CommunityApplication       : No active profile set, falling back to default profiles: default
+2020-07-15 00:28:17.733  INFO 19800 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2020-07-15 00:28:17.734  INFO 19800 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2020-07-15 00:28:19.120  INFO 19800 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8887 (http)
+2020-07-15 00:28:19.126  INFO 19800 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-07-15 00:28:19.126  INFO 19800 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.35]
+2020-07-15 00:28:19.226  INFO 19800 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-07-15 00:28:19.227  INFO 19800 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1493 ms
+2020-07-15 00:28:19.879  INFO 19800 --- [restartedMain] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2020-07-15 00:28:19.949  INFO 19800 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-07-15 00:28:19.982  INFO 19800 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2020-07-15 00:28:20.005  INFO 19800 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2020-07-15 00:28:20.107  INFO 19800 --- [restartedMain] o.s.s.c.ThreadPoolTaskScheduler          : Initializing ExecutorService 'taskScheduler'
+2020-07-15 00:28:20.351  INFO 19800 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8887 (http) with context path ''
+2020-07-15 00:28:20.352  INFO 19800 --- [restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2020-07-15 00:28:20.363  INFO 19800 --- [restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2020-07-15 00:28:20.392  INFO 19800 --- [restartedMain] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2020-07-15 00:28:20.532  INFO 19800 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: profileUsingGET_1
+2020-07-15 00:28:20.558  INFO 19800 --- [scheduling-1] c.e.community.schedule.HotTagTasks       : 开始时间： Wed Jul 15 00:28:20 CST 2020
+2020-07-15 00:28:20.560  INFO 19800 --- [restartedMain] c.e.community.CommunityApplication       : Started CommunityApplication in 3.351 seconds (JVM running for 5.086)
+2020-07-15 00:28:20.586  INFO 19800 --- [scheduling-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2020-07-15 00:28:20.675  INFO 19800 --- [scheduling-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2020-07-15 00:28:20.709  INFO 19800 --- [scheduling-1] c.e.community.schedule.HotTagTasks       : 结束时间： Wed Jul 15 00:28:20 CST 2020
+2020-07-15 00:28:32.053  INFO 19800 --- [http-nio-8887-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-07-15 00:28:32.053  INFO 19800 --- [http-nio-8887-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2020-07-15 00:28:32.059  INFO 19800 --- [http-nio-8887-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 5 ms
+2020-07-15 00:32:04.493  INFO 15404 --- [restartedMain] c.e.community.CommunityApplication       : Starting CommunityApplication on DESKTOP-HC5T7NJ with PID 15404 (D:\ideaProject\community\target\classes started by guo in D:\ideaProject\community)
+2020-07-15 00:32:04.497  INFO 15404 --- [restartedMain] c.e.community.CommunityApplication       : No active profile set, falling back to default profiles: default
+2020-07-15 00:32:04.568  INFO 15404 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2020-07-15 00:32:04.568  INFO 15404 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2020-07-15 00:32:06.278  INFO 15404 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8887 (http)
+2020-07-15 00:32:06.285  INFO 15404 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-07-15 00:32:06.285  INFO 15404 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.35]
+2020-07-15 00:32:06.398  INFO 15404 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-07-15 00:32:06.398  INFO 15404 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1829 ms
+2020-07-15 00:32:07.082  INFO 15404 --- [restartedMain] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2020-07-15 00:32:07.160  INFO 15404 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-07-15 00:32:07.193  INFO 15404 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2020-07-15 00:32:07.216  INFO 15404 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2020-07-15 00:32:07.315  INFO 15404 --- [restartedMain] o.s.s.c.ThreadPoolTaskScheduler          : Initializing ExecutorService 'taskScheduler'
+2020-07-15 00:32:07.589  INFO 15404 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8887 (http) with context path ''
+2020-07-15 00:32:07.590  INFO 15404 --- [restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2020-07-15 00:32:07.601  INFO 15404 --- [restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2020-07-15 00:32:07.631  INFO 15404 --- [restartedMain] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2020-07-15 00:32:07.783  INFO 15404 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: profileUsingGET_1
+2020-07-15 00:32:07.809  INFO 15404 --- [scheduling-1] c.e.community.schedule.HotTagTasks       : 开始时间： Wed Jul 15 00:32:07 CST 2020
+2020-07-15 00:32:07.811  INFO 15404 --- [restartedMain] c.e.community.CommunityApplication       : Started CommunityApplication in 3.723 seconds (JVM running for 5.219)
+2020-07-15 00:32:07.834  INFO 15404 --- [scheduling-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2020-07-15 00:32:07.930  INFO 15404 --- [scheduling-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2020-07-15 00:32:07.962  INFO 15404 --- [scheduling-1] c.e.community.schedule.HotTagTasks       : 结束时间： Wed Jul 15 00:32:07 CST 2020
+2020-07-15 00:32:13.237  INFO 15404 --- [http-nio-8887-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-07-15 00:32:13.237  INFO 15404 --- [http-nio-8887-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2020-07-15 00:32:13.245  INFO 15404 --- [http-nio-8887-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 8 ms

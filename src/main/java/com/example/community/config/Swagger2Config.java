@@ -35,8 +35,8 @@ public class Swagger2Config {
     private ApiInfo apiInfo() {
         return new ApiInfoBuilder()
                 .title("SwaggerUI演示")
-                .description("Community")
-                .contact(new Contact("Gavin","","844123045@qq.com"))
+                .description("阅问社区")
+                .contact(new Contact("Gavin","",""))
                 .version("1.0")
                 .build();
     }
