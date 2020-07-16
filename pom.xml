@@ -11,7 +11,7 @@
     <groupId>com.example</groupId>
     <artifactId>community</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <packaging>war</packaging>
+    <packaging>jar</packaging>
     <name>community</name>
     <description>community</description>
 
@@ -113,7 +113,6 @@
     </dependencies>
 
     <build>
-        <finalName>community</finalName>
         <plugins>
             <!-- spring-boot 的 maven 插件 -->
             <plugin>

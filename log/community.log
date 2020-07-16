@@ -1705,3 +1705,30 @@ Caused by: java.sql.SQLException: Incorrect string value: '\xF0\x9F\x98\xAD' for
 ### SQL: insert into question (id, title, gmt_create,        gmt_modified, creator, comment_count,        view_count, like_count, tag,        description)     values (?, ?, ?,        ?, ?, ?,        ?, ?, ?,        ?)
 ### Cause: java.sql.SQLException: Incorrect string value: '\xF0\x9F\x98\xAD' for column 'description' at row 1
 ; uncategorized SQLException; SQL state [HY000]; error code [1366]; Incorrect string value: '\xF0\x9F\x98\xAD' for column 'description' at row 1; nested exception is java.sql.SQLException: Incorrect string value: '\xF0\x9F\x98\xAD' for column 'description' at row 1]
+2020-07-16 13:54:52.843  INFO 932 --- [restartedMain] c.e.community.CommunityApplication       : Starting CommunityApplication on DESKTOP-HC5T7NJ with PID 932 (D:\ideaProject\community\target\classes started by guo in D:\ideaProject\community)
+2020-07-16 13:54:52.846  INFO 932 --- [restartedMain] c.e.community.CommunityApplication       : No active profile set, falling back to default profiles: default
+2020-07-16 13:54:52.934  INFO 932 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2020-07-16 13:54:52.935  INFO 932 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2020-07-16 13:54:54.526  INFO 932 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8887 (http)
+2020-07-16 13:54:54.538  INFO 932 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-07-16 13:54:54.539  INFO 932 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.35]
+2020-07-16 13:54:54.659  INFO 932 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-07-16 13:54:54.659  INFO 932 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1724 ms
+2020-07-16 13:54:56.054  INFO 932 --- [restartedMain] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2020-07-16 13:54:56.124  INFO 932 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-07-16 13:54:56.172  INFO 932 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2020-07-16 13:54:56.195  INFO 932 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2020-07-16 13:54:56.304  INFO 932 --- [restartedMain] o.s.s.c.ThreadPoolTaskScheduler          : Initializing ExecutorService 'taskScheduler'
+2020-07-16 13:54:56.544  INFO 932 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8887 (http) with context path ''
+2020-07-16 13:54:56.545  INFO 932 --- [restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2020-07-16 13:54:56.556  INFO 932 --- [restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2020-07-16 13:54:56.584  INFO 932 --- [restartedMain] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2020-07-16 13:54:56.726  INFO 932 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: profileUsingGET_1
+2020-07-16 13:54:56.754  INFO 932 --- [scheduling-1] c.e.community.schedule.HotTagTasks       : 开始时间： Thu Jul 16 13:54:56 CST 2020
+2020-07-16 13:54:56.757  INFO 932 --- [restartedMain] c.e.community.CommunityApplication       : Started CommunityApplication in 4.42 seconds (JVM running for 5.934)
+2020-07-16 13:54:56.781  INFO 932 --- [scheduling-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2020-07-16 13:54:56.872  INFO 932 --- [scheduling-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2020-07-16 13:54:56.905  INFO 932 --- [scheduling-1] c.e.community.schedule.HotTagTasks       : 结束时间： Thu Jul 16 13:54:56 CST 2020
+2020-07-16 13:54:59.999  INFO 932 --- [http-nio-8887-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-07-16 13:54:59.999  INFO 932 --- [http-nio-8887-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2020-07-16 13:55:00.007  INFO 932 --- [http-nio-8887-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 8 ms
