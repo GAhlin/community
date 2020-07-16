@@ -201,4 +201,10 @@ $(function () {
     $('[data-toggle="tooltip"]').tooltip()
 });
 
+$(function removeClass() {
+    if ($(window).width() < 800) {
+        $("#contentMain").removeClass("main");
+        $("#contentMain").addClass("main2");
+    }
+});
 

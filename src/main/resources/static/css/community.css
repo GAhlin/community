@@ -44,10 +44,19 @@ body {
     background-image: url("/images/index-bg.png");
 }
 
+.navbar {
+    margin-bottom: 1px;
+}
+
 .main {
-    /*background-color: white;*/
-    /*margin: 30px;*/
-    margin: 30px;
+    margin: 30px 60px;
+    background-color: #fff;
+    box-shadow: 6px 6px 10px gray;
+    border-radius: 4px;
+}
+
+.main2{
+    margin: 0 auto;
     background-color: #fff;
     box-shadow: 6px 6px 10px gray;
     border-radius: 4px;
@@ -293,7 +302,7 @@ body {
 }
 
 .profileFrame{
-    height: 70rem;
+    height: 40rem;
 }
 
 .loginModelRow{
