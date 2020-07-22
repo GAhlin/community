@@ -58,6 +58,6 @@ http://localhost:8887
 - [Spring Web文档](https://spring.io/guides/gs/serving-web-content/)
 - [Spring MVC文档](https://docs.spring.io/spring/docs/5.0.3.RELEASE/spring-framework-reference/web.html#mvc-handlermapping-interceptor)
 - [Spring Boot官方文档](https://docs.spring.io/spring-boot/docs/2.2.4.RELEASE/reference/html/)
-- [Maven repository(maven仓库)](https://mvnrepository.com/)
+- [Maven repository](https://mvnrepository.com/)
 - [菜鸟教程](https://www.runoob.com/mysql/mysql-insert-query.html)
 - [Postman](https://chrome.google.com/webstore/detail/coohjcphdfgbiolnekdpbcijmhambjff)

@@ -124,13 +124,13 @@
                         <img src="/images/gitee.svg" style="width: 5%">
                         <a th:href="@{https://gitee.com/oauth/authorize(client_id=${@environment.getProperty('gitee.client_id')},redirect_uri=${@environment.getProperty('gitee.redirect_uri')},response_type='code',scope='user_info',state=1)}">Gitee登录</a>
                     </div>
-                    <div class="row loginModelRow">
-                        <img src="/images/QQ.svg" style="width: 5%">
-                        <a th:href="@{https://github.com/login/oauth/authorize(client_id=${@environment.getProperty('github.client.id')},redirect_uri=${@environment.getProperty('github.redirect.uri')},scope='user',state=1)}">QQ登录</a>
-                    </div>
+<!--                    <div class="row loginModelRow">-->
+<!--                        <img src="/images/QQ.svg" style="width: 5%">-->
+<!--                        <a th:href="@{https://github.com/login/oauth/authorize(client_id=${@environment.getProperty('github.client.id')},redirect_uri=${@environment.getProperty('github.redirect.uri')},scope='user',state=1)}">QQ登录</a>-->
+<!--                    </div>-->
                 </div>
                 <div class="modal-footer">
-                    推荐使用QQ登录哦！
+                    推荐使用Gitee登录哦！
                     <button type="button" class="btn btn-default" data-dismiss="modal">OK</button>
                 </div>
             </div><!-- /.modal-content -->

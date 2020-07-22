@@ -201,10 +201,17 @@ $(function () {
     $('[data-toggle="tooltip"]').tooltip()
 });
 
+/**
+ * 移动端页面样式切换
+ */
 $(function removeClass() {
     if ($(window).width() < 800) {
         $("#contentMain").removeClass("main");
         $("#contentMain").addClass("main2");
     }
 });
+
+function likeComment() {
+
+}
 
