@@ -29,7 +29,7 @@ public class IndexController {
     @GetMapping("/")
     public String index(Model model,
                         @RequestParam(name = "page", defaultValue = "1") @ApiParam("页码") Integer page,
-                        @RequestParam(name = "size", defaultValue = "6") @ApiParam("每页数量") Integer size,
+                        @RequestParam(name = "size", defaultValue = "10") @ApiParam("每页数量") Integer size,
                         @RequestParam(name = "search", required = false) @ApiParam("搜索问题") String search,
                         @RequestParam(name = "tag", required = false) @ApiParam("热门标签") String tag,
                         @RequestParam(name = "sortName", required = false) @ApiParam("排序名称") String sortName,
