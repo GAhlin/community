@@ -1,5 +1,6 @@
 package com.example.community.controller;
 
+import com.example.community.annotation.WebLog;
 import com.example.community.cache.HotTagCache;
 import com.example.community.dto.PaginationDTO;
 import com.example.community.service.QuestionService;
@@ -12,7 +13,6 @@ import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 
-import javax.servlet.http.HttpServletRequest;
 import java.util.List;
 
 @Api(tags = "IndexController", description = "首页查询")
@@ -27,6 +27,7 @@ public class IndexController {
 
     @ApiOperation("分页查询问题列表")
     @GetMapping("/")
+    @WebLog(description = "分页查询问题列表")
     public String index(Model model,
                         @RequestParam(name = "page", defaultValue = "1") @ApiParam("页码") Integer page,
                         @RequestParam(name = "size", defaultValue = "10") @ApiParam("每页数量") Integer size,

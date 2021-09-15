@@ -1,5 +1,6 @@
 package com.example.community.controller;
 
+import com.example.community.annotation.WebLog;
 import com.example.community.cache.TagCache;
 import com.example.community.dto.QuestionDTO;
 import com.example.community.model.Question;
@@ -8,6 +9,7 @@ import com.example.community.service.QuestionService;
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
 import io.swagger.annotations.ApiParam;
+import lombok.extern.slf4j.Slf4j;
 import org.apache.commons.lang3.StringUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
@@ -19,6 +21,7 @@ import org.springframework.web.bind.annotation.RequestParam;
 
 import javax.servlet.http.HttpServletRequest;
 
+@Slf4j
 @Api(tags = "PublishController", description = "发布提问")
 @Controller
 public class PublishController {
@@ -42,6 +45,7 @@ public class PublishController {
 
     @ApiOperation("返回发布页面")
     @GetMapping("/publish")
+    @WebLog(description = "返回发布页面")
     public String publish(Model model) {
         model.addAttribute("tags", TagCache.get());
         return "publish";
@@ -49,6 +53,7 @@ public class PublishController {
 
     @ApiOperation("发布功能")
     @PostMapping("/publish")
+    @WebLog(description = "发布功能")
     public String doPublish(
             @RequestParam(value = "title", required = false) @ApiParam("问题标题") String title,
             @RequestParam(value = "description", required = false) @ApiParam("问题描述") String description,

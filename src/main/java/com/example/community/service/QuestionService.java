@@ -1,5 +1,6 @@
 package com.example.community.service;
 
+import com.alibaba.fastjson.JSON;
 import com.example.community.dto.PaginationDTO;
 import com.example.community.dto.QuestionDTO;
 import com.example.community.dto.QuestionQueryDTO;
@@ -18,10 +19,10 @@ import org.springframework.beans.BeanUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.List;
+import java.util.*;
 import java.util.stream.Collectors;
+
+import static com.example.community.constants.RedisConstants.REDIS_VIEW_COUNT;
 
 @Service
 public class QuestionService {
@@ -35,8 +36,12 @@ public class QuestionService {
     @Autowired
     private QuestionExtMapper questionExtMapper;
 
+    @Autowired
+    private RedisService redisService;
+
     /**
      * 首页，搜索后的分页信息
+     *
      * @param search
      * @param tag
      * @param page
@@ -49,9 +54,14 @@ public class QuestionService {
             search = Arrays.
                     stream(tags)
                     .filter(StringUtils::isNotBlank)
-                    .map(t -> t.replace("+", "").replace("*", "").replace("?", ""))
-                    .filter(StringUtils::isNotBlank).
-                    collect(Collectors.joining("|"));
+                    .map(t -> t.replace("+", "")
+                            .replace("*", "")
+                            .replace("?", "")
+                            .replace("<", "〈")
+                            .replace(">", "〉")
+                    )
+                    .filter(StringUtils::isNotBlank)
+                    .collect(Collectors.joining("|"));
         }
 
         //首页遍历问题
@@ -62,8 +72,12 @@ public class QuestionService {
         QuestionQueryDTO questionQueryDTO = new QuestionQueryDTO();
         questionQueryDTO.setSearch(search);
         //防止+*?引起搜索异常
-        if(StringUtils.isNotBlank(tag)){
-            tag = tag.replace("+", "").replace("*", "").replace("?", "");
+        if (StringUtils.isNotBlank(tag)) {
+            tag = tag.replace("+", "")
+                    .replace("*", "")
+                    .replace("?", "")
+                    .replace("<", "〈")
+                    .replace(">", "〉");
             questionQueryDTO.setTag(tag);
         }
 
@@ -120,6 +134,10 @@ public class QuestionService {
             QuestionDTO questionDTO = new QuestionDTO();
             BeanUtils.copyProperties(question, questionDTO);
             questionDTO.setUser(user);
+            if (redisService.hasKey(REDIS_VIEW_COUNT, question.getId().toString())) {
+                Object viewCount = redisService.getHash(REDIS_VIEW_COUNT, question.getId().toString());
+                questionDTO.setViewCount(JSON.parseObject(String.valueOf(viewCount), Integer.class));
+            }
             questionDTOList.add(questionDTO);
         }
 
@@ -129,6 +147,7 @@ public class QuestionService {
 
     /**
      * 我的问题，获取分页信息
+     *
      * @param userId
      * @param page
      * @param size
@@ -175,6 +194,10 @@ public class QuestionService {
             QuestionDTO questionDTO = new QuestionDTO();
             BeanUtils.copyProperties(question, questionDTO);
             questionDTO.setUser(user);
+            if (redisService.hasKey(REDIS_VIEW_COUNT, question.getId().toString())) {
+                Object viewCount = redisService.getHash(REDIS_VIEW_COUNT, question.getId().toString());
+                questionDTO.setViewCount(JSON.parseObject(String.valueOf(viewCount), Integer.class));
+            }
             questionDTOList.add(questionDTO);
         }
 
@@ -184,6 +207,7 @@ public class QuestionService {
 
     /**
      * 根据问题id，查询详情
+     *
      * @param id
      * @return
      */
@@ -197,11 +221,16 @@ public class QuestionService {
         BeanUtils.copyProperties(question, questionDTO);
         User user = userMapper.selectByPrimaryKey(question.getCreator());
         questionDTO.setUser(user);
+        if (redisService.hasKey(REDIS_VIEW_COUNT, question.getId().toString())) {
+            Object viewCount = redisService.getHash(REDIS_VIEW_COUNT, question.getId().toString());
+            questionDTO.setViewCount(JSON.parseObject(String.valueOf(viewCount), Integer.class));
+        }
         return questionDTO;
     }
 
     /**
      * 根据id是否存在，创建或修改问题
+     *
      * @param question
      */
     public void createOrUpdate(Question question) {
@@ -244,17 +273,27 @@ public class QuestionService {
 
     /**
      * 增加阅读数
+     *
      * @param id
      */
     public void incView(Long id) {
-        Question question = new Question();
-        question.setId(id);
-        question.setViewCount(1);
-        questionExtMapper.incView(question);
+        String redisKey = REDIS_VIEW_COUNT;
+        if (redisService.getHash(redisKey, id.toString()) != null) {
+            redisService.incrementHash(redisKey, id.toString(), 1);
+        } else {
+            Question question = questionMapper.selectByPrimaryKey(id);
+            Integer viewCount = question.getViewCount();
+            redisService.setHash(REDIS_VIEW_COUNT, id.toString(), viewCount.toString());
+        }
+//        Question question = new Question();
+//        question.setId(id);
+//        question.setViewCount(1);
+//        questionExtMapper.incView(question);
     }
 
     /**
      * 查询相关问题
+     *
      * @param queryDTO
      * @return
      */
@@ -272,16 +311,22 @@ public class QuestionService {
         question.setId(queryDTO.getId());
         question.setTag(regexpTag);
         List<Question> questions = questionExtMapper.selectRelated(question);
-        List<QuestionDTO> questionDTOS = questions.stream().map(q -> {
+        List<QuestionDTO> questionDTOS = new ArrayList<>();
+        for (Question q : questions) {
             QuestionDTO questionDTO = new QuestionDTO();
             BeanUtils.copyProperties(q, questionDTO);
-            return questionDTO;
-        }).collect(Collectors.toList());
+            if (redisService.hasKey(REDIS_VIEW_COUNT, q.getId().toString())) {
+                Object viewCount = redisService.getHash(REDIS_VIEW_COUNT, question.getId().toString());
+                questionDTO.setViewCount(JSON.parseObject(String.valueOf(viewCount), Integer.class));
+            }
+            questionDTOS.add(questionDTO);
+        }
         return questionDTOS;
     }
 
     /**
      * 删除问题
+     *
      * @param id
      * @param userId
      */

@@ -1,5 +1,6 @@
 package com.example.community.controller;
 
+import com.example.community.annotation.WebLog;
 import com.example.community.dto.CommentCreateDTO;
 import com.example.community.dto.CommentDTO;
 import com.example.community.dto.ResultDTO;
@@ -29,6 +30,7 @@ public class CommentController {
     @ApiOperation("评论功能")
     @ResponseBody
     @RequestMapping(value = "/comment", method = RequestMethod.POST)
+    @WebLog(description = "评论功能")
     public Object post(@RequestBody @ApiParam("commentDTO") CommentCreateDTO commentDTO,
                        HttpServletRequest request) {
         User user = (User) request.getSession().getAttribute("user");
@@ -43,12 +45,12 @@ public class CommentController {
         Comment comment = new Comment();
         comment.setParentId(commentDTO.getParentID());
         comment.setType(commentDTO.getType());
-        comment.setContent(commentDTO.getContent());
+        comment.setContent(commentDTO.getContent().replaceAll("<", "〈").replaceAll(">", "〉"));
         comment.setGmtModified(System.currentTimeMillis());
         comment.setGmtCreate(System.currentTimeMillis());
         comment.setCommentator(user.getId());
         comment.setLikeCount(0);
-        commentService.insert(comment,user);
+        commentService.insert(comment, user);
         return ResultDTO.okOf();
     }
 

@@ -3,18 +3,21 @@ package com.example.community.service;
 import com.example.community.mapper.UserMapper;
 import com.example.community.model.User;
 import com.example.community.model.UserExample;
+import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
 
 @Service
+@Slf4j
 public class UserService {
 
     @Autowired
     private UserMapper userMapper;
 
     public void createOrUpdate(User user) {
+        log.info("更新或创建用户");
         //判断数据库已有账号，有则更新，没有则创建
         UserExample userExample = new UserExample();
         userExample.createCriteria()

@@ -1,7 +1,7 @@
 package com.example.community.controller;
 
+import com.example.community.annotation.WebLog;
 import com.example.community.dto.PaginationDTO;
-import com.example.community.model.Notification;
 import com.example.community.model.User;
 import com.example.community.service.NotificationService;
 import com.example.community.service.QuestionService;
@@ -29,6 +29,7 @@ public class ProfileController {
 
     @ApiOperation("分页查询我的问题列表")
     @GetMapping("/profile/{action}")
+    @WebLog(description = "分页查询我的问题列表")
     public String profile(HttpServletRequest request,
                           @PathVariable(name = "action") String action,
                           @RequestParam(name = "page", defaultValue = "1") @ApiParam("页码") Integer page,

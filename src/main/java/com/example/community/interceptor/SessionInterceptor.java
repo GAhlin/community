@@ -4,6 +4,7 @@ import com.example.community.mapper.UserMapper;
 import com.example.community.model.User;
 import com.example.community.model.UserExample;
 import com.example.community.service.NotificationService;
+import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.web.servlet.HandlerInterceptor;
@@ -16,6 +17,7 @@ import javax.servlet.http.HttpSession;
 import java.util.List;
 
 @Service
+@Slf4j
 public class SessionInterceptor implements HandlerInterceptor {
 
     @Autowired

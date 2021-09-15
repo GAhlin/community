@@ -1,9 +1,8 @@
 package com.example.community.controller;
 
+import com.example.community.annotation.WebLog;
 import com.example.community.dto.NotificationDTO;
 import com.example.community.enums.NotificationTypeEnum;
-import com.example.community.exception.CustomizeErrorCode;
-import com.example.community.exception.CustomizeException;
 import com.example.community.model.User;
 import com.example.community.service.NotificationService;
 import io.swagger.annotations.Api;
@@ -21,6 +20,7 @@ public class NotificationController {
     private NotificationService notificationService;
 
     @GetMapping("/notification/{id}")
+    @WebLog(description = "通知功能")
     public String profile(HttpServletRequest request,@PathVariable(name = "id") Long id) {
         User user = (User) request.getSession().getAttribute("user");
 
