@@ -212,6 +212,6 @@ $(function removeClass() {
 });
 
 function likeComment() {
-
+    // TODO 实现点赞
 }
 

@@ -13,6 +13,7 @@ import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
 import io.swagger.annotations.ApiParam;
 import lombok.extern.slf4j.Slf4j;
+import org.apache.commons.lang3.StringUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -61,7 +62,7 @@ public class AuthorizeController {
             User user = new User();
             String token = UUID.randomUUID().toString();
             user.setToken(token);
-            user.setName(githubUser.getName());
+            user.setName(StringUtils.isEmpty(githubUser.getName()) ? "用户" : githubUser.getName());
             user.setAccountId(String.valueOf(githubUser.getId()));
             user.setAvatarUrl(githubUser.getAvatar_url());
             userService.createOrUpdate(user);
@@ -93,7 +94,7 @@ public class AuthorizeController {
             String token = UUID.randomUUID().toString();
             //设置user信息
             user.setToken(token);
-            user.setName(giteeUser.getName());
+            user.setName(StringUtils.isEmpty(giteeUser.getName()) ? "用户" : giteeUser.getName());
             user.setAccountId(String.valueOf(giteeUser.getId()));
             user.setAvatarUrl(giteeUser.getAvatarUrl());
             user.setBio(giteeUser.getBio());
